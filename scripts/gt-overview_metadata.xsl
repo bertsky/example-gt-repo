@@ -45,7 +45,7 @@
                   <xsl:for-each select="collection($coll)">
                       
                       <xsl:variable name="filename" select="base-uri()" />
-                      <xsl:variable name="gtdocument" select="substring-after(substring-before($filename, 'page/')[1],'data_structure/')"/>
+                      <xsl:variable name="gtdocument" select="substring-after(substring-before($filename, '/page/')[1],'data_structure/')"/>
                       
                       <xsl:message select="$gtdocument"/>
                       
@@ -57,7 +57,7 @@
                      
                          <xsl:element name="array"><xsl:attribute name="key">volume_region</xsl:attribute>
                          <xsl:element name="map">
-                             <xsl:attribute name="key1"><xsl:value-of select="substring-after(substring-before($filename, 'page/')[1],'data_structure/')"/></xsl:attribute>
+                             <xsl:attribute name="key1"><xsl:value-of select="substring-after(substring-before($filename, '/page/')[1],'data_structure/')"/></xsl:attribute>
                              <xsl:attribute name="key2"><xsl:value-of select="substring-after($filename, 'page/')"/></xsl:attribute>
                             <string key="{$key1}"><xsl:value-of select="count(document($filename)//*/pc:TextRegion)"/></string>
                              <string key="{$key2}"><xsl:value-of select="count(document($filename)//*/pc:ImageRegion)"/></string>
