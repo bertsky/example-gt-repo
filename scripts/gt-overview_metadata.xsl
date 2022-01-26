@@ -58,7 +58,7 @@
                          <xsl:element name="array"><xsl:attribute name="key">volume_region</xsl:attribute>
                          <xsl:element name="map">
                              <xsl:attribute name="key1"><xsl:value-of select="substring-after(substring-before($filename, '/page/')[1],'data_structure/')"/></xsl:attribute>
-                             <xsl:attribute name="key2"><xsl:value-of select="substring-after($filename, 'page/')"/></xsl:attribute>
+                             <xsl:attribute name="key2"><xsl:value-of select="substring-after($filename, '/page/')"/></xsl:attribute>
                             <string key="{$key1}"><xsl:value-of select="count(document($filename)//*/pc:TextRegion)"/></string>
                              <string key="{$key2}"><xsl:value-of select="count(document($filename)//*/pc:ImageRegion)"/></string>
                              <string key="{$key3}"><xsl:value-of select="count(document($filename)//*/pc:LineDrawingRegion)"/></string>
