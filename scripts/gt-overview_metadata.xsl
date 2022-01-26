@@ -15,7 +15,7 @@
         <xsl:copy-of select="json-to-xml(unparsed-text('../METADATA.json'))"/>
     </xsl:variable>
     
-    <xsl:variable name="path">../data_structure/raw</xsl:variable>
+    <xsl:variable name="path">../data_structure</xsl:variable>
     <xsl:variable name="coll"><xsl:value-of select="$path"/>/?select=*.xml;recurse=yes</xsl:variable>
     
     <xsl:param name="output">METADATA</xsl:param>
