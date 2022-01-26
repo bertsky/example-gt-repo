@@ -1,36 +1,108 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the main branch
+name: gtrepo
+'on':
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-  # Allows you to run this workflow manually from the Actions tab
+    branches:
+      - main
   workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  cli:
+    name: makeBagit
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+     
+    # Instalations
+      
+    - name: install ocrd
+      run: git clone --depth 1 https://github.com/OCR-D/core; ls -l;cd core; make install;cd ..;rm -rf core
+    
+    - name: Set up JDK 1.8
+      uses: joschi/setup-jdk@v2
+      with:
+          java-version: '11'
+      
+    - name: Download and install saxon
+      run: wget https://sourceforge.net/projects/saxon/files/Saxon-HE/10/Java/SaxonHE10-5J.zip/download && unzip download
+    
+    #- name: output dir
+    #  run: cd out && sudo mkdir rules
+    
+    #- name: transform rules
+    #    run: sudo java -jar saxon-he-10.5.jar -xsl:de/xsl/rules.xsl -s:de/trans/trFremdsprache.dita -o:out/rules/ruleset_character.json && sudo java -jar saxon-he-10.5.jar -xsl:de/xsl/rules.xsl -s:de/trans/trLigaturen2.dita -o:out/rules/ruleset_ligature.json
+    
+   
+    - name: Git checkout
+      uses: actions/checkout@v2
+      
+    
+           
+    - name: testocrd
+      run: ocrd --version
+    
+    - name: made ocrdzip_out
+      run: sudo mkdir ocrdzip_out
+    
+    
+    - name: made bagit
+      run: cd gt-repo-example;ocrd zip bag -i ocrd_data_structur_anthus_esskunst_1838;sudo mv /home/runner/work/gt-repo-example/gt-repo-example/gt-repo-example.ocrd.zip /home/runner/work/gt-repo-example/gt-repo-example/ocrdzip_out/;pwd;ls -l
+    
+         
+    - name: Archive the ocrdzip files from ocrdzip_out folder
+      uses: thedoctor0/zip-release@master
+      with:
+         filename: site.zip
+         path: 'ocrdzip_out'
+      
+    
+    - name: Create GitHub release
+      id: create-new-release
+      uses: actions/create-release@latest
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+          tag_name: v${{ github.run_number }}
+          release_name: Release ${{ github.run_number }}
+          body_path: release_note.md 
+          draft: false
+          prerelease: false
+     
+    
+    - name: Upload asset to GitHub release
+      uses: actions/upload-release-asset@latest
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+          tag_name: ${{ github.run_number }}
+          release_name: Release ${{ github.run_number }}
+          upload_url: ${{ steps.create-new-release.outputs.upload_url }}
+          asset_path: ./site.zip
+          asset_name: bagitDump-v${{ github.run_number }}.zip
+          asset_content_type: application/zip
+          
+       
+          
+          
+   # - name: Deploy Bagits 🚀
+   #   uses: JamesIves/github-pages-deploy-action@3.7.1
+   #   with:
+   #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+   #       BRANCH: bagitoutput # The branch the action should deploy to.
+   #       FOLDER: ocrdzip_out # The folder the action should deploy.
+    
+    
+    
+    
+    
+    #- name: Create Release
+    #  id: create_release
+    #  uses: actions/create-release@latest
+    #  env:
+    #      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+    #  with:
+    #      tag_name: ${{ github.ref }}
+    #      release_name: Release ${{ github.ref }}
+    #      body: |
+    #        Changes in this Release
+    #        - First Change
+    #        - Second Change
+    #      draft: false
+    #      prerelease: false
