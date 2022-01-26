@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Kurtzer Bericht Von der Fruchtbringenden Gesellschafft Vorhaben/ auch dero Nahmen/ Gemählde und Wörter</title>
+            <title type="sub">Jn Reimen verfast</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/118574868">
+                  <surname>Anhalt-Köthen</surname>
+                  <forename>Ludwig von</forename>
+               </persName>
+            </author>
+            <editor corresp="#DTACorpusPublisher">
+               <persName ref="http://d-nb.info/gnd/115266127">
+                  <surname>Geyken</surname>
+                  <forename>Alexander</forename>
+               </persName>
+            </editor>
+            <editor corresp="#DTACorpusPublisher">
+               <persName ref="http://d-nb.info/gnd/1018099549">
+                  <surname>Haaf</surname>
+                  <forename>Susanne</forename>
+               </persName>
+            </editor>
+            <editor corresp="#DTACorpusPublisher">
+               <persName ref="http://d-nb.info/gnd/1019062681">
+                  <surname>Jurish</surname>
+                  <forename>Bryan</forename>
+               </persName>
+            </editor>
+            <editor corresp="#DTACorpusPublisher">
+               <persName>
+                  <surname>Boenig</surname>
+                  <forename>Matthias</forename>
+               </persName>
+            </editor>
+            <editor corresp="#DTACorpusPublisher">
+               <persName>
+                  <surname>Thomas</surname>
+                  <forename>Christian</forename>
+               </persName>
+            </editor>
+            <editor corresp="#DTACorpusPublisher">
+               <persName>
+                  <surname>Wiegand</surname>
+                  <forename>Frank</forename>
+               </persName>
+            </editor>
+            <respStmt>
+               <orgName ref="https://www.clarin-d.de">CLARIN-D</orgName>
+               <resp>
+                  <note type="remarkResponsibility">Langfristige Bereitstellung der DTA-Ausgabe</note>
+                  <ref target="https://clarin.bbaw.de"/>
+               </resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>Vollständige digitalisierte Ausgabe.</edition>
+         </editionStmt>
+         <extent>
+            <measure type="images">62</measure>
+            <measure type="tokens">13157</measure>
+            <measure type="types">3687</measure>
+            <measure type="characters">83825</measure>
+         </extent>
+         <publicationStmt>
+            <publisher xml:id="DTACorpusPublisher">
+               <email>dta@bbaw.de</email>
+               <orgName role="project">Deutsches Textarchiv</orgName>
+               <orgName role="hostingInstitution" xml:lang="en">Berlin-Brandenburg Academy of Sciences and Humanities (BBAW)</orgName>
+               <orgName role="hostingInstitution" xml:lang="de">Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)</orgName>
+               <address>
+                  <addrLine>Jägerstr. 22/23, 10117 Berlin</addrLine>
+                  <country>Germany</country>
+               </address>
+            </publisher>
+            <pubPlace>Berlin</pubPlace>
+            <date type="publication">2018-05-16T09:05:01Z</date>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by-nc/3.0/de/">
+                  <p>Distributed under the Creative Commons Attribution-NonCommercial 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <idno>
+               <idno type="URLWeb">http://www.deutschestextarchiv.de/anhaltkoethen_fruchtbringende_1628</idno>
+               <idno type="URLXML">http://www.deutschestextarchiv.de/book/download_xml/anhaltkoethen_fruchtbringende_1628</idno>
+               <idno type="URLHTML">http://www.deutschestextarchiv.de/book/download_html/anhaltkoethen_fruchtbringende_1628</idno>
+               <idno type="URLText">http://www.deutschestextarchiv.de/book/download_text/anhaltkoethen_fruchtbringende_1628</idno>
+               <idno type="DTADirName">anhaltkoethen_fruchtbringende_1628</idno>
+               <idno type="DTAID">20009</idno>
+               <idno type="URN">urn:nbn:de:kobv:b4-200905199906</idno>
+            </idno>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl type="M">[Anhalt-Köthen, Ludwig von]: Kurtzer Bericht Von der Fruchtbringenden Gesellschafft Vorhaben. [s. l.], 1628.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title level="m" type="main">Kurtzer Bericht Von der Fruchtbringenden Gesellschafft Vorhaben/ auch dero Nahmen/ Gemählde und Wörter</title>
+                  <title level="m" type="sub">Jn Reimen verfast</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/118574868">
+                        <surname>Anhalt-Köthen</surname>
+                        <forename>Ludwig von</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <editionStmt>
+                  <edition n="1"/>
+               </editionStmt>
+               <extent>
+                  <measure type="pages">[28] Bl.</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>s. e.</name>
+                  </publisher>
+                  <pubPlace>s. l.</pubPlace>
+                  <date type="publication">1628</date>
+               </publicationStmt>
+               <notesStmt>
+                  <note type="remarkSource">Das zugrundeliegende Exemplar weist einen Fehler in der Bindung auf: Bl. A[iiij] ist hinter dem Titelblatt eingebunden. Die Bilddateien werden hier in dahingehend korrigierter Reihenfolge wiedergegeben.</note>
+               </notesStmt>
+            </biblFull>
+            <msDesc>
+               <msIdentifier>
+                  <repository>HAB Wolfenbüttel</repository>
+                  <idno>
+                     <idno type="shelfmark">HAB Wolfenbüttel, Wa 6098</idno>
+                     <idno type="URLCatalogue">Dig: http://diglib.hab.de/drucke/wa-6098/start.htm</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Dieses Werk wurde gemäß den <ref target="http://www.deutschestextarchiv.de/doku/richtlinien">DTA-Transkriptionsrichtlinien</ref>
+            im Double-Keying-Verfahren von Nicht-Muttersprachlern erfasst und in XML/TEI P5 nach
+            <ref target="http://www.deutschestextarchiv.de/doku/basisformat">DTA-Basisformat</ref> kodiert.</p>
+            <p/>
+         </editorialDecl>
+         <tagsDecl>
+            <rendition scheme="css" xml:id="rendition-aq">font-family:sans-serif</rendition>
+            <rendition scheme="css" xml:id="rendition-b">font-weight:bold</rendition>
+            <rendition scheme="css" xml:id="rendition-blue">color:blue</rendition>
+            <rendition scheme="css" xml:id="rendition-c">display:block; text-align:center</rendition>
+            <rendition scheme="css" xml:id="rendition-et">display:block; margin-left:2em; text-indent:0</rendition>
+            <rendition scheme="css" xml:id="rendition-et2">display:block; margin-left:4em; text-indent:0</rendition>
+            <rendition scheme="css" xml:id="rendition-et3">display:block; margin-left:6em; text-indent:0</rendition>
+            <rendition scheme="css" xml:id="rendition-f">border:1px dotted silver</rendition>
+            <rendition scheme="css" xml:id="rendition-fr">border:1px dotted silver</rendition>
+            <rendition scheme="css" xml:id="rendition-g">letter-spacing:0.125em</rendition>
+            <rendition scheme="css" xml:id="rendition-i">font-style:italic</rendition>
+            <rendition scheme="css" xml:id="rendition-in">font-size:150%</rendition>
+            <rendition scheme="css" xml:id="rendition-k">font-variant:small-caps</rendition>
+            <rendition scheme="css" xml:id="rendition-larger">font-size:larger</rendition>
+            <rendition scheme="css" xml:id="rendition-red">color:red</rendition>
+            <rendition scheme="css" xml:id="rendition-right">display:block; text-align:right</rendition>
+            <rendition scheme="css" xml:id="rendition-s">text-decoration:line-through</rendition>
+            <rendition scheme="css" xml:id="rendition-smaller">font-size:smaller</rendition>
+            <rendition scheme="css" xml:id="rendition-sub">vertical-align:sub; font-size:.7em</rendition>
+            <rendition scheme="css" xml:id="rendition-sup">vertical-align:super; font-size:.7em</rendition>
+            <rendition scheme="css" xml:id="rendition-u">text-decoration:underline</rendition>
+            <rendition scheme="css" xml:id="rendition-uu">border-bottom:double 3px #000</rendition>
+         </tagsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="deu">German</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="http://www.deutschestextarchiv.de/doku/klassifikation#dtamain">Fachtext</classCode>
+            <classCode scheme="http://www.deutschestextarchiv.de/doku/klassifikation#dtasub">Sprachwissenschaft</classCode>
+            <classCode scheme="http://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Wissenschaft</classCode>
+            <classCode scheme="http://www.deutschestextarchiv.de/doku/klassifikation#dwds1sub">Sprachwissenschaft</classCode>
+            <classCode scheme="http://www.deutschestextarchiv.de/doku/klassifikation#DTACorpus">core</classCode>
+            <classCode scheme="http://www.deutschestextarchiv.de/doku/klassifikation#DTACorpus">ready</classCode>
+            <classCode scheme="http://www.deutschestextarchiv.de/doku/klassifikation#DTACorpus">china</classCode>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <head/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0003.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0005.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0006.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0007.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0008.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0009.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0010.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0011.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0012.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0013.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0015.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0016.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0020.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0022.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0026.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0029.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0030.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0034.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0039.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0045.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0046.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0047.jpg"/>
+            <pb facs="anhaltkoethen_fruchtbringende_1628_0054.jpg"/>
+         </div>
+      </body>
+   </text>
+</TEI>
