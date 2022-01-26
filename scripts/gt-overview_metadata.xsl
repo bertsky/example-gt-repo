@@ -18,7 +18,7 @@
     <xsl:variable name="path">../data_structure</xsl:variable>
     <xsl:variable name="coll"><xsl:value-of select="$path"/>/?select=*.xml;recurse=yes</xsl:variable>
     
-    <xsl:param name="output">METADATA</xsl:param>
+    <xsl:param name="output">TABLE</xsl:param>
     
     
     <xsl:variable name="key1">countTextRegion</xsl:variable>
@@ -53,7 +53,7 @@
                      
                          <xsl:element name="array"><xsl:attribute name="key">volume_region</xsl:attribute>
                          <xsl:element name="map">
-                             <xsl:attribute name="key1"><xsl:value-of select="substring-after(substring-before($filename, '/page/')[1],'raw/')"/></xsl:attribute>
+                             <xsl:attribute name="key1"><xsl:value-of select="substring-before($filename, '/page/')[1]"/></xsl:attribute>
                              <xsl:attribute name="key2"><xsl:value-of select="substring-after($filename, 'page/')"/></xsl:attribute>
                             <string key="{$key1}"><xsl:value-of select="count(document($filename)//*/pc:TextRegion)"/></string>
                              <string key="{$key2}"><xsl:value-of select="count(document($filename)//*/pc:ImageRegion)"/></string>
