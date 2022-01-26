@@ -15,13 +15,13 @@ jobs:
     - name: install ocrd
       run: git clone --depth 1 https://github.com/OCR-D/core; ls -l;cd core; make install;cd ..;rm -rf core
     
-    - name: Set up JDK 1.8
-      uses: joschi/setup-jdk@v2
-      with:
-          java-version: '11'
+    #- name: Set up JDK 1.8
+    #  uses: joschi/setup-jdk@v2
+    #  with:
+    #      java-version: '11'
       
-    - name: Download and install saxon
-      run: wget https://sourceforge.net/projects/saxon/files/Saxon-HE/10/Java/SaxonHE10-5J.zip/download && unzip download
+    #- name: Download and install saxon
+    #  run: wget https://sourceforge.net/projects/saxon/files/Saxon-HE/10/Java/SaxonHE10-5J.zip/download && unzip download
     
     #- name: output dir
     #  run: cd out && sudo mkdir rules
