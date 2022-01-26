@@ -83,6 +83,8 @@
               </xsl:variable>
                 
                 
+                
+                
             <xsl:if test="$output = 'METADATA'">
                 <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text()='structure'">
                     <xsl:element name="map" namespace="http://www.w3.org/2005/xpath-functions">
@@ -197,6 +199,9 @@
         
         
         <xsl:if test="$output = 'TABLE'">
+            
+            <xsl:copy-of select="$holeMetric"/>
+            
             
             <xsl:variable name="tableHeader">
                 <tr>
