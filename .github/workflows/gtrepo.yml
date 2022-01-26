@@ -43,7 +43,8 @@ jobs:
     
     
     - name: made bagit
-      run: cd gt-repo-example;ocrd zip bag -i ocrd_data_structur_anthus_esskunst_1838;sudo mv /home/runner/work/gt-repo-example/gt-repo-example/gt-repo-example.ocrd.zip /home/runner/work/gt-repo-example/gt-repo-example/ocrdzip_out/;pwd;ls -l
+      run: cd example-gt-repo/data_structure/raw/anthus_esskunst_1838;ocrd zip bag -i ocrd_data_structur_anthus_esskunst_1838;ls -l;
+      # sudo mv /home/runner/work/gt-repo-example/gt-repo-example/gt-repo-example.ocrd.zip /home/runner/work/gt-repo-example/gt-repo-example/ocrdzip_out/;pwd;ls -l
     
          
     - name: Archive the ocrdzip files from ocrdzip_out folder
