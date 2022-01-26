@@ -43,8 +43,8 @@ jobs:
       
        
     - name: transform METADATA and make GT-Overview
-      run: sudo java -jar saxon-he-10.5.jar -xsl:script/gt-overview_metadata.xsl -s:script/gt-overview_metadata.xsl -o:ghout/test.md
-    
+      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl -s:scripts/gt-overview_metadata.xsl -o:ghout/test.md
+                                                                                     
             
     - name: Archive the ocrdzip files from ocrdzip_out folder
       uses: thedoctor0/zip-release@master
