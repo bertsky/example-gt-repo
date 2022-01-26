@@ -2,6 +2,6 @@
 metsfiles=`ls ../data_structure/raw/`
 for eachfile in $metsfiles
 do
-   echo cd ../data_structure/raw/$eachfile; ocrd zip bag -i ocrd_data_structur_$eachfile;sudo mv /home/runner/work/example-gt-repo/example-gt-repo/data_structure/raw/$eachfile/*.zip /home/runner/work/example-gt-repo/example-gt-repo/ocrdzip_out/
-   # echo $eachfile;pwd
+   # echo cd ../data_structure/raw/$eachfile; ocrd zip bag -i ocrd_data_structur_$eachfile;sudo mv /home/runner/work/example-gt-repo/example-gt-repo/data_structure/raw/$eachfile/*.zip /home/runner/work/example-gt-repo/example-gt-repo/ocrdzip_out/
+   echo ../data_structure/raw/$eachfile;ls -l
 done
