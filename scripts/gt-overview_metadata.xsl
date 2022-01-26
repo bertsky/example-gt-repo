@@ -200,7 +200,7 @@
         
         <xsl:if test="$output = 'TABLE'">
             
-            <xsl:copy-of select="$holeMetric"/>
+            
             
             
             <xsl:variable name="tableHeader">
