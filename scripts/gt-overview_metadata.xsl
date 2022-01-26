@@ -45,9 +45,9 @@
                   <xsl:for-each select="collection($coll)">
                       
                       <xsl:variable name="filename" select="base-uri()" />
-                      <xsl:variable name="gtdocument" select="substring-after(substring-before($filename, 'page/')[1],'raw/')"/>
+                      <xsl:variable name="gtdocument" select="substring-before($filename, 'page/')[1]"/>
                        
-                      <xsl:message select="$filename"/>
+                      <xsl:message select="$gtdocument"/>
                         <xsl:if test="$gtdocument !=''">
                             
                      
