@@ -1,0 +1,7 @@
+#!/bin/bash
+metsfiles=`ls ../data_structure/raw/`
+for eachfile in $metsfiles
+do
+   echo cd data_structure/raw/$eachfile; ocrd zip bag -i ocrd_data_structur_$eachfile;sudo mv /home/runner/work/example-gt-repo/example-gt-repo/$eachfile/*.zip /home/runner/work/example-gt-repo/example-gt-repo/ocrdzip_out/
+
+done
