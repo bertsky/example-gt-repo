@@ -46,7 +46,8 @@
                       
                       <xsl:variable name="filename" select="base-uri()" />
                       <xsl:variable name="gtdocument" select="substring-after(substring-before($filename, 'page/')[1],'raw/')"/>
-                        
+                       
+                      <xsl:message select="$filename"/>
                         <xsl:if test="$gtdocument !=''">
                             
                      
