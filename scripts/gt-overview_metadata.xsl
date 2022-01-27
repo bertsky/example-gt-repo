@@ -8,7 +8,7 @@
     xmlns:in="http://www.intern.de"
     exclude-result-prefixes="#all"
     version="3.0">
-    <xsl:output indent="yes" omit-xml-declaration="no" method="html" doctype-public="" doctype-system=""/>
+    <xsl:output indent="yes" omit-xml-declaration="no" method="xml"/>
     
     
     <xsl:variable name="docMETADATA">
@@ -40,68 +40,7 @@
    
     
     <xsl:template match="/">
-        
-        <style>
-            
-            header {
-            background-color: #c8ab37 !important;
-            border-color: #c8ab37 !important;
-            }
-            
-            
-            #overview td {
-            padding: 1em;
-            border: 1px solid black;
-            }
-            
-            #overview.hide2 tr > *:nth-child(2) {
-            display: none;
-            }
-            #overview.hide3 tr > *:nth-child(3) {
-            display: none;
-            }
-            #overview.hide4 tr > *:nth-child(4) {
-            display: none;
-            }
-            #overview.hide5 tr > *:nth-child(5) {
-            display: none;
-            }
-            #overview.hide6 tr > *:nth-child(6) {
-            display: none;
-            }
-            #overview.hide7 tr > *:nth-child(7) {
-            display: none;
-            }
-            #overview.hide8 tr > *:nth-child(8) {
-            display: none;
-            }
-            #overview.hide9 tr > *:nth-child(9) {
-            display: none;
-            }
-            #overview.hide10 tr > *:nth-child(10) {
-            display: none;
-            }
-            #overview.hide11 tr > *:nth-child(11) {
-            display: none;
-            }
-            #overview.hide12 tr > *:nth-child(12) {
-            display: none;
-            }
-            #overview.hide13 tr > *:nth-child(13) {
-            display: none;
-            }
-            #overview.hide14 tr > *:nth-child(14) {
-            display: none;
-            }
-            #overview.hide15 tr > *:nth-child(15) {
-            display: none;
-            }
-            
-            
-            
-        </style>
-        
-        
+        <link rel="stylesheet" href="table_hide.css"/>
         
         
              <xsl:variable name="holeMetric">
