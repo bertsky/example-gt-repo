@@ -8,7 +8,7 @@
     xmlns:in="http://www.intern.de"
     exclude-result-prefixes="#all"
     version="3.0">
-    <xsl:output indent="yes" omit-xml-declaration="yes" method="xml"/>
+    <xsl:output indent="yes" omit-xml-declaration="yes" method="html"/>
     
     
     <xsl:variable name="docMETADATA">
@@ -40,6 +40,70 @@
    
     
     <xsl:template match="/">
+        
+        <style>
+            
+            header {
+            background-color: #c8ab37 !important;
+            border-color: #c8ab37 !important;
+            }
+            
+            
+            #overview td {
+            padding: 1em;
+            border: 1px solid black;
+            }
+            
+            #overview.hide2 tr &gt; *:nth-child(2) {
+            display: none;
+            }
+            #overview.hide3 tr &gt; *:nth-child(3) {
+            display: none;
+            }
+            #overview.hide4 tr &gt; *:nth-child(4) {
+            display: none;
+            }
+            #overview.hide5 tr &gt; *:nth-child(5) {
+            display: none;
+            }
+            #overview.hide6 tr &gt; *:nth-child(6) {
+            display: none;
+            }
+            #overview.hide7 tr &gt; *:nth-child(7) {
+            display: none;
+            }
+            #overview.hide8 tr &gt; *:nth-child(8) {
+            display: none;
+            }
+            #overview.hide9 tr &gt; *:nth-child(9) {
+            display: none;
+            }
+            #overview.hide10 tr &gt; *:nth-child(10) {
+            display: none;
+            }
+            #overview.hide11 tr &gt; *:nth-child(11) {
+            display: none;
+            }
+            #overview.hide12 tr &gt; *:nth-child(12) {
+            display: none;
+            }
+            #overview.hide13 tr &gt; *:nth-child(13) {
+            display: none;
+            }
+            #overview.hide14 tr &gt; *:nth-child(14) {
+            display: none;
+            }
+            #overview.hide15 tr &gt; *:nth-child(15) {
+            display: none;
+            }
+            
+            
+            
+        </style>
+        
+        
+        
+        
              <xsl:variable name="holeMetric">
                 <xsl:element name="array">
                   <xsl:for-each select="collection($coll)">
@@ -239,7 +303,31 @@
                     
                     <h2>Übersicht</h2>
                     <div>
-                    <table>
+                        
+                        
+                        
+                        
+                        <!--<button>
+                            <xsl:attribute name="onclick">document.getElementById('overview').classList.toggle('hide2')</xsl:attribute>
+                            Hide <i>countTextRegion</i>
+                        </button>-->
+                        <button onclick="document.getElementById('overview').classList.toggle('hide2')">Hide <i>countTextRegion</i></button>
+                        <button onclick="document.getElementById('overview').classList.toggle('hide3')">Hide <i>countImageRegion</i></button>
+                        <button onclick="document.getElementById('overview').classList.toggle('hide4')">Hide <i>countLineDrawingRegion</i></button>
+                        <button onclick="document.getElementById('overview').classList.toggle('hide5')">Hide <i>countGraphicRegion</i></button>
+                        <button onclick="document.getElementById('overview').classList.toggle('hide6')">Hide <i>countTableRegion</i></button>
+                        <button onclick="document.getElementById('overview').classList.toggle('hide7')">Hide <i>countChartRegion</i></button>
+                        <button onclick="document.getElementById('overview').classList.toggle('hide8')">Hide <i>countSeperatorRegion</i></button>
+                        <button onclick="document.getElementById('overview').classList.toggle('hide9')">Hide <i>countMathsRegion</i></button>
+                        <button onclick="document.getElementById('overview').classList.toggle('hide10')">Hide <i>countChemRegion</i></button>
+                        <button onclick="document.getElementById('overview').classList.toggle('hide11')">Hide <i>countMusicRegion</i></button>
+                        <button onclick="document.getElementById('overview').classList.toggle('hide12')">Hide <i>countAdvertRegion</i></button>
+                        <button onclick="document.getElementById('overview').classList.toggle('hide13')">Hide <i>countNoiseRegion</i></button>
+                        <button onclick="document.getElementById('overview').classList.toggle('hide14')">Hide <i>countUnkownRegion</i></button>
+                        <button onclick="document.getElementById('overview').classList.toggle('hide15')">Hide <i>countCustomRegion</i></button>
+                        
+                        
+                    <table id="overview">
                         
                        <xsl:copy-of select="$tableHeader"/>
                         
