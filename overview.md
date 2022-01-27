@@ -1,10 +1,70 @@
-<div class="metadata">
+<!DOCTYPE HTML><style>
+            
+            header {
+            background-color: #c8ab37 !important;
+            border-color: #c8ab37 !important;
+            }
+            
+            
+            #overview td {
+            padding: 1em;
+            border: 1px solid black;
+            }
+            
+            #overview.hide2 tr > *:nth-child(2) {
+            display: none;
+            }
+            #overview.hide3 tr > *:nth-child(3) {
+            display: none;
+            }
+            #overview.hide4 tr > *:nth-child(4) {
+            display: none;
+            }
+            #overview.hide5 tr > *:nth-child(5) {
+            display: none;
+            }
+            #overview.hide6 tr > *:nth-child(6) {
+            display: none;
+            }
+            #overview.hide7 tr > *:nth-child(7) {
+            display: none;
+            }
+            #overview.hide8 tr > *:nth-child(8) {
+            display: none;
+            }
+            #overview.hide9 tr > *:nth-child(9) {
+            display: none;
+            }
+            #overview.hide10 tr > *:nth-child(10) {
+            display: none;
+            }
+            #overview.hide11 tr > *:nth-child(11) {
+            display: none;
+            }
+            #overview.hide12 tr > *:nth-child(12) {
+            display: none;
+            }
+            #overview.hide13 tr > *:nth-child(13) {
+            display: none;
+            }
+            #overview.hide14 tr > *:nth-child(14) {
+            display: none;
+            }
+            #overview.hide15 tr > *:nth-child(15) {
+            display: none;
+            }
+            
+            
+            
+        </style><div class="metadata">
    <h2>Metadaten</h2>
    <dl>
       <dt>Name:</dt>
       <dd>gt-repo-example</dd>
       <dt>Beschreibung:</dt>
-      <dd>Dieses Repositorium dient als Vorlage für vergleichbare Repositorien, die Ground Truth-Daten öffentlich zur Verfügung stellen möchten. Nach Prüfung und den entsprechenden Lizenzen kann dieses Repo in das OCR-D-GT-Repo eingebunden werden.</dd>
+      <dd>Dieses Repositorium dient als Vorlage für vergleichbare Repositorien, die Ground Truth-Daten
+         öffentlich zur Verfügung stellen möchten. Nach Prüfung und den entsprechenden Lizenzen
+         kann dieses Repo in das OCR-D-GT-Repo eingebunden werden.</dd>
       <dt>Sprache:</dt>
       <dd>deu</dd>
       <dt>Format:</dt>
@@ -15,8 +75,7 @@
       <dd>structure</dd>
    </dl>
    <h2>Übersicht</h2>
-   <div>
-      <table>
+   <div><button onclick="document.getElementById('overview').classList.toggle('hide2')">Hide <i>countTextRegion</i></button><button onclick="document.getElementById('overview').classList.toggle('hide3')">Hide <i>countImageRegion</i></button><button onclick="document.getElementById('overview').classList.toggle('hide4')">Hide <i>countLineDrawingRegion</i></button><button onclick="document.getElementById('overview').classList.toggle('hide5')">Hide <i>countGraphicRegion</i></button><button onclick="document.getElementById('overview').classList.toggle('hide6')">Hide <i>countTableRegion</i></button><button onclick="document.getElementById('overview').classList.toggle('hide7')">Hide <i>countChartRegion</i></button><button onclick="document.getElementById('overview').classList.toggle('hide8')">Hide <i>countSeperatorRegion</i></button><button onclick="document.getElementById('overview').classList.toggle('hide9')">Hide <i>countMathsRegion</i></button><button onclick="document.getElementById('overview').classList.toggle('hide10')">Hide <i>countChemRegion</i></button><button onclick="document.getElementById('overview').classList.toggle('hide11')">Hide <i>countMusicRegion</i></button><button onclick="document.getElementById('overview').classList.toggle('hide12')">Hide <i>countAdvertRegion</i></button><button onclick="document.getElementById('overview').classList.toggle('hide13')">Hide <i>countNoiseRegion</i></button><button onclick="document.getElementById('overview').classList.toggle('hide14')">Hide <i>countUnkownRegion</i></button><button onclick="document.getElementById('overview').classList.toggle('hide15')">Hide <i>countCustomRegion</i></button><table id="overview">
          <tr>
             <th>document</th>
             <th>countTextRegion</th>
