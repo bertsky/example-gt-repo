@@ -1,4 +1,10 @@
 <style>
+    header {
+           background-color: #c8ab37 !important;
+           border: 1px solid #c8ab37 !important;    
+    }
+    
+    
     #foo td {
         padding: 1em;
         border: 1px solid black;
