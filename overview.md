@@ -33,7 +33,7 @@
    <button onclick='document.getElementById("foo").classList.toggle("hide2")'>Click me</button>
     <button onclick='document.getElementById("foo").classList.toggle("hide3")'>Click me</button>
    <div>
-      <table>
+      <table id="foo">
          <tr>
             <th>document</th>
             <th>countTextRegion</th>
