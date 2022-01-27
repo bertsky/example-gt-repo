@@ -8,7 +8,7 @@
     xmlns:in="http://www.intern.de"
     exclude-result-prefixes="#all"
     version="3.0">
-    <xsl:output indent="yes" omit-xml-declaration="yes" method="html"/>
+    <xsl:output indent="yes" omit-xml-declaration="yes" method="adaptive"/>
     
     
     <xsl:variable name="docMETADATA">
