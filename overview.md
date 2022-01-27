@@ -16,7 +16,7 @@
     #foo.hide3 tr > *:nth-child(2) {
         display: none;
     }
-    </style>
+  </style>
 
 
 <div class="metadata">
