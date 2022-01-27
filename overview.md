@@ -1,3 +1,18 @@
+<style>
+    #foo td {
+        padding: 1em;
+        border: 1px solid black;
+    }
+    
+    #foo.hide2 tr > *:nth-child(1) {
+        display: none;
+    }
+    #foo.hide3 tr > *:nth-child(2) {
+        display: none;
+    }
+    </style>
+
+
 <div class="metadata">
    <h2>Metadaten</h2>
    <dl>
@@ -15,6 +30,8 @@
       <dd>structure</dd>
    </dl>
    <h2>Übersicht</h2>
+   <button onclick='document.getElementById("foo").classList.toggle("hide2")'>Click me</button>
+    <button onclick='document.getElementById("foo").classList.toggle("hide3")'>Click me</button>
    <div>
       <table>
          <tr>
