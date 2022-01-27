@@ -11,14 +11,10 @@ The METADATA.json and LICENCE.md files provide specific information/metadata abo
 METADATA.json<br/>
 LICENSE.md<br/>
 - data_document
-  - raw
-  - bagit
+  
 - data_structure
-  - raw
-  - bagit
+  
 - data_structure_and_text
-  - raw
-  - bagit
+  
 - data_line
-  - raw
-  - bagit
+  
