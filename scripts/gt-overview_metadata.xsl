@@ -8,7 +8,7 @@
     xmlns:in="http://www.intern.de"
     exclude-result-prefixes="#all"
     version="3.0">
-    <xsl:output indent="yes" omit-xml-declaration="no" method="html" doctype-public=""/>
+    <xsl:output indent="yes" omit-xml-declaration="no" method="html" doctype-public="" doctype-system=""/>
     
     
     <xsl:variable name="docMETADATA">
@@ -54,46 +54,46 @@
             border: 1px solid black;
             }
             
-            #overview.hide2 tr &gt; *:nth-child(2) {
+            #overview.hide2 tr > *:nth-child(2) {
             display: none;
             }
-            #overview.hide3 tr &gt; *:nth-child(3) {
+            #overview.hide3 tr > *:nth-child(3) {
             display: none;
             }
-            #overview.hide4 tr &gt; *:nth-child(4) {
+            #overview.hide4 tr > *:nth-child(4) {
             display: none;
             }
-            #overview.hide5 tr &gt; *:nth-child(5) {
+            #overview.hide5 tr > *:nth-child(5) {
             display: none;
             }
-            #overview.hide6 tr &gt; *:nth-child(6) {
+            #overview.hide6 tr > *:nth-child(6) {
             display: none;
             }
-            #overview.hide7 tr &gt; *:nth-child(7) {
+            #overview.hide7 tr > *:nth-child(7) {
             display: none;
             }
-            #overview.hide8 tr &gt; *:nth-child(8) {
+            #overview.hide8 tr > *:nth-child(8) {
             display: none;
             }
-            #overview.hide9 tr &gt; *:nth-child(9) {
+            #overview.hide9 tr > *:nth-child(9) {
             display: none;
             }
-            #overview.hide10 tr &gt; *:nth-child(10) {
+            #overview.hide10 tr > *:nth-child(10) {
             display: none;
             }
-            #overview.hide11 tr &gt; *:nth-child(11) {
+            #overview.hide11 tr > *:nth-child(11) {
             display: none;
             }
-            #overview.hide12 tr &gt; *:nth-child(12) {
+            #overview.hide12 tr > *:nth-child(12) {
             display: none;
             }
-            #overview.hide13 tr &gt; *:nth-child(13) {
+            #overview.hide13 tr > *:nth-child(13) {
             display: none;
             }
-            #overview.hide14 tr &gt; *:nth-child(14) {
+            #overview.hide14 tr > *:nth-child(14) {
             display: none;
             }
-            #overview.hide15 tr &gt; *:nth-child(15) {
+            #overview.hide15 tr > *:nth-child(15) {
             display: none;
             }
             
