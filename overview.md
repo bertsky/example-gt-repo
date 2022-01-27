@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <link rel="stylesheet" href="table_hide.css"/>
 <div class="metadata">
    <h2>Metadaten</h2>
