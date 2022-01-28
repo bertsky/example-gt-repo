@@ -97,7 +97,7 @@
             
             table.noStyle {
                 table-layout: auto !important;
-                width: 50% !important;
+                width: 200% !important;
                 border-style: none !important;
             }
             .noStyle td {
