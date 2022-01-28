@@ -17,34 +17,36 @@
    </dl>
    <h2>Übersicht</h2>
    <div>
-      <button onclick="document.getElementById('overview').classList.toggle('hide2')">Hide <i>countTextRegion</i>
-      </button>
-      <button onclick="document.getElementById('overview').classList.toggle('hide3')">Hide <i>countImageRegion</i>
-      </button>
-      <button onclick="document.getElementById('overview').classList.toggle('hide4')">Hide <i>countLineDrawingRegion</i>
-      </button>
-      <button onclick="document.getElementById('overview').classList.toggle('hide5')">Hide <i>countGraphicRegion</i>
-      </button>
-      <button onclick="document.getElementById('overview').classList.toggle('hide6')">Hide <i>countTableRegion</i>
-      </button>
-      <button onclick="document.getElementById('overview').classList.toggle('hide7')">Hide <i>countChartRegion</i>
-      </button>
-      <button onclick="document.getElementById('overview').classList.toggle('hide8')">Hide <i>countSeperatorRegion</i>
-      </button>
-      <button onclick="document.getElementById('overview').classList.toggle('hide9')">Hide <i>countMathsRegion</i>
-      </button>
-      <button onclick="document.getElementById('overview').classList.toggle('hide10')">Hide <i>countChemRegion</i>
-      </button>
-      <button onclick="document.getElementById('overview').classList.toggle('hide11')">Hide <i>countMusicRegion</i>
-      </button>
-      <button onclick="document.getElementById('overview').classList.toggle('hide12')">Hide <i>countAdvertRegion</i>
-      </button>
-      <button onclick="document.getElementById('overview').classList.toggle('hide13')">Hide <i>countNoiseRegion</i>
-      </button>
-      <button onclick="document.getElementById('overview').classList.toggle('hide14')">Hide <i>countUnkownRegion</i>
-      </button>
-      <button onclick="document.getElementById('overview').classList.toggle('hide15')">Hide <i>countCustomRegion</i>
-      </button>
+      <div class="grid-container">
+         <button onclick="document.getElementById('overview').classList.toggle('hide2')">Hide <i>countTextRegion</i>
+         </button>
+         <button onclick="document.getElementById('overview').classList.toggle('hide3')">Hide <i>countImageRegion</i>
+         </button>
+         <button onclick="document.getElementById('overview').classList.toggle('hide4')">Hide <i>countLineDrawingRegion</i>
+         </button>
+         <button onclick="document.getElementById('overview').classList.toggle('hide5')">Hide <i>countGraphicRegion</i>
+         </button>
+         <button onclick="document.getElementById('overview').classList.toggle('hide6')">Hide <i>countTableRegion</i>
+         </button>
+         <button onclick="document.getElementById('overview').classList.toggle('hide7')">Hide <i>countChartRegion</i>
+         </button>
+         <button onclick="document.getElementById('overview').classList.toggle('hide8')">Hide <i>countSeperatorRegion</i>
+         </button>
+         <button onclick="document.getElementById('overview').classList.toggle('hide9')">Hide <i>countMathsRegion</i>
+         </button>
+         <button onclick="document.getElementById('overview').classList.toggle('hide10')">Hide <i>countChemRegion</i>
+         </button>
+         <button onclick="document.getElementById('overview').classList.toggle('hide11')">Hide <i>countMusicRegion</i>
+         </button>
+         <button onclick="document.getElementById('overview').classList.toggle('hide12')">Hide <i>countAdvertRegion</i>
+         </button>
+         <button onclick="document.getElementById('overview').classList.toggle('hide13')">Hide <i>countNoiseRegion</i>
+         </button>
+         <button onclick="document.getElementById('overview').classList.toggle('hide14')">Hide <i>countUnkownRegion</i>
+         </button>
+         <button onclick="document.getElementById('overview').classList.toggle('hide15')">Hide <i>countCustomRegion</i>
+         </button>
+      </div>
       <table id="overview">
          <tr>
             <th>document</th>
