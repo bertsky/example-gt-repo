@@ -62,7 +62,7 @@
                          <xsl:element name="map">
                              <xsl:attribute name="key1"><xsl:value-of select="substring-after(substring-before($filename, '/page/')[1],'data_structure/')"/></xsl:attribute>
                              <xsl:attribute name="key2"><xsl:value-of select="substring-after($filename, '/page/')"/></xsl:attribute>
-                            <string key="{$key1}"><xsl:value-of select="count(document($filename)//*/pc:TextRegion)"/></string>
+                             <string key="{$key1}"><xsl:value-of select="count(document($filename)//*/pc:TextRegion)"/></string>
                              <string key="{$key2}"><xsl:value-of select="count(document($filename)//*/pc:ImageRegion)"/></string>
                              <string key="{$key3}"><xsl:value-of select="count(document($filename)//*/pc:LineDrawingRegion)"/></string>
                              <string key="{$key4}"><xsl:value-of select="count(document($filename)//*/pc:GraphicRegion)"/></string>
@@ -241,7 +241,7 @@
                         <dt>Sprache:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='language']"/></dd>
                         <dt>Format:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='format']"/></dd>
                         <dt>Zeitraum:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='start']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='end']"/></dd>
-                        <dt>Ground Truth Type:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='gtType']"/></dd>
+                        <dt>GT Type:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='gtType']"/></dd>
                     </dl>
                     
                     <h2>Übersicht</h2>
