@@ -242,14 +242,7 @@
                     
                     <h2>Übersicht</h2>
                     <div>
-                        
-                        
-                        
-                        
-                        <!--<button>
-                            <xsl:attribute name="onclick">document.getElementById('overview').classList.toggle('hide2')</xsl:attribute>
-                            Hide <i>countTextRegion</i>
-                        </button>-->
+                    <div class="grid-container">
                         <button onclick="document.getElementById('overview').classList.toggle('hide2')">Hide <i>countTextRegion</i></button>
                         <button onclick="document.getElementById('overview').classList.toggle('hide3')">Hide <i>countImageRegion</i></button>
                         <button onclick="document.getElementById('overview').classList.toggle('hide4')">Hide <i>countLineDrawingRegion</i></button>
@@ -264,7 +257,7 @@
                         <button onclick="document.getElementById('overview').classList.toggle('hide13')">Hide <i>countNoiseRegion</i></button>
                         <button onclick="document.getElementById('overview').classList.toggle('hide14')">Hide <i>countUnkownRegion</i></button>
                         <button onclick="document.getElementById('overview').classList.toggle('hide15')">Hide <i>countCustomRegion</i></button>
-                        
+                        </div>
                         
                     <table id="overview">
                         
