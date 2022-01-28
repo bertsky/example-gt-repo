@@ -1,16 +1,11 @@
-header {
+            header {
             background-color: #c8ab37 !important;
             border-color: #c8ab37 !important;
             }
             
-            
-            #overview td {
-            padding: 1em;
-            border: 1px solid black;
-            }
-            
             #overview.hide2 tr > *:nth-child(2) {
             display: none;
+            
             }
             #overview.hide3 tr > *:nth-child(3) {
             display: none;
@@ -50,4 +45,49 @@ header {
             }
             #overview.hide15 tr > *:nth-child(15) {
             display: none;
+            }
+            .grid-container {
+             display: grid;
+             grid-template-columns: auto auto auto auto auto auto auto;
+             padding: 4px;
+             grid-gap: 4px;
+            }
+            button {
+             font-size: 12px;
+             float: left;
+             cursor: pointer;
+             text-align: left;
+             padding: 4px;
+             }
+             
+             button:hover {
+             background-color: silver;
+             }
+             
+             
+             button i {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.3s;
+             }
+             
+             
+             button i:after {
+             content: 'Hide/Show';
+             position: absolute;
+             opacity: 0;
+             top: 0;
+             right: 20px;
+             transition: 0.3s;
+             }
+
+             button:hover i {
+             padding-right: 75px;
+             }
+             
+
+            button:hover i:after {
+              opacity: 1;
+              right: 0;
             }
