@@ -1,7 +1,13 @@
-            header {
+           header {
             background-color: #c8ab37 !important;
             border-color: #c8ab37 !important;
             }
+            
+            header li {
+                background: linear-gradient(to top, #c19b01 0%, #8d7102 100%) !important;
+                box-shadow: inset 0px 1px 1px 0 #e2b603 !important;
+            }
+            
             
             #overview.hide2 tr > *:nth-child(2) {
             display: none;
