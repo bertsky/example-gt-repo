@@ -17,7 +17,7 @@
    </dl>
    <h2>Übersicht</h2>
    <div>
-      <table>
+      <table class="noStyle">
          <tr>
             <td>💡 Sie können einzelne Spalten der Tabelle ein- und ausblenden.<br/>Klicken Sie auf den passenden Button.</td>
             <td>
