@@ -17,52 +17,118 @@
    </dl>
    <h2>Übersicht</h2>
    <div>
+      <details>
+         <summary>Legende</summary>
+         <dl class="grid">
+            <dt>TxtRegion</dt>
+            <dd>
+               <a href="https://ocr-d.de/de/gt-guidelines/trans/lytextregion.html"
+                  target="_blank">TextRegion</a>
+            </dd>
+            <dt>ImgRegion</dt>
+            <dd>
+               <a href="https://ocr-d.de/de/gt-guidelines/trans/lyBildbereiche.html"
+                  target="_blank">ImageRegion</a>
+            </dd>
+            <dt>LineDrawRegion</dt>
+            <dd>LineDrawingRegion</dd>
+            <dt>GraphRegion</dt>
+            <dd>
+               <a href="https://ocr-d.de/de/gt-guidelines/trans/lyGraphik.html"
+                  target="_blank">GraphicRegion</a>
+            </dd>
+            <dt>TabRegion</dt>
+            <dd>
+               <a href="https://ocr-d.de/de/gt-guidelines/trans/lyTabellen.html"
+                  target="_blank">TableRegion</a>
+            </dd>
+            <dt>ChartRegion</dt>
+            <dd>ChartRegion</dd>
+            <dt>SepRegion</dt>
+            <dd>
+               <a href="https://ocr-d.de/de/gt-guidelines/trans/lySeparatoren.html"
+                  target="_blank">SeperatorRegion</a>
+            </dd>
+            <dt>MathRegion</dt>
+            <dd>
+               <a href="https://ocr-d.de/de/gt-guidelines/trans/lyMathematische_Zeichen.html"
+                  target="_blank">MathsRegion</a>
+            </dd>
+            <dt>ChemRegion</dt>
+            <dd>
+               <a href="https://ocr-d.de/de/gt-guidelines/trans/lyChemische_Symbole.html"
+                  target="_blank">ChemRegion</a>
+            </dd>
+            <dt>MusicRegion</dt>
+            <dd>
+               <a href="https://ocr-d.de/de/gt-guidelines/trans/lyNotenzeichen.html"
+                  target="_blank">MusicRegion</a>
+            </dd>
+            <dt>AdRegion</dt>
+            <dd>
+               <a href="https://ocr-d.de/de/gt-guidelines/trans/lyWerbung.html"
+                  target="_blank">AdvertRegion</a>
+            </dd>
+            <dt>NoiseRegion</dt>
+            <dd>
+               <a href="https://ocr-d.de/de/gt-guidelines/trans/lyRauschen.html"
+                  target="_blank">NoiseRegion</a>
+            </dd>
+            <dt>UnkownRegion</dt>
+            <dd>
+               <a href="https://ocr-d.de/de/gt-guidelines/trans/lySonstiges.html"
+                  target="_blank">UnkownRegion</a>
+            </dd>
+            <dt>CustomRegion</dt>
+            <dd>CustomRegion</dd>
+         </dl>
+      </details>
       <table class="noStyle">
          <tr>
             <td>💡 Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf den passenden Button.</td>
             <td>
                <div class="grid-container">
                   <button onclick="document.getElementById('overview').classList.toggle('hide2')">
-                     <i>countTextRegion</i>
+                     <i>TxtRegion</i>
                   </button>
                   <button onclick="document.getElementById('overview').classList.toggle('hide3')">
-                     <i>countImageRegion</i>
+                     <i>ImgRegion</i>
                   </button>
                   <button onclick="document.getElementById('overview').classList.toggle('hide4')">
-                     <i>countLineDrawingRegion</i>
+                     <i>LineDrawRegion</i>
                   </button>
                   <button onclick="document.getElementById('overview').classList.toggle('hide5')">
-                     <i>countGraphicRegion</i>
+                     <i>GraphRegion</i>
                   </button>
                   <button onclick="document.getElementById('overview').classList.toggle('hide6')">
-                     <i>countTableRegion</i>
+                     <i>TabRegion</i>
                   </button>
                   <button onclick="document.getElementById('overview').classList.toggle('hide7')">
-                     <i>countChartRegion</i>
+                     <i>ChartRegion</i>
                   </button>
                   <button onclick="document.getElementById('overview').classList.toggle('hide8')">
-                     <i>countSeperatorRegion</i>
+                     <i>SepRegion</i>
                   </button>
                   <button onclick="document.getElementById('overview').classList.toggle('hide9')">
-                     <i>countMathsRegion</i>
+                     <i>MathRegion</i>
                   </button>
                   <button onclick="document.getElementById('overview').classList.toggle('hide10')">
-                     <i>countChemRegion</i>
+                     <i>ChemRegion</i>
                   </button>
                   <button onclick="document.getElementById('overview').classList.toggle('hide11')">
-                     <i>countMusicRegion</i>
+                     <i>MusicRegion</i>
                   </button>
                   <button onclick="document.getElementById('overview').classList.toggle('hide12')">
-                     <i>countAdvertRegion</i>
+                     <i>AdRegion</i>
                   </button>
                   <button onclick="document.getElementById('overview').classList.toggle('hide13')">
-                     <i>countNoiseRegion</i>
+                     <i>NoiseRegion</i>
                   </button>
                   <button onclick="document.getElementById('overview').classList.toggle('hide14')">
-                     <i>countUnkownRegion</i>
+                     <i>UnkownRegion</i>
                   </button>
                   <button onclick="document.getElementById('overview').classList.toggle('hide15')">
-                     <i>countCustomRegion</i>
+                     <i>CustomRegion</i>
                   </button>
                </div>
             </td>
@@ -71,20 +137,20 @@
       <table id="overview">
          <tr>
             <th>document</th>
-            <th>countTextRegion</th>
-            <th>countImageRegion</th>
-            <th>countLineDrawingRegion</th>
-            <th>countGraphicRegion</th>
-            <th>countTableRegion</th>
-            <th>countChartRegion</th>
-            <th>countSeperatorRegion</th>
-            <th>countMathsRegion</th>
-            <th>countChemRegion</th>
-            <th>countMusicRegion</th>
-            <th>countAdvertRegion</th>
-            <th>countNoiseRegion</th>
-            <th>countUnkownRegion</th>
-            <th>countCustomRegion</th>
+            <th>TxtRegion</th>
+            <th>ImgRegion</th>
+            <th>LineDrawRegion</th>
+            <th>GraphRegion</th>
+            <th>TabRegion</th>
+            <th>ChartRegion</th>
+            <th>SepRegion</th>
+            <th>MathRegion</th>
+            <th>ChemRegion</th>
+            <th>MusicRegion</th>
+            <th>AdRegion</th>
+            <th>NoiseRegion</th>
+            <th>UnkownRegion</th>
+            <th>CustomRegion</th>
          </tr>
          <tr>
             <td>anhaltkoethen_fruchtbringende_1628</td>
@@ -110,20 +176,20 @@
                   <table>
                      <tr>
                         <th>document</th>
-                        <th>countTextRegion</th>
-                        <th>countImageRegion</th>
-                        <th>countLineDrawingRegion</th>
-                        <th>countGraphicRegion</th>
-                        <th>countTableRegion</th>
-                        <th>countChartRegion</th>
-                        <th>countSeperatorRegion</th>
-                        <th>countMathsRegion</th>
-                        <th>countChemRegion</th>
-                        <th>countMusicRegion</th>
-                        <th>countAdvertRegion</th>
-                        <th>countNoiseRegion</th>
-                        <th>countUnkownRegion</th>
-                        <th>countCustomRegion</th>
+                        <th>TxtRegion</th>
+                        <th>ImgRegion</th>
+                        <th>LineDrawRegion</th>
+                        <th>GraphRegion</th>
+                        <th>TabRegion</th>
+                        <th>ChartRegion</th>
+                        <th>SepRegion</th>
+                        <th>MathRegion</th>
+                        <th>ChemRegion</th>
+                        <th>MusicRegion</th>
+                        <th>AdRegion</th>
+                        <th>NoiseRegion</th>
+                        <th>UnkownRegion</th>
+                        <th>CustomRegion</th>
                      </tr>
                      <tr>
                         <td>anhaltkoethen_fruchtbringende_1628_0020.xml</td>
@@ -544,20 +610,20 @@
                   <table>
                      <tr>
                         <th>document</th>
-                        <th>countTextRegion</th>
-                        <th>countImageRegion</th>
-                        <th>countLineDrawingRegion</th>
-                        <th>countGraphicRegion</th>
-                        <th>countTableRegion</th>
-                        <th>countChartRegion</th>
-                        <th>countSeperatorRegion</th>
-                        <th>countMathsRegion</th>
-                        <th>countChemRegion</th>
-                        <th>countMusicRegion</th>
-                        <th>countAdvertRegion</th>
-                        <th>countNoiseRegion</th>
-                        <th>countUnkownRegion</th>
-                        <th>countCustomRegion</th>
+                        <th>TxtRegion</th>
+                        <th>ImgRegion</th>
+                        <th>LineDrawRegion</th>
+                        <th>GraphRegion</th>
+                        <th>TabRegion</th>
+                        <th>ChartRegion</th>
+                        <th>SepRegion</th>
+                        <th>MathRegion</th>
+                        <th>ChemRegion</th>
+                        <th>MusicRegion</th>
+                        <th>AdRegion</th>
+                        <th>NoiseRegion</th>
+                        <th>UnkownRegion</th>
+                        <th>CustomRegion</th>
                      </tr>
                      <tr>
                         <td>anthus_esskunst_1838_0020.xml</td>
