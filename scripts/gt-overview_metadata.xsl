@@ -235,7 +235,7 @@
                 <xsl:element name="div">
                     <xsl:attribute name="class">metadata</xsl:attribute>
                     <h2>Metadaten</h2>
-                    <dl>
+                    <dl class="grid">
                         <dt>Name:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='name']"/></dd>
                         <dt>Beschreibung:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='description']"/></dd>
                         <dt>Sprache:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='language']"/></dd>
@@ -246,43 +246,44 @@
                     
                     <h2>Übersicht</h2>
                     <div>
-                        <details>
-                            <summary>Legende</summary>
-                            
-                            
-                            <dl class="grid">
-                                <dt><xsl:value-of select="$tableHeader//th[2]"/></dt>
-                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lytextregion.html" target="_blank">TextRegion</a></dd>
-                                <dt><xsl:value-of select="$tableHeader//th[3]"/></dt>
-                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyBildbereiche.html" target="_blank">ImageRegion</a></dd>
-                                <dt><xsl:value-of select="$tableHeader//th[4]"/></dt>
-                                    <dd>LineDrawingRegion</dd>
-                                <dt><xsl:value-of select="$tableHeader//th[5]"/></dt>
-                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyGraphik.html" target="_blank">GraphicRegion</a></dd>
-                                <dt><xsl:value-of select="$tableHeader//th[6]"/></dt>
-                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyTabellen.html" target="_blank">TableRegion</a></dd>
-                                <dt><xsl:value-of select="$tableHeader//th[7]"/></dt>
-                                    <dd>ChartRegion</dd>
-                                <dt><xsl:value-of select="$tableHeader//th[8]"/></dt>
-                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lySeparatoren.html" target="_blank">SeperatorRegion</a></dd>
-                                <dt><xsl:value-of select="$tableHeader//th[9]"/></dt>
-                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyMathematische_Zeichen.html" target="_blank">MathsRegion</a></dd>
-                                <dt><xsl:value-of select="$tableHeader//th[10]"/></dt>
-                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyChemische_Symbole.html" target="_blank">ChemRegion</a></dd>
-                                <dt><xsl:value-of select="$tableHeader//th[11]"/></dt>
-                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyNotenzeichen.html" target="_blank">MusicRegion</a></dd>
-                                <dt><xsl:value-of select="$tableHeader//th[12]"/></dt>
-                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyWerbung.html" target="_blank">AdvertRegion</a></dd>
-                                <dt><xsl:value-of select="$tableHeader//th[13]"/></dt>
-                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyRauschen.html" target="_blank">NoiseRegion</a></dd>
-                                <dt><xsl:value-of select="$tableHeader//th[14]"/></dt>
-                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lySonstiges.html" target="_blank">UnkownRegion</a></dd>
-                                <dt><xsl:value-of select="$tableHeader//th[15]"/></dt>
-                                    <dd>CustomRegion</dd>
-                            </dl>
-                        </details>    
+                           
                     <table class="noStyle">
-                        <tr><td>&#x1F4A1; Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf den passenden Button.</td>
+                        <tr><td>&#x1F4A1; Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf den passenden Button.
+                            <details>
+                                <summary>Legende</summary>                         
+                                <dl class="grid">
+                                    <dt><xsl:value-of select="$tableHeader//th[2]"/></dt>
+                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lytextregion.html" target="_blank">TextRegion</a></dd>
+                                    <dt><xsl:value-of select="$tableHeader//th[3]"/></dt>
+                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyBildbereiche.html" target="_blank">ImageRegion</a></dd>
+                                    <dt><xsl:value-of select="$tableHeader//th[4]"/></dt>
+                                    <dd>LineDrawingRegion</dd>
+                                    <dt><xsl:value-of select="$tableHeader//th[5]"/></dt>
+                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyGraphik.html" target="_blank">GraphicRegion</a></dd>
+                                    <dt><xsl:value-of select="$tableHeader//th[6]"/></dt>
+                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyTabellen.html" target="_blank">TableRegion</a></dd>
+                                    <dt><xsl:value-of select="$tableHeader//th[7]"/></dt>
+                                    <dd>ChartRegion</dd>
+                                    <dt><xsl:value-of select="$tableHeader//th[8]"/></dt>
+                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lySeparatoren.html" target="_blank">SeperatorRegion</a></dd>
+                                    <dt><xsl:value-of select="$tableHeader//th[9]"/></dt>
+                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyMathematische_Zeichen.html" target="_blank">MathsRegion</a></dd>
+                                    <dt><xsl:value-of select="$tableHeader//th[10]"/></dt>
+                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyChemische_Symbole.html" target="_blank">ChemRegion</a></dd>
+                                    <dt><xsl:value-of select="$tableHeader//th[11]"/></dt>
+                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyNotenzeichen.html" target="_blank">MusicRegion</a></dd>
+                                    <dt><xsl:value-of select="$tableHeader//th[12]"/></dt>
+                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyWerbung.html" target="_blank">AdvertRegion</a></dd>
+                                    <dt><xsl:value-of select="$tableHeader//th[13]"/></dt>
+                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyRauschen.html" target="_blank">NoiseRegion</a></dd>
+                                    <dt><xsl:value-of select="$tableHeader//th[14]"/></dt>
+                                    <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lySonstiges.html" target="_blank">UnkownRegion</a></dd>
+                                    <dt><xsl:value-of select="$tableHeader//th[15]"/></dt>
+                                    <dd>CustomRegion</dd>
+                                </dl>
+                            </details> 
+                        
+                        </td>
                          <td>
                         <div class="grid-container">
                             <button onclick="document.getElementById('overview').classList.toggle('hide2')"><i><xsl:value-of select="$tableHeader//th[2]"/></i></button>
