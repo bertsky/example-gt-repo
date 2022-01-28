@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="table_hide.css"/>
 <div class="metadata">
    <h2>Metadaten</h2>
-   <dl>
+   <dl class="grid">
       <dt>Name:</dt>
       <dd>gt-repo-example</dd>
       <dt>Beschreibung:</dt>
@@ -17,75 +17,76 @@
    </dl>
    <h2>Übersicht</h2>
    <div>
-      <details>
-         <summary>Legende</summary>
-         <dl class="grid">
-            <dt>TxtRegion</dt>
-            <dd>
-               <a href="https://ocr-d.de/de/gt-guidelines/trans/lytextregion.html"
-                  target="_blank">TextRegion</a>
-            </dd>
-            <dt>ImgRegion</dt>
-            <dd>
-               <a href="https://ocr-d.de/de/gt-guidelines/trans/lyBildbereiche.html"
-                  target="_blank">ImageRegion</a>
-            </dd>
-            <dt>LineDrawRegion</dt>
-            <dd>LineDrawingRegion</dd>
-            <dt>GraphRegion</dt>
-            <dd>
-               <a href="https://ocr-d.de/de/gt-guidelines/trans/lyGraphik.html"
-                  target="_blank">GraphicRegion</a>
-            </dd>
-            <dt>TabRegion</dt>
-            <dd>
-               <a href="https://ocr-d.de/de/gt-guidelines/trans/lyTabellen.html"
-                  target="_blank">TableRegion</a>
-            </dd>
-            <dt>ChartRegion</dt>
-            <dd>ChartRegion</dd>
-            <dt>SepRegion</dt>
-            <dd>
-               <a href="https://ocr-d.de/de/gt-guidelines/trans/lySeparatoren.html"
-                  target="_blank">SeperatorRegion</a>
-            </dd>
-            <dt>MathRegion</dt>
-            <dd>
-               <a href="https://ocr-d.de/de/gt-guidelines/trans/lyMathematische_Zeichen.html"
-                  target="_blank">MathsRegion</a>
-            </dd>
-            <dt>ChemRegion</dt>
-            <dd>
-               <a href="https://ocr-d.de/de/gt-guidelines/trans/lyChemische_Symbole.html"
-                  target="_blank">ChemRegion</a>
-            </dd>
-            <dt>MusicRegion</dt>
-            <dd>
-               <a href="https://ocr-d.de/de/gt-guidelines/trans/lyNotenzeichen.html"
-                  target="_blank">MusicRegion</a>
-            </dd>
-            <dt>AdRegion</dt>
-            <dd>
-               <a href="https://ocr-d.de/de/gt-guidelines/trans/lyWerbung.html"
-                  target="_blank">AdvertRegion</a>
-            </dd>
-            <dt>NoiseRegion</dt>
-            <dd>
-               <a href="https://ocr-d.de/de/gt-guidelines/trans/lyRauschen.html"
-                  target="_blank">NoiseRegion</a>
-            </dd>
-            <dt>UnkownRegion</dt>
-            <dd>
-               <a href="https://ocr-d.de/de/gt-guidelines/trans/lySonstiges.html"
-                  target="_blank">UnkownRegion</a>
-            </dd>
-            <dt>CustomRegion</dt>
-            <dd>CustomRegion</dd>
-         </dl>
-      </details>
       <table class="noStyle">
          <tr>
-            <td>💡 Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf den passenden Button.</td>
+            <td>💡 Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf den passenden Button.
+                            <details>
+                  <summary>Legende</summary>
+                  <dl class="grid">
+                     <dt>TxtRegion</dt>
+                     <dd>
+                        <a href="https://ocr-d.de/de/gt-guidelines/trans/lytextregion.html"
+                           target="_blank">TextRegion</a>
+                     </dd>
+                     <dt>ImgRegion</dt>
+                     <dd>
+                        <a href="https://ocr-d.de/de/gt-guidelines/trans/lyBildbereiche.html"
+                           target="_blank">ImageRegion</a>
+                     </dd>
+                     <dt>LineDrawRegion</dt>
+                     <dd>LineDrawingRegion</dd>
+                     <dt>GraphRegion</dt>
+                     <dd>
+                        <a href="https://ocr-d.de/de/gt-guidelines/trans/lyGraphik.html"
+                           target="_blank">GraphicRegion</a>
+                     </dd>
+                     <dt>TabRegion</dt>
+                     <dd>
+                        <a href="https://ocr-d.de/de/gt-guidelines/trans/lyTabellen.html"
+                           target="_blank">TableRegion</a>
+                     </dd>
+                     <dt>ChartRegion</dt>
+                     <dd>ChartRegion</dd>
+                     <dt>SepRegion</dt>
+                     <dd>
+                        <a href="https://ocr-d.de/de/gt-guidelines/trans/lySeparatoren.html"
+                           target="_blank">SeperatorRegion</a>
+                     </dd>
+                     <dt>MathRegion</dt>
+                     <dd>
+                        <a href="https://ocr-d.de/de/gt-guidelines/trans/lyMathematische_Zeichen.html"
+                           target="_blank">MathsRegion</a>
+                     </dd>
+                     <dt>ChemRegion</dt>
+                     <dd>
+                        <a href="https://ocr-d.de/de/gt-guidelines/trans/lyChemische_Symbole.html"
+                           target="_blank">ChemRegion</a>
+                     </dd>
+                     <dt>MusicRegion</dt>
+                     <dd>
+                        <a href="https://ocr-d.de/de/gt-guidelines/trans/lyNotenzeichen.html"
+                           target="_blank">MusicRegion</a>
+                     </dd>
+                     <dt>AdRegion</dt>
+                     <dd>
+                        <a href="https://ocr-d.de/de/gt-guidelines/trans/lyWerbung.html"
+                           target="_blank">AdvertRegion</a>
+                     </dd>
+                     <dt>NoiseRegion</dt>
+                     <dd>
+                        <a href="https://ocr-d.de/de/gt-guidelines/trans/lyRauschen.html"
+                           target="_blank">NoiseRegion</a>
+                     </dd>
+                     <dt>UnkownRegion</dt>
+                     <dd>
+                        <a href="https://ocr-d.de/de/gt-guidelines/trans/lySonstiges.html"
+                           target="_blank">UnkownRegion</a>
+                     </dd>
+                     <dt>CustomRegion</dt>
+                     <dd>CustomRegion</dd>
+                  </dl>
+               </details>
+            </td>
             <td>
                <div class="grid-container">
                   <button onclick="document.getElementById('overview').classList.toggle('hide2')">
