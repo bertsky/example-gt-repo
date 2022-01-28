@@ -12,7 +12,7 @@
       <dd>PAGE</dd>
       <dt>Zeitraum:</dt>
       <dd>1600-1900</dd>
-      <dt>Ground Truth Type:</dt>
+      <dt>GT Type:</dt>
       <dd>structure</dd>
    </dl>
    <h2>Übersicht</h2>
