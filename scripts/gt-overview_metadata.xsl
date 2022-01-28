@@ -242,8 +242,10 @@
                     
                     <h2>Übersicht</h2>
                     <div>
-                    <div class="grid-container">
-                        <button>&#x1F4A1; Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf den passenden Button.</button>
+                    <table>
+                        <tr><td>&#x1F4A1; Sie können einzelne Spalten der Tabelle ein- und ausblenden.<br/>Klicken Sie auf den passenden Button.</td>
+                         <td>
+                        <div class="grid-container">
                         <button onclick="document.getElementById('overview').classList.toggle('hide2')"><i>countTextRegion</i></button>
                         <button onclick="document.getElementById('overview').classList.toggle('hide3')"><i>countImageRegion</i></button>
                         <button onclick="document.getElementById('overview').classList.toggle('hide4')"><i>countLineDrawingRegion</i></button>
@@ -258,8 +260,8 @@
                         <button onclick="document.getElementById('overview').classList.toggle('hide13')"><i>countNoiseRegion</i></button>
                         <button onclick="document.getElementById('overview').classList.toggle('hide14')"><i>countUnkownRegion</i></button>
                         <button onclick="document.getElementById('overview').classList.toggle('hide15')"><i>countCustomRegion</i></button>
-                        </div>
-                        
+                        </div></td></tr>
+                    </table>   
                     <table id="overview">
                         
                        <xsl:copy-of select="$tableHeader"/>
