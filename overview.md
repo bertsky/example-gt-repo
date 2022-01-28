@@ -17,51 +17,57 @@
    </dl>
    <h2>Übersicht</h2>
    <div>
-      <div class="grid-container">
-         <button>💡 Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf den passenden Button.</button>
-         <button onclick="document.getElementById('overview').classList.toggle('hide2')">
-            <i>countTextRegion</i>
-         </button>
-         <button onclick="document.getElementById('overview').classList.toggle('hide3')">
-            <i>countImageRegion</i>
-         </button>
-         <button onclick="document.getElementById('overview').classList.toggle('hide4')">
-            <i>countLineDrawingRegion</i>
-         </button>
-         <button onclick="document.getElementById('overview').classList.toggle('hide5')">
-            <i>countGraphicRegion</i>
-         </button>
-         <button onclick="document.getElementById('overview').classList.toggle('hide6')">
-            <i>countTableRegion</i>
-         </button>
-         <button onclick="document.getElementById('overview').classList.toggle('hide7')">
-            <i>countChartRegion</i>
-         </button>
-         <button onclick="document.getElementById('overview').classList.toggle('hide8')">
-            <i>countSeperatorRegion</i>
-         </button>
-         <button onclick="document.getElementById('overview').classList.toggle('hide9')">
-            <i>countMathsRegion</i>
-         </button>
-         <button onclick="document.getElementById('overview').classList.toggle('hide10')">
-            <i>countChemRegion</i>
-         </button>
-         <button onclick="document.getElementById('overview').classList.toggle('hide11')">
-            <i>countMusicRegion</i>
-         </button>
-         <button onclick="document.getElementById('overview').classList.toggle('hide12')">
-            <i>countAdvertRegion</i>
-         </button>
-         <button onclick="document.getElementById('overview').classList.toggle('hide13')">
-            <i>countNoiseRegion</i>
-         </button>
-         <button onclick="document.getElementById('overview').classList.toggle('hide14')">
-            <i>countUnkownRegion</i>
-         </button>
-         <button onclick="document.getElementById('overview').classList.toggle('hide15')">
-            <i>countCustomRegion</i>
-         </button>
-      </div>
+      <table>
+         <tr>
+            <td>💡 Sie können einzelne Spalten der Tabelle ein- und ausblenden.<br/>Klicken Sie auf den passenden Button.</td>
+            <td>
+               <div class="grid-container">
+                  <button onclick="document.getElementById('overview').classList.toggle('hide2')">
+                     <i>countTextRegion</i>
+                  </button>
+                  <button onclick="document.getElementById('overview').classList.toggle('hide3')">
+                     <i>countImageRegion</i>
+                  </button>
+                  <button onclick="document.getElementById('overview').classList.toggle('hide4')">
+                     <i>countLineDrawingRegion</i>
+                  </button>
+                  <button onclick="document.getElementById('overview').classList.toggle('hide5')">
+                     <i>countGraphicRegion</i>
+                  </button>
+                  <button onclick="document.getElementById('overview').classList.toggle('hide6')">
+                     <i>countTableRegion</i>
+                  </button>
+                  <button onclick="document.getElementById('overview').classList.toggle('hide7')">
+                     <i>countChartRegion</i>
+                  </button>
+                  <button onclick="document.getElementById('overview').classList.toggle('hide8')">
+                     <i>countSeperatorRegion</i>
+                  </button>
+                  <button onclick="document.getElementById('overview').classList.toggle('hide9')">
+                     <i>countMathsRegion</i>
+                  </button>
+                  <button onclick="document.getElementById('overview').classList.toggle('hide10')">
+                     <i>countChemRegion</i>
+                  </button>
+                  <button onclick="document.getElementById('overview').classList.toggle('hide11')">
+                     <i>countMusicRegion</i>
+                  </button>
+                  <button onclick="document.getElementById('overview').classList.toggle('hide12')">
+                     <i>countAdvertRegion</i>
+                  </button>
+                  <button onclick="document.getElementById('overview').classList.toggle('hide13')">
+                     <i>countNoiseRegion</i>
+                  </button>
+                  <button onclick="document.getElementById('overview').classList.toggle('hide14')">
+                     <i>countUnkownRegion</i>
+                  </button>
+                  <button onclick="document.getElementById('overview').classList.toggle('hide15')">
+                     <i>countCustomRegion</i>
+                  </button>
+               </div>
+            </td>
+         </tr>
+      </table>
       <table id="overview">
          <tr>
             <th>document</th>

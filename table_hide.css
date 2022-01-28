@@ -52,6 +52,7 @@
              padding: 4px;
              grid-gap: 4px;
              
+             
             }
             button {
              font-size: 12px;
@@ -62,7 +63,7 @@
              
              }
              
-             button:hover *:nth-child(1) {
+             button:hover {
              background-color: silver;
              }
              
