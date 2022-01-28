@@ -96,6 +96,12 @@
             }
             
             table.noStyle {
-                table-layout: auto;
-                width: 50%;
+                table-layout: auto !important;
+                width: 50% !important;
+                border-style: none !important;
             }
+            .noStyle td {
+                background-color:transparent !important;
+                
+            }
+            
