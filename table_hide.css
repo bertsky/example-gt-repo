@@ -51,6 +51,7 @@
              grid-template-columns: auto auto auto auto auto auto auto;
              padding: 4px;
              grid-gap: 4px;
+             
             }
             button {
              font-size: 12px;
@@ -58,9 +59,10 @@
              cursor: pointer;
              text-align: left;
              padding: 4px;
+             
              }
              
-             button:hover {
+             button:hover *:nth-child(1) {
              background-color: silver;
              }
              

@@ -17,8 +17,8 @@
    </dl>
    <h2>Übersicht</h2>
    <div>
-      <p>💡 Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf den passenden Button.</p>
       <div class="grid-container">
+         <button>💡 Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf den passenden Button.</button>
          <button onclick="document.getElementById('overview').classList.toggle('hide2')">
             <i>countTextRegion</i>
          </button>
