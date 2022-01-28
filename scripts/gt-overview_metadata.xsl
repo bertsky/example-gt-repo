@@ -242,7 +242,7 @@
                     
                     <h2>Übersicht</h2>
                     <div>
-                    <table>
+                    <table class="noStyle">
                         <tr><td>&#x1F4A1; Sie können einzelne Spalten der Tabelle ein- und ausblenden.<br/>Klicken Sie auf den passenden Button.</td>
                          <td>
                         <div class="grid-container">
