@@ -7,6 +7,34 @@ Collection represents the entire repository. Collection is a placeholder for the
 
 The METADATA.json and LICENCE.md files provide specific information/metadata about the repository.
 
+
+The structure of the repo is the following:
+
+```
+├── METADATA.json
+├── LICENSE.md
+└── Data
+      ├── data_document
+      │   └── document_title or identifer
+      │       ├── page
+      │       └── img-Folder (e.g. jpg or png or tif)     
+      ├── data_structure
+      │   └── document_title or identifer
+      │      ├── page
+      │      └── img-Folder (e.g. jpg or png or tif)     
+      ├── data_structure_and_text
+      │   └── document_title or identifer
+      │      ├── page
+      │      └── img-Folder (e.g. jpg or png or tif)     
+      └── data_line
+          └── document_title or identifer
+             ├── page
+             └── img-Folder (e.g. jpg or png or tif)     
+
+```
+
+
+
 ### Collection
 METADATA.json<br/>
 LICENSE.md<br/>
