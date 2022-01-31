@@ -35,14 +35,5 @@ The structure of the repo is the following:
 
 
 
-### Collection
-METADATA.json<br/>
-LICENSE.md<br/>
-- data_document
-  
-- data_structure
-  
-- data_structure_and_text
-  
-- data_line
+### METADATA File format
   
