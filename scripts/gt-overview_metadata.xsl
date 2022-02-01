@@ -302,20 +302,6 @@
                             <button onclick="document.getElementById('overview').classList.toggle('hide15')"><i><xsl:value-of select="$tableHeader//th[15]"/></i></button>
                         </div></td></tr>
                     </table>
-                        
-                        <div class="datatable-begin"></div>
-
-Food    | Description                           | Category | Sample type
-------- | ------------------------------------- | -------- | -----------
-Apples  | A small, somewhat round ...           | Fruit    | Fuji
-Bananas | A long and curved, often-yellow ...   | Fruit    | Snow
-Kiwis   | A small, hairy-skinned sweet ...      | Fruit    | Golden
-Oranges | A spherical, orange-colored sweet ... | Fruit    | Navel
-
-<div class="datatable-end"></div>
-                        
-                        
-                        
                     <table id="overview">
                         
                        <xsl:copy-of select="$tableHeader"/>
@@ -372,9 +358,6 @@ Oranges | A spherical, orange-colored sweet ... | Fruit    | Navel
                                </table>
                            </details>
                             </td></tr>
-                           
-                           
-                           
                     </xsl:for-each-group>
                 </table>
                         
