@@ -135,6 +135,7 @@
             </td>
          </tr>
       </table>
+      <div class="datatable-begin"/>
       <table id="overview">
          <tr>
             <th>document</th>
@@ -971,5 +972,6 @@
             </td>
          </tr>
       </table>
+      <div class="datatable-end"/>
    </div>
 </div>
