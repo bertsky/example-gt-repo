@@ -1,4 +1,4 @@
-@import url("cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css"); /* Using a url */           
+            @import url("https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css"); /* Using a url */
 
             header {
             background-color: #c8ab37 !important;
