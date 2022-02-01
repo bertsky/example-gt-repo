@@ -41,7 +41,9 @@
     
     <xsl:template match="/">
         <link rel="stylesheet" href="table_hide.css"/>
-        
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+
         
              <xsl:variable name="holeMetric">
                 <xsl:element name="array">
@@ -207,7 +209,7 @@
             
             
             <xsl:variable name="tableHeader">
-                               
+               <thead>                
                 <tr>
                     <th>document</th>
                     <th>TxtRegion</th>
@@ -225,7 +227,7 @@
                     <th>UnkownRegion</th>
                     <th>CustomRegion</th>
                 </tr>
-                
+                </thead>
                 
                 
             </xsl:variable>
@@ -286,26 +288,27 @@
                         </td>
                          <td>
                         <div class="grid-container">
-                            <button onclick="document.getElementById('overview').classList.toggle('hide2')"><i><xsl:value-of select="$tableHeader//th[2]"/></i></button>
-                            <button onclick="document.getElementById('overview').classList.toggle('hide3')"><i><xsl:value-of select="$tableHeader//th[3]"/></i></button>
-                            <button onclick="document.getElementById('overview').classList.toggle('hide4')"><i><xsl:value-of select="$tableHeader//th[4]"/></i></button>
-                            <button onclick="document.getElementById('overview').classList.toggle('hide5')"><i><xsl:value-of select="$tableHeader//th[5]"/></i></button>
-                            <button onclick="document.getElementById('overview').classList.toggle('hide6')"><i><xsl:value-of select="$tableHeader//th[6]"/></i></button>
-                            <button onclick="document.getElementById('overview').classList.toggle('hide7')"><i><xsl:value-of select="$tableHeader//th[7]"/></i></button>
-                            <button onclick="document.getElementById('overview').classList.toggle('hide8')"><i><xsl:value-of select="$tableHeader//th[8]"/></i></button>
-                            <button onclick="document.getElementById('overview').classList.toggle('hide9')"><i><xsl:value-of select="$tableHeader//th[9]"/></i></button>
-                            <button onclick="document.getElementById('overview').classList.toggle('hide10')"><i><xsl:value-of select="$tableHeader//th[10]"/></i></button>
-                            <button onclick="document.getElementById('overview').classList.toggle('hide11')"><i><xsl:value-of select="$tableHeader//th[11]"/></i></button>
-                            <button onclick="document.getElementById('overview').classList.toggle('hide12')"><i><xsl:value-of select="$tableHeader//th[12]"/></i></button>
-                            <button onclick="document.getElementById('overview').classList.toggle('hide13')"><i><xsl:value-of select="$tableHeader//th[13]"/></i></button>
-                            <button onclick="document.getElementById('overview').classList.toggle('hide14')"><i><xsl:value-of select="$tableHeader//th[14]"/></i></button>
-                            <button onclick="document.getElementById('overview').classList.toggle('hide15')"><i><xsl:value-of select="$tableHeader//th[15]"/></i></button>
+                            <button onclick="document.getElementById('table_id').classList.toggle('hide2')"><i><xsl:value-of select="$tableHeader//th[2]"/></i></button>
+                            <button onclick="document.getElementById('table_id').classList.toggle('hide3')"><i><xsl:value-of select="$tableHeader//th[3]"/></i></button>
+                            <button onclick="document.getElementById('table_id').classList.toggle('hide4')"><i><xsl:value-of select="$tableHeader//th[4]"/></i></button>
+                            <button onclick="document.getElementById('table_id').classList.toggle('hide5')"><i><xsl:value-of select="$tableHeader//th[5]"/></i></button>
+                            <button onclick="document.getElementById('table_id').classList.toggle('hide6')"><i><xsl:value-of select="$tableHeader//th[6]"/></i></button>
+                            <button onclick="document.getElementById('table_id').classList.toggle('hide7')"><i><xsl:value-of select="$tableHeader//th[7]"/></i></button>
+                            <button onclick="document.getElementById('table_id').classList.toggle('hide8')"><i><xsl:value-of select="$tableHeader//th[8]"/></i></button>
+                            <button onclick="document.getElementById('table_id').classList.toggle('hide9')"><i><xsl:value-of select="$tableHeader//th[9]"/></i></button>
+                            <button onclick="document.getElementById('table_id').classList.toggle('hide10')"><i><xsl:value-of select="$tableHeader//th[10]"/></i></button>
+                            <button onclick="document.getElementById('table_id').classList.toggle('hide11')"><i><xsl:value-of select="$tableHeader//th[11]"/></i></button>
+                            <button onclick="document.getElementById('table_id').classList.toggle('hide12')"><i><xsl:value-of select="$tableHeader//th[12]"/></i></button>
+                            <button onclick="document.getElementById('table_id').classList.toggle('hide13')"><i><xsl:value-of select="$tableHeader//th[13]"/></i></button>
+                            <button onclick="document.getElementById('table_id').classList.toggle('hide14')"><i><xsl:value-of select="$tableHeader//th[14]"/></i></button>
+                            <button onclick="document.getElementById('table_id').classList.toggle('hide15')"><i><xsl:value-of select="$tableHeader//th[15]"/></i></button>
                         </div></td></tr>
                     </table>
-                    <table id="overview">
+                    <table id="table_id" class="display">
                         
                        <xsl:copy-of select="$tableHeader"/>
-                        
+                       
+                       <tbody> 
                        <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
                            <xsl:variable name="content"><list><xsl:copy-of select="current-group()"/></list></xsl:variable>
                            
@@ -359,6 +362,7 @@
                            </details>
                             </td></tr>
                     </xsl:for-each-group>
+                  </tbody>       
                 </table>
                         
                     </div>
