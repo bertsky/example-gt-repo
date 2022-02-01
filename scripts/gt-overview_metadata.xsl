@@ -301,7 +301,8 @@
                             <button onclick="document.getElementById('overview').classList.toggle('hide14')"><i><xsl:value-of select="$tableHeader//th[14]"/></i></button>
                             <button onclick="document.getElementById('overview').classList.toggle('hide15')"><i><xsl:value-of select="$tableHeader//th[15]"/></i></button>
                         </div></td></tr>
-                    </table>   
+                    </table>
+                        <div class="datatable-begin"></div>
                     <table id="overview">
                         
                        <xsl:copy-of select="$tableHeader"/>
@@ -363,6 +364,7 @@
                            
                     </xsl:for-each-group>
                 </table>
+                        <div class="datatable-end"></div>
                     </div>
                 </xsl:element>
             </xsl:if>
