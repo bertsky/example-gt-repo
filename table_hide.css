@@ -11,7 +11,7 @@
             }
             
             
-            #overview.hide2 tr > *:nth-child(2) {
+            #table_id.hide2 tr > *:nth-child(2) {
             display: none;
             
             }
