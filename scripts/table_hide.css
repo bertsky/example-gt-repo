@@ -11,6 +11,10 @@
             }
             
             
+            #table_id.hide1 tr > *:nth-child(1) {
+            display: none;
+            }
+            
             #table_id.hide2 tr > *:nth-child(2) {
             display: none;
             
