@@ -19,7 +19,7 @@
    <div>
       <table class="noStyle">
          <tr>
-            <td>💡 Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf den passenden Button.
+            <td>💡 Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf<br/>den passenden Button.
                             <details>
                   <summary>Legende</summary>
                   <dl class="grid">
