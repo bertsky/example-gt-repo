@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="table_hide.css"/>
 <div class="metadata">
-   <h2>Metadaten</h2>
+   <h2>Metadata</h2>
    <dl class="grid">
       <dt>Name:</dt>
       <dd>gt-repo-example</dd>
@@ -15,7 +15,7 @@
       <dt>GT Type:</dt>
       <dd>structure</dd>
    </dl>
-   <h2>Übersicht</h2>
+   <h2>Compressed table view</h2>
    <div>
       <table class="noStyle">
          <tr>

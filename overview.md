@@ -10,7 +10,7 @@
         src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"> </script>
 <script type="text/javascript">
                     $(document).ready(function() {
-                    $('#example').DataTable( {
+                    $('#table_id').DataTable( {
                     "pagingType": "full_numbers",
                     "ordering": true,
                     "info":     true,
@@ -18,8 +18,8 @@
                     } );
                     } );
                 </script>
-<h2>Overview</h2>
-<table id="example">
+<h2>Detailed table view</h2>
+<table id="table_id">
    <thead>
       <tr>
          <th>document</th>
