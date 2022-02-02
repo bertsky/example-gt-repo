@@ -315,7 +315,7 @@
             <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text()='structure'">
                 <xsl:element name="div">
                     <xsl:attribute name="class">metadata</xsl:attribute>
-                    <h2>Metadaten</h2>
+                    <h2>Metadata</h2>
                     <dl class="grid">
                         <dt>Name:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='name']"/></dd>
                         <dt>Beschreibung:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='description']"/></dd>
@@ -325,7 +325,7 @@
                         <dt>GT Type:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='gtType']"/></dd>
                     </dl>
                     
-                    <h2>Übersicht</h2>
+                    <h2>Compressed table view</h2>
                     <div>
                     <table class="noStyle">
                         <tr><td>&#x1F4A1; Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf<br/>den passenden Button.
@@ -464,7 +464,7 @@
                     src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"><xsl:text> </xsl:text></script>
                 <script type="text/javascript">
                     $(document).ready(function() {
-                    $('#example').DataTable( {
+                    $('#table_id').DataTable( {
                     "pagingType": "full_numbers",
                     "ordering": true,
                     "info":     true,
@@ -474,9 +474,9 @@
                 </script>
             
             
-           <h2>Overview</h2>
+            <h2>Detailed table view</h2>
                         
-            <table id="example">
+            <table id="table_id">
                             
                             <xsl:copy-of select="$tableHeader"/>
                             
