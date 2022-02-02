@@ -1,5 +1,11 @@
-            @import url("https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css"); /* Using a url */
-
+/*            Data-Table*/
+            div#table_id_filter {
+                margin-bottom: 0.5cm;
+            }
+            
+            
+/*            Normal Styles*/
+            
             header {
             background-color: #c8ab37 !important;
             border-color: #c8ab37 !important;
