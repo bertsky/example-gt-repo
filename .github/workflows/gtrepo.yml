@@ -43,7 +43,13 @@ jobs:
       
        
     - name: transform METADATA and make GT-Overview
-      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl -s:scripts/gt-overview_metadata.xsl -o:ghout/overview.md
+      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=METADATA -s:scripts/gt-overview_metadata.xsl -o:ghout/metadata.md
+
+    - name: make Compressed table view
+      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=TABLE -s:scripts/gt-overview_metadata.xsl -o:ghout/table.md
+
+    - name: Detailed table view
+      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=OVERVIEW -s:scripts/gt-overview_metadata.xsl -o:ghout/overview.md    
                                                                                      
     - name: copy css styles and yml files to ghout
       run: sudo cp scripts/table_hide.css ghout/;sudo cp scripts/_config.yml ghout/ 
