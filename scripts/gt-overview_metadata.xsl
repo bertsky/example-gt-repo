@@ -557,7 +557,14 @@
                         
             <table id="table_id">
                             
-                            <xsl:copy-of select="$tableHeader"/>
+                            
+                <xsl:element name="thead">
+                    <xsl:element name="tr">
+                        <th style="position: sticky !important; left: 0 !important;">document</th>
+                        <xsl:copy-of select="$tableHeader//thead/tr/th[position()>1]"/>
+                    </xsl:element>
+                </xsl:element>
+                            
                             
                             <tbody>
                             <xsl:for-each select="$holeMetric/array/array">
