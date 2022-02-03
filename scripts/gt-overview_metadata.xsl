@@ -63,6 +63,7 @@
         <xsl:element name="div">
             <xsl:element name="h2">Details</xsl:element>
             <xsl:element name="ul">
+                <xsl:element name="li"><a href="metadata">Metadata</a></xsl:element>
                 <xsl:element name="li"><a href="table">Compressed table view</a></xsl:element>
                 <xsl:element name="li"><a href="overview">Detailed table view</a></xsl:element>
         </xsl:element>
@@ -298,7 +299,13 @@
                 </xsl:if>
                 </xsl:element>
                 
-                <xsl:copy-of select="$details"/>
+                
+                <xsl:element name="div">
+                    <xsl:element name="h2">Details</xsl:element>
+                    <xsl:element name="ul">
+                        <xsl:copy-of select="$details//li[position()>1]"/>
+                    </xsl:element>
+                </xsl:element>
                 
                     
                     
@@ -318,7 +325,13 @@
         <xsl:if test="$output = 'TABLE'">
             <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text()='structure'">
                 
-                <xsl:copy-of select="$details"/>
+                <xsl:element name="div">
+                    <xsl:element name="h2">Details</xsl:element>
+                    <xsl:element name="ul">
+                        <xsl:copy-of select="$details//li[1]"/>
+                        <xsl:copy-of select="$details//li[3]"/>
+                    </xsl:element>
+                </xsl:element>
                 
                 <xsl:element name="div">
                     <xsl:attribute name="class">metadata</xsl:attribute>
@@ -482,7 +495,13 @@
                 </script>
             
             
-            <xsl:copy-of select="$details"/>
+            <xsl:element name="div">
+                <xsl:element name="h2">Details</xsl:element>
+                <xsl:element name="ul">
+                    <xsl:copy-of select="$details//li[1]"/>
+                    <xsl:copy-of select="$details//li[2]"/>
+                </xsl:element>
+            </xsl:element>
             
             
             
