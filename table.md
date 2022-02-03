@@ -3,7 +3,7 @@
    <h2>Details</h2>
    <ul>
       <li>
-         <a href="table">Compressed table view</a>
+         <a href="metadata">Metadata</a>
       </li>
       <li>
          <a href="overview">Detailed table view</a>
