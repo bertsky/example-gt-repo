@@ -3,6 +3,10 @@
                 margin-bottom: 0.5cm;
             }
             
+            .dataTables_wrapper .dataTables_scroll {
+             
+             width: 1800px !important;
+             }
             
 /*            Normal Styles*/
             
