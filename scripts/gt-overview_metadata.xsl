@@ -317,6 +317,9 @@
         
         <xsl:if test="$output = 'TABLE'">
             <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text()='structure'">
+                
+                <xsl:copy-of select="$details"/>
+                
                 <xsl:element name="div">
                     <xsl:attribute name="class">metadata</xsl:attribute>
                     <h2>Metadata</h2>
@@ -448,8 +451,7 @@
                     </xsl:for-each-group>
                   </tbody>       
                 </table>
-                        
-                    </div>
+               </div>
                 </xsl:element>
             </xsl:if>
         </xsl:if>
@@ -482,7 +484,133 @@
             
             <xsl:copy-of select="$details"/>
             
+            
+            
+            
+            
+            
             <h2>Detailed table view</h2>
+            
+            <div>
+                <table class="noStyle">
+                    <tr><td>&#x1F4A1; Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf<br/>den passenden Button.
+                        <details>
+                            <summary>Legende</summary>                         
+                            <dl class="grid">
+                                <dt><xsl:value-of select="$tableHeader//th[2]"/></dt>
+                                <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lytextregion.html" target="_blank">TextRegion</a></dd>
+                                <dt><xsl:value-of select="$tableHeader//th[3]"/></dt>
+                                <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyBildbereiche.html" target="_blank">ImageRegion</a></dd>
+                                <dt><xsl:value-of select="$tableHeader//th[4]"/></dt>
+                                <dd>LineDrawingRegion</dd>
+                                <dt><xsl:value-of select="$tableHeader//th[5]"/></dt>
+                                <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyGraphik.html" target="_blank">GraphicRegion</a></dd>
+                                <dt><xsl:value-of select="$tableHeader//th[6]"/></dt>
+                                <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyTabellen.html" target="_blank">TableRegion</a></dd>
+                                <dt><xsl:value-of select="$tableHeader//th[7]"/></dt>
+                                <dd>ChartRegion</dd>
+                                <dt><xsl:value-of select="$tableHeader//th[8]"/></dt>
+                                <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lySeparatoren.html" target="_blank">SeperatorRegion</a></dd>
+                                <dt><xsl:value-of select="$tableHeader//th[9]"/></dt>
+                                <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyMathematische_Zeichen.html" target="_blank">MathsRegion</a></dd>
+                                <dt><xsl:value-of select="$tableHeader//th[10]"/></dt>
+                                <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyChemische_Symbole.html" target="_blank">ChemRegion</a></dd>
+                                <dt><xsl:value-of select="$tableHeader//th[11]"/></dt>
+                                <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyNotenzeichen.html" target="_blank">MusicRegion</a></dd>
+                                <dt><xsl:value-of select="$tableHeader//th[12]"/></dt>
+                                <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyWerbung.html" target="_blank">AdvertRegion</a></dd>
+                                <dt><xsl:value-of select="$tableHeader//th[13]"/></dt>
+                                <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyRauschen.html" target="_blank">NoiseRegion</a></dd>
+                                <dt><xsl:value-of select="$tableHeader//th[14]"/></dt>
+                                <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lySonstiges.html" target="_blank">UnkownRegion</a></dd>
+                                <dt><xsl:value-of select="$tableHeader//th[15]"/></dt>
+                                <dd>CustomRegion</dd>
+                            </dl>
+                        </details>
+                    </td>
+                        
+                        <td>
+                            <div class="grid-container">
+                                <button onclick="document.getElementById('table_id').classList.toggle('hide2')"><i><xsl:value-of select="$tableHeader//th[2]"/></i></button>
+                                <button onclick="document.getElementById('table_id').classList.toggle('hide3')"><i><xsl:value-of select="$tableHeader//th[3]"/></i></button>
+                                <button onclick="document.getElementById('table_id').classList.toggle('hide4')"><i><xsl:value-of select="$tableHeader//th[4]"/></i></button>
+                                <button onclick="document.getElementById('table_id').classList.toggle('hide5')"><i><xsl:value-of select="$tableHeader//th[5]"/></i></button>
+                                <button onclick="document.getElementById('table_id').classList.toggle('hide6')"><i><xsl:value-of select="$tableHeader//th[6]"/></i></button>
+                                <button onclick="document.getElementById('table_id').classList.toggle('hide7')"><i><xsl:value-of select="$tableHeader//th[7]"/></i></button>
+                                <button onclick="document.getElementById('table_id').classList.toggle('hide8')"><i><xsl:value-of select="$tableHeader//th[8]"/></i></button>
+                                <button onclick="document.getElementById('table_id').classList.toggle('hide9')"><i><xsl:value-of select="$tableHeader//th[9]"/></i></button>
+                                <button onclick="document.getElementById('table_id').classList.toggle('hide10')"><i><xsl:value-of select="$tableHeader//th[10]"/></i></button>
+                                <button onclick="document.getElementById('table_id').classList.toggle('hide11')"><i><xsl:value-of select="$tableHeader//th[11]"/></i></button>
+                                <button onclick="document.getElementById('table_id').classList.toggle('hide12')"><i><xsl:value-of select="$tableHeader//th[12]"/></i></button>
+                                <button onclick="document.getElementById('table_id').classList.toggle('hide13')"><i><xsl:value-of select="$tableHeader//th[13]"/></i></button>
+                                <button onclick="document.getElementById('table_id').classList.toggle('hide14')"><i><xsl:value-of select="$tableHeader//th[14]"/></i></button>
+                                <button onclick="document.getElementById('table_id').classList.toggle('hide15')"><i><xsl:value-of select="$tableHeader//th[15]"/></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table id="table_id" class="display">
+                    
+                    <xsl:copy-of select="$tableHeader"/>
+                    
+                    <tbody> 
+                        <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
+                            <xsl:variable name="content"><list><xsl:copy-of select="current-group()"/></list></xsl:variable>
+                            
+                            <tr>
+                                <td><xsl:value-of select="current-grouping-key()"/></td>
+                                <td><xsl:value-of select="sum(current-group()//*[@key=$key1])"/></td>
+                                <td><xsl:value-of select="sum(current-group()//*[@key=$key2])"/></td>
+                                <td><xsl:value-of select="sum(current-group()//*[@key=$key3])"/></td>
+                                <td><xsl:value-of select="sum(current-group()//*[@key=$key4])"/></td>
+                                <td><xsl:value-of select="sum(current-group()//*[@key=$key5])"/></td>
+                                <td><xsl:value-of select="sum(current-group()//*[@key=$key6])"/></td>
+                                <td><xsl:value-of select="sum(current-group()//*[@key=$key7])"/></td>
+                                <td><xsl:value-of select="sum(current-group()//*[@key=$key8])"/></td>
+                                <td><xsl:value-of select="sum(current-group()//*[@key=$key9])"/></td>
+                                <td><xsl:value-of select="sum(current-group()//*[@key=$key10])"/></td>
+                                <td><xsl:value-of select="sum(current-group()//*[@key=$key11])"/></td>
+                                <td><xsl:value-of select="sum(current-group()//*[@key=$key12])"/></td>
+                                <td><xsl:value-of select="sum(current-group()//*[@key=$key13])"/></td>
+                                <td><xsl:value-of select="sum(current-group()//*[@key=$key14])"/></td>
+                            </tr>
+                            <tr><td colspan="15">
+                                
+                                <details>
+                                    <summary>Overview</summary>
+                                    
+                                    <table>
+                                        
+                                        <xsl:copy-of select="$tableHeader"/>
+                                        
+                                        
+                                        <xsl:for-each select="$content//map">
+                                            <tr>
+                                                <td><xsl:value-of select="@key2"/></td>
+                                                <td><xsl:value-of select="string[@key=$key1]"/></td>
+                                                <td><xsl:value-of select="string[@key=$key2]"/></td>
+                                                <td><xsl:value-of select="string[@key=$key3]"/></td>
+                                                <td><xsl:value-of select="string[@key=$key4]"/></td>
+                                                <td><xsl:value-of select="string[@key=$key5]"/></td>
+                                                <td><xsl:value-of select="string[@key=$key6]"/></td>
+                                                <td><xsl:value-of select="string[@key=$key7]"/></td>
+                                                <td><xsl:value-of select="string[@key=$key8]"/></td>
+                                                <td><xsl:value-of select="string[@key=$key9]"/></td>
+                                                <td><xsl:value-of select="string[@key=$key10]"/></td>
+                                                <td><xsl:value-of select="string[@key=$key11]"/></td>
+                                                <td><xsl:value-of select="string[@key=$key12]"/></td>
+                                                <td><xsl:value-of select="string[@key=$key13]"/></td>
+                                                <td><xsl:value-of select="string[@key=$key14]"/></td>
+                                            </tr>
+                                        </xsl:for-each>
+                                    </table>
+                                </details>
+                            </td></tr>
+                        </xsl:for-each-group>
+                    </tbody>       
+                </table>
+            </div>
+            
                         
             <table id="table_id">
                             
