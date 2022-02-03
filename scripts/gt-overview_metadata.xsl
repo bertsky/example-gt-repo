@@ -562,7 +562,7 @@
                             <tbody>
                             <xsl:for-each select="$holeMetric/array/array">
                                 <tr>
-                                    <td><xsl:value-of select="map/@key2"/></td>
+                                    <th style="position: sticky !important;"><xsl:value-of select="map/@key2"/></th>
                                     <td><xsl:value-of select="map/string[@key=$key1]"/></td>
                                     <td><xsl:value-of select="map/string[@key=$key2]"/></td>
                                     <td><xsl:value-of select="map/string[@key=$key3]"/></td>
