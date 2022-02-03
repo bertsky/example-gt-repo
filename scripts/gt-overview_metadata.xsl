@@ -549,66 +549,7 @@
                         </td>
                     </tr>
                 </table>
-                <table id="table_id" class="display">
-                    
-                    <xsl:copy-of select="$tableHeader"/>
-                    
-                    <tbody> 
-                        <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
-                            <xsl:variable name="content"><list><xsl:copy-of select="current-group()"/></list></xsl:variable>
-                            
-                            <tr>
-                                <td><xsl:value-of select="current-grouping-key()"/></td>
-                                <td><xsl:value-of select="sum(current-group()//*[@key=$key1])"/></td>
-                                <td><xsl:value-of select="sum(current-group()//*[@key=$key2])"/></td>
-                                <td><xsl:value-of select="sum(current-group()//*[@key=$key3])"/></td>
-                                <td><xsl:value-of select="sum(current-group()//*[@key=$key4])"/></td>
-                                <td><xsl:value-of select="sum(current-group()//*[@key=$key5])"/></td>
-                                <td><xsl:value-of select="sum(current-group()//*[@key=$key6])"/></td>
-                                <td><xsl:value-of select="sum(current-group()//*[@key=$key7])"/></td>
-                                <td><xsl:value-of select="sum(current-group()//*[@key=$key8])"/></td>
-                                <td><xsl:value-of select="sum(current-group()//*[@key=$key9])"/></td>
-                                <td><xsl:value-of select="sum(current-group()//*[@key=$key10])"/></td>
-                                <td><xsl:value-of select="sum(current-group()//*[@key=$key11])"/></td>
-                                <td><xsl:value-of select="sum(current-group()//*[@key=$key12])"/></td>
-                                <td><xsl:value-of select="sum(current-group()//*[@key=$key13])"/></td>
-                                <td><xsl:value-of select="sum(current-group()//*[@key=$key14])"/></td>
-                            </tr>
-                            <tr><td colspan="15">
-                                
-                                <details>
-                                    <summary>Overview</summary>
-                                    
-                                    <table>
-                                        
-                                        <xsl:copy-of select="$tableHeader"/>
-                                        
-                                        
-                                        <xsl:for-each select="$content//map">
-                                            <tr>
-                                                <td><xsl:value-of select="@key2"/></td>
-                                                <td><xsl:value-of select="string[@key=$key1]"/></td>
-                                                <td><xsl:value-of select="string[@key=$key2]"/></td>
-                                                <td><xsl:value-of select="string[@key=$key3]"/></td>
-                                                <td><xsl:value-of select="string[@key=$key4]"/></td>
-                                                <td><xsl:value-of select="string[@key=$key5]"/></td>
-                                                <td><xsl:value-of select="string[@key=$key6]"/></td>
-                                                <td><xsl:value-of select="string[@key=$key7]"/></td>
-                                                <td><xsl:value-of select="string[@key=$key8]"/></td>
-                                                <td><xsl:value-of select="string[@key=$key9]"/></td>
-                                                <td><xsl:value-of select="string[@key=$key10]"/></td>
-                                                <td><xsl:value-of select="string[@key=$key11]"/></td>
-                                                <td><xsl:value-of select="string[@key=$key12]"/></td>
-                                                <td><xsl:value-of select="string[@key=$key13]"/></td>
-                                                <td><xsl:value-of select="string[@key=$key14]"/></td>
-                                            </tr>
-                                        </xsl:for-each>
-                                    </table>
-                                </details>
-                            </td></tr>
-                        </xsl:for-each-group>
-                    </tbody>       
-                </table>
+                
             </div>
             
                         
