@@ -512,10 +512,10 @@
             
             <div>
                 <table class="noStyle">
-                    <tr><td>&#x1F4A1; 
+                    <tr><td> 
                         <details>
-                            <summary>Legende</summary>                         
-                            <dl class="grid">
+                            <summary>&#x1F4A1; Legende</summary>                         
+                            <dl class="grid_only">
                                 <dt><xsl:value-of select="$tableHeader//th[2]"/></dt>
                                 <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lytextregion.html" target="_blank">TextRegion</a></dd>
                                 <dt><xsl:value-of select="$tableHeader//th[3]"/></dt>

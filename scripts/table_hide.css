@@ -131,6 +131,11 @@
            	display: grid;
            	grid-template-columns: 1fr 100%;
                     }
+                    
+            dl.grid_only {
+           	display: grid;
+           	grid-template-columns: auto auto auto auto auto auto;
+                    }        
            
             dd {
            	margin: 0;
