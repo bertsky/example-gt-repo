@@ -11,7 +11,7 @@
 <script type="text/javascript">
                     $(document).ready(function() {
                     $('#table_id').DataTable( {
-                    "scrollY":        "800px",
+                    "scrollY":        "1800px",
                     "scrollCollapse": true,
                     "pagingType": "full_numbers",
                     "ordering": true,
@@ -20,6 +20,17 @@
                     } );
                     } );
                 </script>
+<div>
+   <h2>Details</h2>
+   <ul>
+      <li>
+         <a href="table">Compressed table view</a>
+      </li>
+      <li>
+         <a href="overview">Detailed table view</a>
+      </li>
+   </ul>
+</div>
 <h2>Detailed table view</h2>
 <table id="table_id">
    <thead>
