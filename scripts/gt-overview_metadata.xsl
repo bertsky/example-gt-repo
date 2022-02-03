@@ -59,7 +59,14 @@
         </thead>
     </xsl:variable>
     
-    
+    <xsl:variable name="details">
+        <xsl:element name="div">
+            <xsl:element name="h2">Details</xsl:element>
+            <xsl:element name="ul">
+                <xsl:element name="li"><a href="table">Compressed table view</a></xsl:element>
+                <xsl:element name="li"><a href="overview">Detailed table view</a></xsl:element>
+        </xsl:element>
+    </xsl:variable>
     
    
     
@@ -289,15 +296,11 @@
                 </xsl:element>
                 </xsl:if>
                 </xsl:element>
-                <xsl:element name="div">
-                    <xsl:element name="h2">Details</xsl:element>
-                    <xsl:element name="ul">
-                        <xsl:element name="li"><a href="table">Compressed table view</a></xsl:element>
-                        <xsl:element name="li"><a href="overview">Detailed table view</a></xsl:element>
-                    </xsl:element>
+                
+                <xsl:copy-of select="$details"/>
+                
                     
                     
-                </xsl:element>
                 
                 <xsl:if test="$docMETADATA//map/string[@key='gtType']/text()='text'">
                 
@@ -465,7 +468,7 @@
                 <script type="text/javascript">
                     $(document).ready(function() {
                     $('#table_id').DataTable( {
-                    "scrollY":        "800px",
+                    "scrollY":        "1800px",
                     "scrollCollapse": true,
                     "pagingType": "full_numbers",
                     "ordering": true,
@@ -475,6 +478,8 @@
                     } );
                 </script>
             
+            
+            <xsl:copy-of select="$details"/>
             
             <h2>Detailed table view</h2>
                         
