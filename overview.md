@@ -11,6 +11,8 @@
 <script type="text/javascript">
                     $(document).ready(function() {
                     $('#table_id').DataTable( {
+                    "scrollY":        "200px",
+                    "scrollCollapse": true,
                     "pagingType": "full_numbers",
                     "ordering": true,
                     "info":     true,
@@ -41,42 +43,11 @@
    </thead>
    <tbody>
       <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0020.xml</td>
-         <td>15</td>
+         <td>anthus_esskunst_1838_0023.xml</td>
+         <td>4</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0039.xml</td>
-         <td>15</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0008.xml</td>
-         <td>5</td>
          <td>0</td>
          <td>0</td>
          <td>1</td>
@@ -87,19 +58,16 @@
          <td>0</td>
          <td>0</td>
          <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
       </tr>
       <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0054.xml</td>
-         <td>15</td>
+         <td>anthus_esskunst_1838_0022.xml</td>
+         <td>5</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
-         <td>0</td>
+         <td>1</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
@@ -109,14 +77,14 @@
          <td>0</td>
       </tr>
       <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0011.xml</td>
-         <td>15</td>
+         <td>anthus_esskunst_1838_0027.xml</td>
+         <td>8</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
-         <td>0</td>
+         <td>1</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
@@ -126,31 +94,14 @@
          <td>0</td>
       </tr>
       <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0007.xml</td>
+         <td>anthus_esskunst_1838_0021.xml</td>
          <td>6</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0016.xml</td>
-         <td>14</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
+         <td>1</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
@@ -160,7 +111,296 @@
          <td>0</td>
       </tr>
       <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0045.xml</td>
+         <td>anthus_esskunst_1838_0024.xml</td>
+         <td>5</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anthus_esskunst_1838_0016.xml</td>
+         <td>7</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anthus_esskunst_1838_0029.xml</td>
+         <td>3</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anthus_esskunst_1838_0017.xml</td>
+         <td>7</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anthus_esskunst_1838_0033.xml</td>
+         <td>6</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>2</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anthus_esskunst_1838_0026.xml</td>
+         <td>6</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anthus_esskunst_1838_0030.xml</td>
+         <td>6</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anthus_esskunst_1838_0028.xml</td>
+         <td>4</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anthus_esskunst_1838_0011.xml</td>
+         <td>5</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anthus_esskunst_1838_0032.xml</td>
+         <td>5</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anthus_esskunst_1838_0020.xml</td>
+         <td>7</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anthus_esskunst_1838_0010.xml</td>
+         <td>5</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anthus_esskunst_1838_0031.xml</td>
+         <td>9</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anthus_esskunst_1838_0018.xml</td>
+         <td>7</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anthus_esskunst_1838_0019.xml</td>
+         <td>5</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anthus_esskunst_1838_0025.xml</td>
+         <td>7</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anhaltkoethen_fruchtbringende_1628_0003.xml</td>
+         <td>2</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anhaltkoethen_fruchtbringende_1628_0015.xml</td>
          <td>15</td>
          <td>0</td>
          <td>0</td>
@@ -177,24 +417,7 @@
          <td>0</td>
       </tr>
       <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0012.xml</td>
-         <td>15</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0013.xml</td>
+         <td>anhaltkoethen_fruchtbringende_1628_0020.xml</td>
          <td>15</td>
          <td>0</td>
          <td>0</td>
@@ -228,14 +451,14 @@
          <td>0</td>
       </tr>
       <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0003.xml</td>
-         <td>2</td>
+         <td>anhaltkoethen_fruchtbringende_1628_0006.xml</td>
+         <td>6</td>
          <td>0</td>
          <td>0</td>
-         <td>1</td>
          <td>0</td>
          <td>0</td>
-         <td>1</td>
+         <td>0</td>
+         <td>0</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
@@ -245,8 +468,8 @@
          <td>0</td>
       </tr>
       <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0034.xml</td>
-         <td>14</td>
+         <td>anhaltkoethen_fruchtbringende_1628_0039.xml</td>
+         <td>15</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
@@ -279,8 +502,76 @@
          <td>0</td>
       </tr>
       <tr>
+         <td>anhaltkoethen_fruchtbringende_1628_0009.xml</td>
+         <td>15</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anhaltkoethen_fruchtbringende_1628_0054.xml</td>
+         <td>15</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anhaltkoethen_fruchtbringende_1628_0029.xml</td>
+         <td>15</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
          <td>anhaltkoethen_fruchtbringende_1628_0026.xml</td>
          <td>14</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anhaltkoethen_fruchtbringende_1628_0012.xml</td>
+         <td>15</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
@@ -330,8 +621,8 @@
          <td>0</td>
       </tr>
       <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0006.xml</td>
-         <td>6</td>
+         <td>anhaltkoethen_fruchtbringende_1628_0046.xml</td>
+         <td>14</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
@@ -364,7 +655,24 @@
          <td>0</td>
       </tr>
       <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0046.xml</td>
+         <td>anhaltkoethen_fruchtbringende_1628_0011.xml</td>
+         <td>15</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anhaltkoethen_fruchtbringende_1628_0034.xml</td>
          <td>14</td>
          <td>0</td>
          <td>0</td>
@@ -381,7 +689,7 @@
          <td>0</td>
       </tr>
       <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0015.xml</td>
+         <td>anhaltkoethen_fruchtbringende_1628_0045.xml</td>
          <td>15</td>
          <td>0</td>
          <td>0</td>
@@ -398,7 +706,24 @@
          <td>0</td>
       </tr>
       <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0029.xml</td>
+         <td>anhaltkoethen_fruchtbringende_1628_0016.xml</td>
+         <td>14</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>anhaltkoethen_fruchtbringende_1628_0013.xml</td>
          <td>15</td>
          <td>0</td>
          <td>0</td>
@@ -415,48 +740,14 @@
          <td>0</td>
       </tr>
       <tr>
-         <td>anhaltkoethen_fruchtbringende_1628_0009.xml</td>
-         <td>15</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0020.xml</td>
-         <td>7</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0022.xml</td>
+         <td>anhaltkoethen_fruchtbringende_1628_0008.xml</td>
          <td>5</td>
          <td>0</td>
          <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
          <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
@@ -466,303 +757,14 @@
          <td>0</td>
       </tr>
       <tr>
-         <td>anthus_esskunst_1838_0026.xml</td>
+         <td>anhaltkoethen_fruchtbringende_1628_0007.xml</td>
          <td>6</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
-         <td>1</td>
          <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0032.xml</td>
-         <td>5</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0023.xml</td>
-         <td>4</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0011.xml</td>
-         <td>5</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0016.xml</td>
-         <td>7</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0024.xml</td>
-         <td>5</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0025.xml</td>
-         <td>7</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0033.xml</td>
-         <td>6</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>2</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0031.xml</td>
-         <td>9</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0021.xml</td>
-         <td>6</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0018.xml</td>
-         <td>7</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0017.xml</td>
-         <td>7</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0030.xml</td>
-         <td>6</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0010.xml</td>
-         <td>5</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0027.xml</td>
-         <td>8</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0029.xml</td>
-         <td>3</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0019.xml</td>
-         <td>5</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-      </tr>
-      <tr>
-         <td>anthus_esskunst_1838_0028.xml</td>
-         <td>4</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>0</td>
-         <td>1</td>
          <td>0</td>
          <td>0</td>
          <td>0</td>
