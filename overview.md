@@ -35,10 +35,10 @@
 <div>
    <table class="noStyle">
       <tr>
-         <td>💡 
-                        <details>
-               <summary>Legende</summary>
-               <dl class="grid">
+         <td>
+            <details>
+               <summary>💡 Legende</summary>
+               <dl class="grid_only">
                   <dt>TxtRegion</dt>
                   <dd>
                      <a href="https://ocr-d.de/de/gt-guidelines/trans/lytextregion.html"
