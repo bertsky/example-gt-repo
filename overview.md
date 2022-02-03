@@ -109,7 +109,7 @@
 <table id="table_id">
    <thead>
       <tr>
-         <th>document</th>
+         <th style="position: sticky !important; left: 0 !important;">document</th>
          <th>TxtRegion</th>
          <th>ImgRegion</th>
          <th>LineDrawRegion</th>
