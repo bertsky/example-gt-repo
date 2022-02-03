@@ -1,4 +1,15 @@
 <link rel="stylesheet" href="table_hide.css"/>
+<div>
+   <h2>Details</h2>
+   <ul>
+      <li>
+         <a href="table">Compressed table view</a>
+      </li>
+      <li>
+         <a href="overview">Detailed table view</a>
+      </li>
+   </ul>
+</div>
 <div class="metadata">
    <h2>Metadata</h2>
    <dl class="grid">
