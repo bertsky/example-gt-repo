@@ -11,7 +11,7 @@
 <script type="text/javascript">
                     $(document).ready(function() {
                     $('#table_id').DataTable( {
-                    "scrollY":        "1800px",
+                    "scrollX": true,
                     "scrollCollapse": true,
                     "pagingType": "full_numbers",
                     "ordering": true,
