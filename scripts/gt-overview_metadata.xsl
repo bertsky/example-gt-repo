@@ -465,6 +465,8 @@
                 <script type="text/javascript">
                     $(document).ready(function() {
                     $('#table_id').DataTable( {
+                    "scrollY":        "200px",
+                    "scrollCollapse": true,
                     "pagingType": "full_numbers",
                     "ordering": true,
                     "info":     true,
