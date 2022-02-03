@@ -66,6 +66,7 @@
                 <xsl:element name="li"><a href="table">Compressed table view</a></xsl:element>
                 <xsl:element name="li"><a href="overview">Detailed table view</a></xsl:element>
         </xsl:element>
+        </xsl:element>
     </xsl:variable>
     
    
