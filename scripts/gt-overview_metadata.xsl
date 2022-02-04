@@ -17,7 +17,7 @@
     
     <xsl:variable name="path">../data_structure</xsl:variable>
     <xsl:variable name="coll"><xsl:value-of select="$path"/>/?select=*.xml;recurse=yes</xsl:variable>
-    <xsl:variable name="folder" select="substring-before(base-uri(), 'scripts')" />
+    <xsl:variable name="folder" select="substring-after(substring-before(base-uri(), 'scripts'), 'file/home/runner/work/example-gt-repo/')" />
     
     
     
@@ -448,10 +448,14 @@
                                        
                                        <tr>
                                            
-                                           <!--https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0010.xml-->
+                                           <!--
+                                               https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0010.xml
+                                           https://github.comfile/home/runner/work/example-gt-repo/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0023.xml
+                                           
+                                           -->
                                            
                                            
-                                           <td><a><xsl:attribute name="href">https://github.com<xsl:value-of select="$folder"/>blob/main/data_structure/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute>🗏</a><xsl:value-of select="@key2"/></td>
+                                           <td><a><xsl:attribute name="href">https://github.com/tboenig/<xsl:value-of select="$folder"/>blob/main/data_structure/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute>🗏</a><xsl:value-of select="@key2"/></td>
                                            <td><xsl:value-of select="string[@key=$key1]"/></td>
                                            <td><xsl:value-of select="string[@key=$key2]"/></td>
                                            <td><xsl:value-of select="string[@key=$key3]"/></td>
