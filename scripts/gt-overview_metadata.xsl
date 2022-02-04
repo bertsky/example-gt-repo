@@ -413,7 +413,7 @@
                            <xsl:variable name="content"><list><xsl:copy-of select="current-group()"/></list></xsl:variable>
                            
                         <tr>
-                            <td><xsl:value-of select="current-grouping-key()"/></td>
+                            <th><xsl:value-of select="current-grouping-key()"/></th>
                             <td><xsl:value-of select="sum(current-group()//*[@key=$key1])"/></td>
                             <td><xsl:value-of select="sum(current-group()//*[@key=$key2])"/></td>
                             <td><xsl:value-of select="sum(current-group()//*[@key=$key3])"/></td>
