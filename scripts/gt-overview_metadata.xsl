@@ -17,6 +17,9 @@
     
     <xsl:variable name="path">../data_structure</xsl:variable>
     <xsl:variable name="coll"><xsl:value-of select="$path"/>/?select=*.xml;recurse=yes</xsl:variable>
+    <xsl:variable name="folder" select="substring-before(base-uri(), 'scripts')" />
+    
+    
     
     <xsl:param name="output">TABLE</xsl:param>
     
@@ -410,6 +413,7 @@
                        
                        <tbody> 
                        <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
+                           
                            <xsl:variable name="content"><list><xsl:copy-of select="current-group()"/></list></xsl:variable>
                            
                         <tr>
@@ -440,8 +444,14 @@
                                    
                                    
                                    <xsl:for-each select="$content//map">
+                                       
+                                       
                                        <tr>
-                                           <td><xsl:value-of select="@key2"/></td>
+                                           
+                                           <!--https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0010.xml-->
+                                           
+                                           
+                                           <td><a><xsl:attribute name="href">https://github.com<xsl:value-of select="$folder"/>blob/main/data_structure/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute>🗏</a><xsl:value-of select="@key2"/></td>
                                            <td><xsl:value-of select="string[@key=$key1]"/></td>
                                            <td><xsl:value-of select="string[@key=$key2]"/></td>
                                            <td><xsl:value-of select="string[@key=$key3]"/></td>
