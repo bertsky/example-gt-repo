@@ -463,7 +463,7 @@
                                            -->
                                            
                                            
-                                           <td><a><xsl:attribute name="href">https://github.com/tboenig/example-gt-repo/blob/main/data_structure/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute>🗏</a><xsl:value-of select="@key2"/></td>
+                                           <td><a><xsl:attribute name="href">https://github.com/tboenig/example-gt-repo/blob/main/data_structure/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                            <td><xsl:value-of select="string[@key=$key1]"/></td>
                                            <td><xsl:value-of select="string[@key=$key2]"/></td>
                                            <td><xsl:value-of select="string[@key=$key3]"/></td>
