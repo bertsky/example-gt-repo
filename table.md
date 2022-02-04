@@ -185,7 +185,7 @@
                <td>0</td>
             </tr>
             <tr>
-               <td colspan="15">
+               <td colspan="15" style="text-align:left !important;">
                   <details>
                      <summary>Overview</summary>
                      <table>
@@ -570,7 +570,7 @@
                <td>0</td>
             </tr>
             <tr>
-               <td colspan="15">
+               <td colspan="15" style="text-align:left !important;">
                   <details>
                      <summary>Overview</summary>
                      <table>
