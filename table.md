@@ -168,7 +168,7 @@
          </thead>
          <tbody>
             <tr>
-               <td>anthus_esskunst_1838</td>
+               <th>anthus_esskunst_1838</th>
                <td>117</td>
                <td>0</td>
                <td>0</td>
@@ -553,7 +553,7 @@
                </td>
             </tr>
             <tr>
-               <td>anhaltkoethen_fruchtbringende_1628</td>
+               <th>anhaltkoethen_fruchtbringende_1628</th>
                <td>287</td>
                <td>0</td>
                <td>0</td>
