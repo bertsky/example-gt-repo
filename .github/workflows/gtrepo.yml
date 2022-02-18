@@ -17,17 +17,10 @@ jobs:
       
     - name: install ocrd
       run: git clone --depth 1 https://github.com/OCR-D/core; ls -l;cd core; make install;cd ..;rm -rf core
-    
-    - name: Set up JDK 1.8
-      uses: joschi/setup-jdk@v2
-      with:
-          java-version: '11'
-      
+          
     - name: Download and install saxon
       run: wget https://sourceforge.net/projects/saxon/files/Saxon-HE/10/Java/SaxonHE10-5J.zip/download && unzip download
-    
-   
-                  
+                      
     - name: testocrd
       run: ocrd --version
     
@@ -36,12 +29,10 @@ jobs:
       
     - name: made gh-pages_out
       run: sudo mkdir ghout
-    
-    
+        
     - name: made bagit
       run: sh scripts/data_structure.sh
-      
-       
+           
     - name: transform METADATA and make GT-Overview
       run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=METADATA -s:scripts/gt-overview_metadata.xsl -o:ghout/metadata.md
 
