@@ -46,6 +46,7 @@
     <xsl:variable name="key13">countUnkownRegion</xsl:variable>
     <xsl:variable name="key14">countCustomRegion</xsl:variable>
     <xsl:variable name="key15">countTextLine</xsl:variable>
+    <xsl:variable name="key16">countPage</xsl:variable>
     
     
     <xsl:variable name="tableHeader">
@@ -66,6 +67,8 @@
                 <th>NoiseRegion</th>
                 <th>UnkownRegion</th>
                 <th>CustomRegion</th>
+                <th>TextLine</th>
+                <th>Page</th>
             </tr>
         </thead>
     </xsl:variable>
@@ -117,6 +120,7 @@
                              <string key="{$key13}"><xsl:value-of select="count(document($filename)//*/pc:UnkownRegion)"/></string>
                              <string key="{$key14}"><xsl:value-of select="count(document($filename)//*/pc:CustomRegion)"/></string>
                              <string key="{$key15}"><xsl:value-of select="count(document($filename)//*/pc:TextLine)"/></string>
+                             <string key="{$key16}"><xsl:value-of select="count(document($filename)//*/pc:Page)"/></string>
                             
                             
                         </xsl:element>
@@ -180,6 +184,10 @@
                                     <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lySonstiges.html" target="_blank">UnkownRegion</a></dd>
                                     <dt><xsl:value-of select="$tableHeader//th[15]"/></dt>
                                     <dd>CustomRegion</dd>
+                                    <dt><xsl:value-of select="$tableHeader//th[16]"/></dt>
+                                    <dd>TextLine</dd>
+                                    <dt><xsl:value-of select="$tableHeader//th[17]"/></dt>
+                                    <dd>Page</dd>
                                 </dl>
                             </details>
                         </td>
@@ -200,6 +208,8 @@
                                     <button onclick="document.getElementById('table_id').classList.toggle('hide12')"><i><xsl:value-of select="$tableHeader//th[13]"/></i></button>
                                     <button onclick="document.getElementById('table_id').classList.toggle('hide13')"><i><xsl:value-of select="$tableHeader//th[14]"/></i></button>
                                     <button onclick="document.getElementById('table_id').classList.toggle('hide14')"><i><xsl:value-of select="$tableHeader//th[15]"/></i></button>
+                                    <button onclick="document.getElementById('table_id').classList.toggle('hide15')"><i><xsl:value-of select="$tableHeader//th[16]"/></i></button>
+                                    <button onclick="document.getElementById('table_id').classList.toggle('hide16')"><i><xsl:value-of select="$tableHeader//th[17]"/></i></button>
                                 </div>
                             </td>
                         </tr>
@@ -302,6 +312,18 @@
                                 <xsl:value-of select="sum($holeMetric//string[@key=$key14])"/>
                             </xsl:for-each>
                         </xsl:element>
+                        <xsl:element name="td" >
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key15])"/>
+                            </xsl:for-each>
+                        </xsl:element>
+                        <xsl:element name="td" >
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key16])"/>
+                            </xsl:for-each>
+                        </xsl:element>
                         
                     </xsl:element>
                     </xsl:element>
@@ -316,6 +338,10 @@
                                 <details>
                                     <summary>Legende</summary>                         
                                     <dl class="grid">
+                                        <dt><xsl:value-of select="$tableHeader//th[16]"/></dt>
+                                        <dd>TextLine</dd>
+                                        <dt><xsl:value-of select="$tableHeader//th[17]"/></dt>
+                                        <dd>Page</dd>
                                         <dt><xsl:value-of select="$tableHeader//th[2]"/></dt>
                                         <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lytextregion.html" target="_blank">TextRegion</a></dd>
                                         <dt><xsl:value-of select="$tableHeader//th[3]"/></dt>
@@ -350,6 +376,8 @@
                                 
                                 <td>
                                     <div class="grid-container">
+                                        <button onclick="document.getElementById('table_id').classList.toggle('hide15')"><i><xsl:value-of select="$tableHeader//th[16]"/></i></button>
+                                        <button onclick="document.getElementById('table_id').classList.toggle('hide16')"><i><xsl:value-of select="$tableHeader//th[17]"/></i></button>
                                         <button onclick="document.getElementById('table_id').classList.toggle('hide1')"><i><xsl:value-of select="$tableHeader//th[2]"/></i></button>
                                         <button onclick="document.getElementById('table_id').classList.toggle('hide2')"><i><xsl:value-of select="$tableHeader//th[3]"/></i></button>
                                         <button onclick="document.getElementById('table_id').classList.toggle('hide3')"><i><xsl:value-of select="$tableHeader//th[4]"/></i></button>
@@ -369,7 +397,7 @@
                             </tr>
                         </table>
                         
-                        <xsl:message select="$holeMetric"></xsl:message>
+                        
                         
                         <xsl:element name="table">
                             <xsl:attribute name="id">table_id</xsl:attribute>
@@ -386,6 +414,12 @@
                                         
                                         <xsl:for-each select="$holeMetric/array">
                                             <xsl:value-of select="sum($holeMetric//string[@key=$key15])"/>
+                                        </xsl:for-each>
+                                    </xsl:element>
+                                    <xsl:element name="td">
+                                        
+                                        <xsl:for-each select="$holeMetric/array">
+                                            <xsl:value-of select="sum($holeMetric//string[@key=$key16])"/>
                                         </xsl:for-each>
                                     </xsl:element>
                                     <xsl:element name="td">
