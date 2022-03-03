@@ -221,7 +221,8 @@
                         <xsl:attribute name="id">table_id</xsl:attribute>
                     <xsl:element name="thead">
                         <xsl:element name="tr">
-                    <xsl:copy-of select="$tableHeader//thead/tr/th[position()>1]"/>
+                    <xsl:copy-of select="$tableHeader//thead/tr/th[position()>15]"/>
+                    <xsl:copy-of select="$tableHeader//thead/tr/th[position()&lt;15]"/>
                     </xsl:element>
                     </xsl:element>
                     <xsl:element name="tbody">
@@ -746,7 +747,7 @@
                 <table class="noStyle">
                     <tr><td> 
                         <details>
-                            <summary>&#x1F4A1; Legende</summary>                         
+                            <summary>&#x1F4A1; Legende</summary>
                             <dl class="grid_only">
                                 <dt><xsl:value-of select="$tableHeader//th[2]"/></dt>
                                 <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lytextregion.html" target="_blank">TextRegion</a></dd>
