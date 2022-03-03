@@ -826,6 +826,8 @@
                                     <td><xsl:value-of select="map/string[@key=$key12]"/></td>
                                     <td><xsl:value-of select="map/string[@key=$key13]"/></td>
                                     <td><xsl:value-of select="map/string[@key=$key14]"/></td>
+                                    <td><xsl:value-of select="map/string[@key=$key15]"/></td>
+                                    <td><xsl:value-of select="map/string[@key=$key16]"/></td>
                                 </tr>
                             </xsl:for-each>
                             </tbody>     
