@@ -10,6 +10,7 @@
     version="3.0">
     <xsl:output indent="yes" omit-xml-declaration="yes" method="xml"/>
     
+    <xsl:param name="repoName"/>
     
     <xsl:variable name="docMETADATA">
         <xsl:copy-of select="json-to-xml(unparsed-text('../METADATA.json'))"/>
@@ -22,7 +23,8 @@
         <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'line'">../data_line</xsl:if>
      </xsl:variable>
     <xsl:variable name="coll"><xsl:value-of select="$path"/>/?select=*.xml;recurse=yes</xsl:variable>
-    <xsl:variable name="folder" select="substring-after(substring-before(base-uri(), 'scripts'), 'file/home/runner/work/example-gt-repo/')" />
+    <xsl:variable name="folder" select="substring-after(substring-before(base-uri(), 'scripts'), 'file/home/runner/work/{$repoName}/')" />
+    
     
     
     
