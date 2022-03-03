@@ -45,6 +45,7 @@
     <xsl:variable name="key12">countNoiseRegion</xsl:variable>
     <xsl:variable name="key13">countUnkownRegion</xsl:variable>
     <xsl:variable name="key14">countCustomRegion</xsl:variable>
+    <xsl:variable name="key15">countTextLine</xsl:variable>
     
     
     <xsl:variable name="tableHeader">
@@ -115,6 +116,7 @@
                              <string key="{$key12}"><xsl:value-of select="count(document($filename)//*/pc:NoiseRegion)"/></string>
                              <string key="{$key13}"><xsl:value-of select="count(document($filename)//*/pc:UnkownRegion)"/></string>
                              <string key="{$key14}"><xsl:value-of select="count(document($filename)//*/pc:CustomRegion)"/></string>
+                             <string key="{$key15}"><xsl:value-of select="count(document($filename)//*/pc:TextLine)"/></string>
                             
                             
                         </xsl:element>
@@ -367,7 +369,7 @@
                             </tr>
                         </table>
                         
-                        
+                        <xsl:message select="$holeMetric"></xsl:message>
                         
                         <xsl:element name="table">
                             <xsl:attribute name="id">table_id</xsl:attribute>
@@ -383,7 +385,7 @@
                                     <xsl:element name="td">
                                         
                                         <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key1])"/>
+                                            <xsl:value-of select="sum($holeMetric//string[@key=$key15])"/>
                                         </xsl:for-each>
                                     </xsl:element>
                                     <xsl:element name="td">
