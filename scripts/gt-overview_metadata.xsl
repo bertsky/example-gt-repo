@@ -221,8 +221,7 @@
                         <xsl:attribute name="id">table_id</xsl:attribute>
                     <xsl:element name="thead">
                         <xsl:element name="tr">
-                    <xsl:copy-of select="$tableHeader//thead/tr/th[position()>15]"/>
-                    <xsl:copy-of select="$tableHeader//thead/tr/th[position()&lt;15]"/>
+                    <xsl:copy-of select="$tableHeader//thead/tr/th[position()>1]"/>
                     </xsl:element>
                     </xsl:element>
                     <xsl:element name="tbody">
@@ -404,7 +403,8 @@
                             <xsl:attribute name="id">table_id</xsl:attribute>
                             <xsl:element name="thead">
                                 <xsl:element name="tr">
-                                    <xsl:copy-of select="$tableHeader//thead/tr/th[position()>1]"/>
+                                    <xsl:copy-of select="$tableHeader//thead/tr/th[position()>15]"/>
+                                    <xsl:copy-of select="$tableHeader//thead/tr/th[position()&lt;15]"/>
                                 </xsl:element>
                             </xsl:element>
                             <xsl:element name="tbody">
