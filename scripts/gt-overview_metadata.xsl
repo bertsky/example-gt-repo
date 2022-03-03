@@ -423,6 +423,14 @@
                                             <xsl:value-of select="sum($holeMetric//string[@key=$key16])"/>
                                         </xsl:for-each>
                                     </xsl:element>
+                                    
+                                    <xsl:element name="td">
+                                        
+                                        <xsl:for-each select="$holeMetric/array">
+                                            <xsl:value-of select="sum($holeMetric//string[@key=$key1])"/>
+                                        </xsl:for-each>
+                                    </xsl:element>
+                                    
                                     <xsl:element name="td">
                                         
                                         <xsl:for-each select="$holeMetric/array">
