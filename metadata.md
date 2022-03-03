@@ -85,6 +85,10 @@
                   </dd>
                   <dt>CustomRegion</dt>
                   <dd>CustomRegion</dd>
+                  <dt>TextLine</dt>
+                  <dd>TextLine</dd>
+                  <dt>Page</dt>
+                  <dd>Page</dd>
                </dl>
             </details>
          </td>
@@ -132,6 +136,12 @@
                <button onclick="document.getElementById('table_id').classList.toggle('hide14')">
                   <i>CustomRegion</i>
                </button>
+               <button onclick="document.getElementById('table_id').classList.toggle('hide15')">
+                  <i>TextLine</i>
+               </button>
+               <button onclick="document.getElementById('table_id').classList.toggle('hide16')">
+                  <i>Page</i>
+               </button>
             </div>
          </td>
       </tr>
@@ -153,6 +163,8 @@
             <th>NoiseRegion</th>
             <th>UnkownRegion</th>
             <th>CustomRegion</th>
+            <th>TextLine</th>
+            <th>Page</th>
          </tr>
       </thead>
       <tbody>
@@ -171,6 +183,8 @@
             <td>0</td>
             <td>0</td>
             <td>0</td>
+            <td>0</td>
+            <td>43</td>
          </tr>
       </tbody>
    </table>

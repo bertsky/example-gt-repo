@@ -124,6 +124,8 @@
          <th>NoiseRegion</th>
          <th>UnkownRegion</th>
          <th>CustomRegion</th>
+         <th>TextLine</th>
+         <th>Page</th>
       </tr>
    </thead>
    <tbody>
