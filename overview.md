@@ -39,6 +39,10 @@
             <details>
                <summary>💡 Legende</summary>
                <dl class="grid_only">
+                  <dt>TextLine</dt>
+                  <dd>TextLine</dd>
+                  <dt>Page</dt>
+                  <dd>Page</dd>
                   <dt>TxtRegion</dt>
                   <dd>
                      <a href="https://ocr-d.de/de/gt-guidelines/trans/lytextregion.html"
