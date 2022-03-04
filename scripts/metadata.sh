@@ -1,7 +1,7 @@
 #!/bin/bash
-repN=`${{github.repository.name}}`
+repN="${{github.repository.name}}"
 
- printf $repN
+echo "$repN"
    
 
 
