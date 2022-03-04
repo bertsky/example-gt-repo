@@ -23,7 +23,11 @@
         <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'line'">../data_line</xsl:if>
      </xsl:variable>
     <xsl:variable name="coll"><xsl:value-of select="$path"/>/?select=*.xml;recurse=yes</xsl:variable>
-    <!--<xsl:variable name="folder" select="substring-after(substring-before(base-uri(), 'scripts'), 'file/home/runner/work/{$repoName}/')" />-->
+    <!--<xsl:variable name="folder" select="substring-after(substring-before(base-uri(), 'scripts'), 'file:/home/runner/work/{$repoName}/')" />
+    
+    file:/home/runner/work/DTGT/DTGT/scripts/gt-overview_metadata.xsl
+https://github.com/tboenig/DTGT/blob/main/data_line/Allgemeine_kirchliche_Zeitung/1860/page/0_c6c10_default.xml
+    -->
     <xsl:variable name="folder" select="base-uri()" />
     
     
@@ -334,6 +338,7 @@
                     
                     <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text()='line'">
                         
+                        <xsl:message select="$repoName"></xsl:message>
                         <!-- beginn columes -->
                         
                         <xsl:variable name="k15">
@@ -1265,7 +1270,7 @@
                                            blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0023.xml
                                            
                                            -->
-                                                      <xsl:message select="$folder"></xsl:message>
+                                                      <xsl:message select="$repoName"></xsl:message>
                                                         
                                                         <td><a><xsl:attribute name="href">https://github.com/tboenig/example-gt-repo/blob/main/data_line/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                                         <td><xsl:value-of select="string[@key=$key1]"/></td>
