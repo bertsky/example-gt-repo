@@ -1,5 +1,5 @@
 #!/bin/bash
-repN="hallo"
+repN=${{ github.event.repository.name }}
 
 echo "$repN"
    
