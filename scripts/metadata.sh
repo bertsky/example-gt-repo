@@ -1,7 +1,8 @@
 #!/bin/bash
-repN=${{ github.event.repository.name }}
 
-echo "$repN"
+echo ::set-env name=REPO_NAME::${{ github.event.repository.name }}
+
+
    
 
 
