@@ -858,7 +858,7 @@
                                            -->
                                                         
                                                         
-                                                        <td><a><xsl:attribute name="href">https://github.com/tboenig/example-gt-repo/blob/main/data_structure/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
+                                                        <td><a><xsl:attribute name="href">https://github.com/tboenig/example-gt-repo/blob/main/data_line/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                                         <td><xsl:value-of select="string[@key=$key1]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key2]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key3]"/></td>
@@ -941,6 +941,10 @@
                         <details>
                             <summary>&#x1F4A1; Legende</summary>
                             <dl class="grid_only">
+                                <dt><xsl:value-of select="$tableHeader//th[16]"/></dt>
+                                <dd>TextLine</dd>
+                                <dt><xsl:value-of select="$tableHeader//th[17]"/></dt>
+                                <dd>Page</dd> 
                                 <dt><xsl:value-of select="$tableHeader//th[2]"/></dt>
                                 <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lytextregion.html" target="_blank">TextRegion</a></dd>
                                 <dt><xsl:value-of select="$tableHeader//th[3]"/></dt>
