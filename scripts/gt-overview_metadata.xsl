@@ -1265,7 +1265,7 @@
                                            blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0023.xml
                                            
                                            -->
-                                                        
+                                                      <xsl:message select="$folder"></xsl:message>
                                                         
                                                         <td><a><xsl:attribute name="href">https://github.com/tboenig/example-gt-repo/blob/main/data_line/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                                         <td><xsl:value-of select="string[@key=$key1]"/></td>
