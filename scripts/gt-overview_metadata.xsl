@@ -634,29 +634,6 @@
                         </table>
                         
                         
-                        <xsl:variable name="tableHeader">
-                            <thead>                
-                                <tr>
-                                    <th>document</th>
-                                    <th>TxtRegion</th>
-                                    <th>ImgRegion</th>
-                                    <th>LineDrawRegion</th>
-                                    <th>GraphRegion</th>
-                                    <th>TabRegion</th>
-                                    <th>ChartRegion</th>
-                                    <th>SepRegion</th>
-                                    <th>MathRegion</th>
-                                    <th>ChemRegion</th>
-                                    <th>MusicRegion</th>
-                                    <th>AdRegion</th>
-                                    <th>NoiseRegion</th>
-                                    <th>UnkownRegion</th>
-                                    <th>CustomRegion</th>
-                                    <th>TextLine</th>
-                                    <th>Page</th>
-                                </tr>
-                            </thead>
-                        </xsl:variable>
                         
                         
                         
