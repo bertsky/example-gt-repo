@@ -23,8 +23,8 @@
         <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'line'">../data_line</xsl:if>
      </xsl:variable>
     <xsl:variable name="coll"><xsl:value-of select="$path"/>/?select=*.xml;recurse=yes</xsl:variable>
-    <xsl:variable name="folder" select="substring-after(substring-before(base-uri(), 'scripts'), 'file/home/runner/work/{$repoName}/')" />
-    
+    <!--<xsl:variable name="folder" select="substring-after(substring-before(base-uri(), 'scripts'), 'file/home/runner/work/{$repoName}/')" />-->
+    <xsl:variable name="folder" select="base-uri()" />
     
     
     
