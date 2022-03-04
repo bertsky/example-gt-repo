@@ -333,6 +333,128 @@
                     
                     
                     <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text()='line'">
+                        
+                        <!-- beginn columes -->
+                        
+                        <xsl:variable name="k15">
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key15])"/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        
+                        <xsl:variable name="k16">
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key16])"/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        
+                        <xsl:variable name="k1">
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key1])"/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        
+                        <xsl:variable name="k2">
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key2])"/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        
+                        <xsl:variable name="k3">
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key3])"/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        
+                        <xsl:variable name="k4">
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key4])"/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        
+                        <xsl:variable name="k5">
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key5])"/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        
+                        
+                        <xsl:variable name="k6">
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key6])"/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        
+                        <xsl:variable name="k7">
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key7])"/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        
+                        <xsl:variable name="k8">
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key8])"/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        
+                        <xsl:variable name="k9">
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key9])"/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        
+                        <xsl:variable name="k10">
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key10])"/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        
+                        <xsl:variable name="k11">
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key11])"/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        
+                        <xsl:variable name="k12">
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key12])"/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        
+                        <xsl:variable name="k13">
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key13])"/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        
+                        <xsl:variable name="k14">
+                            
+                            <xsl:for-each select="$holeMetric/array">
+                                <xsl:value-of select="sum($holeMetric//string[@key=$key14])"/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- end columes -->
+                        
                         <table class="noStyle">
                             <tr><td>&#x1F4A1; Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf<br/>den passenden Button.
                                 <details>
@@ -342,34 +464,76 @@
                                         <dd>TextLine</dd>
                                         <dt><xsl:value-of select="$tableHeader//th[17]"/></dt>
                                         <dd>Page</dd>
+                                        
+                                        <xsl:if test="$k1 > 0">
                                         <dt><xsl:value-of select="$tableHeader//th[2]"/></dt>
                                         <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lytextregion.html" target="_blank">TextRegion</a></dd>
+                                        </xsl:if>
+                                        
+                                        <xsl:if test="$k2 > 0">
                                         <dt><xsl:value-of select="$tableHeader//th[3]"/></dt>
                                         <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyBildbereiche.html" target="_blank">ImageRegion</a></dd>
+                                        </xsl:if>
+                                        
+                                        <xsl:if test="$k3 > 0">
                                         <dt><xsl:value-of select="$tableHeader//th[4]"/></dt>
                                         <dd>LineDrawingRegion</dd>
+                                        </xsl:if>
+                                        
+                                        <xsl:if test="$k4 > 0">
                                         <dt><xsl:value-of select="$tableHeader//th[5]"/></dt>
                                         <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyGraphik.html" target="_blank">GraphicRegion</a></dd>
+                                        </xsl:if>
+                                        
+                                        <xsl:if test="$k5 > 0">    
                                         <dt><xsl:value-of select="$tableHeader//th[6]"/></dt>
                                         <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyTabellen.html" target="_blank">TableRegion</a></dd>
+                                        </xsl:if>
+                                        
+                                        <xsl:if test="$k6 > 0">
                                         <dt><xsl:value-of select="$tableHeader//th[7]"/></dt>
                                         <dd>ChartRegion</dd>
+                                        </xsl:if>
+                                        
+                                        <xsl:if test="$k7 > 0">
                                         <dt><xsl:value-of select="$tableHeader//th[8]"/></dt>
                                         <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lySeparatoren.html" target="_blank">SeperatorRegion</a></dd>
+                                        </xsl:if>
+                                        
+                                        <xsl:if test="$k8 > 0">
                                         <dt><xsl:value-of select="$tableHeader//th[9]"/></dt>
                                         <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyMathematische_Zeichen.html" target="_blank">MathsRegion</a></dd>
+                                        </xsl:if>
+                                        
+                                        <xsl:if test="$k9 > 0">
                                         <dt><xsl:value-of select="$tableHeader//th[10]"/></dt>
                                         <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyChemische_Symbole.html" target="_blank">ChemRegion</a></dd>
+                                        </xsl:if>
+                                        
+                                        <xsl:if test="$k10 > 0">
                                         <dt><xsl:value-of select="$tableHeader//th[11]"/></dt>
                                         <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyNotenzeichen.html" target="_blank">MusicRegion</a></dd>
+                                        </xsl:if>
+                                            
+                                        <xsl:if test="$k11 > 0">   
                                         <dt><xsl:value-of select="$tableHeader//th[12]"/></dt>
                                         <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyWerbung.html" target="_blank">AdvertRegion</a></dd>
+                                        </xsl:if>
+                                            
+                                        <xsl:if test="$k12 > 0">    
                                         <dt><xsl:value-of select="$tableHeader//th[13]"/></dt>
                                         <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lyRauschen.html" target="_blank">NoiseRegion</a></dd>
+                                        </xsl:if>
+                                        
+                                        <xsl:if test="$k13 > 0">
                                         <dt><xsl:value-of select="$tableHeader//th[14]"/></dt>
                                         <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lySonstiges.html" target="_blank">UnkownRegion</a></dd>
+                                        </xsl:if>
+                                        
+                                        <xsl:if test="$k14 > 0">
                                         <dt><xsl:value-of select="$tableHeader//th[15]"/></dt>
                                         <dd>CustomRegion</dd>
+                                        </xsl:if>   
                                     </dl>
                                 </details>
                             </td>
@@ -411,117 +575,7 @@
                                 
                                 
                                 <xsl:element name="tr">
-                                    <xsl:variable name="k15">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key15])"/>
-                                        </xsl:for-each>
-                                    </xsl:variable>
                                     
-                                    <xsl:variable name="k16">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key16])"/>
-                                        </xsl:for-each>
-                                    </xsl:variable>
-                                    
-                                    <xsl:variable name="k1">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key1])"/>
-                                        </xsl:for-each>
-                                    </xsl:variable>
-                                    
-                                    <xsl:variable name="k2">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key2])"/>
-                                        </xsl:for-each>
-                                    </xsl:variable>
-                                    
-                                    <xsl:variable name="k3">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key3])"/>
-                                        </xsl:for-each>
-                                    </xsl:variable>
-                                    
-                                    <xsl:variable name="k4">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key4])"/>
-                                        </xsl:for-each>
-                                    </xsl:variable>
-                                    
-                                    <xsl:variable name="k5">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key5])"/>
-                                        </xsl:for-each>
-                                    </xsl:variable>
-                                    
-                                    
-                                    <xsl:variable name="k6">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key6])"/>
-                                        </xsl:for-each>
-                                    </xsl:variable>
-                                    
-                                    <xsl:variable name="k7">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key7])"/>
-                                        </xsl:for-each>
-                                    </xsl:variable>
-                                    
-                                    <xsl:variable name="k8">
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key8])"/>
-                                        </xsl:for-each>
-                                    </xsl:variable>
-                                    
-                                    <xsl:variable name="k9">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key9])"/>
-                                        </xsl:for-each>
-                                    </xsl:variable>
-                                    
-                                    <xsl:variable name="k10">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key10])"/>
-                                        </xsl:for-each>
-                                    </xsl:variable>
-                                    
-                                    <xsl:variable name="k11">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key11])"/>
-                                        </xsl:for-each>
-                                    </xsl:variable>
-                                    
-                                    <xsl:variable name="k12">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key12])"/>
-                                        </xsl:for-each>
-                                    </xsl:variable>
-                                    
-                                    <xsl:variable name="k13">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key13])"/>
-                                        </xsl:for-each>
-                                    </xsl:variable>
-                                    
-                                    <xsl:variable name="k14">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key14])"/>
-                                        </xsl:for-each>
-                                    </xsl:variable>
                                     
                                     
                                      <xsl:element name="td">
