@@ -627,24 +627,36 @@
                                         </xsl:if>
                                         
                                         
-                                        <!--<button onclick="document.getElementById('table_id').classList.toggle('hide3')"><i><xsl:value-of select="$tableHeader//th[2]"/></i></button>
-                                        <button onclick="document.getElementById('table_id').classList.toggle('hide4')"><i><xsl:value-of select="$tableHeader//th[3]"/></i></button>
-                                        <button onclick="document.getElementById('table_id').classList.toggle('hide5')"><i><xsl:value-of select="$tableHeader//th[4]"/></i></button>
-                                        <button onclick="document.getElementById('table_id').classList.toggle('hide6')"><i><xsl:value-of select="$tableHeader//th[5]"/></i></button>
-                                        <button onclick="document.getElementById('table_id').classList.toggle('hide7')"><i><xsl:value-of select="$tableHeader//th[6]"/></i></button>
-                                        <button onclick="document.getElementById('table_id').classList.toggle('hide8')"><i><xsl:value-of select="$tableHeader//th[7]"/></i></button>
-                                        <button onclick="document.getElementById('table_id').classList.toggle('hide9')"><i><xsl:value-of select="$tableHeader//th[8]"/></i></button>
-                                        <button onclick="document.getElementById('table_id').classList.toggle('hide10')"><i><xsl:value-of select="$tableHeader//th[9]"/></i></button>
-                                        <button onclick="document.getElementById('table_id').classList.toggle('hide11')"><i><xsl:value-of select="$tableHeader//th[10]"/></i></button>
-                                        <button onclick="document.getElementById('table_id').classList.toggle('hide12')"><i><xsl:value-of select="$tableHeader//th[11]"/></i></button>
-                                        <button onclick="document.getElementById('table_id').classList.toggle('hide13')"><i><xsl:value-of select="$tableHeader//th[12]"/></i></button>
-                                        <button onclick="document.getElementById('table_id').classList.toggle('hide14')"><i><xsl:value-of select="$tableHeader//th[13]"/></i></button>
-                                        <button onclick="document.getElementById('table_id').classList.toggle('hide15')"><i><xsl:value-of select="$tableHeader//th[14]"/></i></button>
-                                        <button onclick="document.getElementById('table_id').classList.toggle('hide16')"><i><xsl:value-of select="$tableHeader//th[15]"/></i></button>-->
+                                        
                                     </div>
                                 </td>
                             </tr>
                         </table>
+                        
+                        
+                        <xsl:variable name="tableHeader">
+                            <thead>                
+                                <tr>
+                                    <th>document</th>
+                                    <th>TxtRegion</th>
+                                    <th>ImgRegion</th>
+                                    <th>LineDrawRegion</th>
+                                    <th>GraphRegion</th>
+                                    <th>TabRegion</th>
+                                    <th>ChartRegion</th>
+                                    <th>SepRegion</th>
+                                    <th>MathRegion</th>
+                                    <th>ChemRegion</th>
+                                    <th>MusicRegion</th>
+                                    <th>AdRegion</th>
+                                    <th>NoiseRegion</th>
+                                    <th>UnkownRegion</th>
+                                    <th>CustomRegion</th>
+                                    <th>TextLine</th>
+                                    <th>Page</th>
+                                </tr>
+                            </thead>
+                        </xsl:variable>
                         
                         
                         
@@ -653,7 +665,62 @@
                             <xsl:element name="thead">
                                 <xsl:element name="tr">
                                     <xsl:copy-of select="$tableHeader//thead/tr/th[position()>15]"/>
-                                    <xsl:copy-of select="$tableHeader//thead/tr/th[position()&lt;16 and not(position()=1)]"/>
+                                    <xsl:if test="$k1 > 0">
+                                        <th>TxtRegion</th>
+                                    </xsl:if>
+
+                                    <xsl:if test="$k2 > 0">
+                                        <th>ImgRegion</th>
+                                    </xsl:if>
+                                    
+                                    <xsl:if test="$k3 > 0">
+                                        <th>LineDrawRegion</th>
+                                    </xsl:if>
+                                    
+                                    <xsl:if test="$k4 > 0">
+                                        <th>GraphRegion</th>
+                                    </xsl:if>
+                                    
+                                    <xsl:if test="$k5 > 0">
+                                        <th>TabRegion</th>
+                                    </xsl:if>
+                                    
+                                    <xsl:if test="$k6 > 0">
+                                        <th>ChartRegion</th>
+                                    </xsl:if>
+                                    
+                                    <xsl:if test="$k7 > 0">
+                                        <th>SepRegion</th>
+                                    </xsl:if>
+                                    
+                                    <xsl:if test="$k8 > 0">
+                                        <th>MathRegion</th>
+                                    </xsl:if>
+                                    
+                                    <xsl:if test="$k9 > 0">
+                                        <th>ChemRegion</th>
+                                    </xsl:if>
+                                    
+                                    <xsl:if test="$k10 > 0">
+                                        <th>MusicRegion</th>
+                                    </xsl:if>
+                                    
+                                    <xsl:if test="$k11 > 0">
+                                        <th>AdRegion</th>
+                                    </xsl:if>
+                                    
+                                    <xsl:if test="$k12 > 0">
+                                        <th>NoiseRegion</th>
+                                    </xsl:if>
+                                    
+                                    <xsl:if test="$k13 > 0">
+                                        <th>UnkownRegion</th>
+                                    </xsl:if>
+                                    
+                                    <xsl:if test="$k14 > 0">
+                                        <th>CustomRegion</th>
+                                    </xsl:if>
+                                    
                                 </xsl:element>
                             </xsl:element>
                             <xsl:element name="tbody">
