@@ -999,8 +999,9 @@
             
             
             <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text()='line'">
-                <xsl:value-of select="$repoName"/>
+                
                 <xsl:element name="div">
+                    <p>Hallo<xsl:value-of select="$repoName"/></p>
                     <xsl:element name="h2">Details</xsl:element>
                     <xsl:element name="ul">
                         <xsl:copy-of select="$details//li[1]"/>
