@@ -1133,7 +1133,7 @@
                                                 
                                                 
                                                 <xsl:for-each select="$content//map">
-                                                    <xsl:variable name="cfile" select="document-uri(/)"/>
+                                                    <xsl:variable name="cfile" select="base-uri()"/>
                                                     
                                                     <tr>
                                                         
