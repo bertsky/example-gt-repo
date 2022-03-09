@@ -999,7 +999,7 @@
             
             
             <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text()='line'">
-                
+                <xsl:value-of select="$repoName"/>
                 <xsl:element name="div">
                     <xsl:element name="h2">Details</xsl:element>
                     <xsl:element name="ul">
@@ -1010,6 +1010,7 @@
                 
                 <xsl:element name="div">
                     <xsl:attribute name="class">metadata</xsl:attribute>
+                    
                     <h2>Metadata</h2>
                     <dl class="grid">
                         <dt>Name:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='name']"/></dd>
@@ -1117,7 +1118,7 @@
                                     <tr><td colspan="15" style="text-align:left !important;">
                                         
                                         <details>
-                                            <summary>Overview <xsl:value-of select="$repoName"/></summary>
+                                            <summary>Overview</summary>
                                             
                                             <table>
                                                 
