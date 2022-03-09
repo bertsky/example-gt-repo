@@ -710,8 +710,7 @@
                                     
                                     
                                      <xsl:element name="td">
-                                         Hallo<xsl:value-of select="$repoName"/>
-                                       <xsl:value-of select="$k15"/>
+                                      <xsl:value-of select="$k15"/>
                                      </xsl:element>    
                                     
                                     
@@ -813,116 +812,7 @@
                                             <xsl:value-of select="$k11"/>
                                         </xsl:element>    
                                     </xsl:if>
-                                    
-                                    
-                                    
-                                    
-                                    <!--<xsl:element name="td">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key16])"/>
-                                        </xsl:for-each>
-                                    </xsl:element>
-                                    
-                                    <xsl:element name="td">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key1])"/>
-                                        </xsl:for-each>
-                                    </xsl:element>
-                                    
-                                    <xsl:element name="td">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key2])"/>
-                                        </xsl:for-each>
-                                    </xsl:element>
-                                    <xsl:element name="td">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key3])"/>
-                                        </xsl:for-each>
-                                    </xsl:element>
-                                    <xsl:element name="td">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key4])"/>
-                                        </xsl:for-each>
-                                    </xsl:element>
-                                    <xsl:element name="td" >
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key5])"/>
-                                        </xsl:for-each>
-                                    </xsl:element>
-                                    <xsl:element name="td" >
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key6])"/>
-                                        </xsl:for-each>
-                                    </xsl:element>
-                                    <xsl:element name="td" >
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key7])"/>
-                                        </xsl:for-each>
-                                    </xsl:element>
-                                    <xsl:element name="td" >
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key8])"/>
-                                        </xsl:for-each>
-                                    </xsl:element>
-                                    <xsl:element name="td" >
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key9])"/>
-                                        </xsl:for-each>
-                                    </xsl:element>
-                                    <xsl:element name="td">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key10])"/>
-                                        </xsl:for-each>
-                                    </xsl:element>
-                                    <xsl:element name="td" >
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key11])"/>
-                                        </xsl:for-each>
-                                    </xsl:element>
-                                    <xsl:element name="td">
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key12])"/>
-                                        </xsl:for-each>
-                                    </xsl:element>
-                                    <xsl:element name="td" >
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key13])"/>
-                                        </xsl:for-each>
-                                    </xsl:element>
-                                    <xsl:element name="td" >
-                                        
-                                        <xsl:for-each select="$holeMetric/array">
-                                            <xsl:value-of select="sum($holeMetric//string[@key=$key14])"/>
-                                        </xsl:for-each>
-                                    </xsl:element>-->
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                </xsl:element>
+                                  </xsl:element>
                             </xsl:element>
                         </xsl:element>
                     </xsl:if>
@@ -1242,7 +1132,7 @@
                                                         
                                                       
                                                         
-                                                        <td><a class="{$repoName}"><xsl:attribute name="href">https://github.com/tboenig/<xsl:value-of select="$repoName"/>/bloby/main/data_line/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
+                                                        <td><xsl:value-of select="$repoName"/><a><xsl:attribute name="href">https://github.com/tboenig/<xsl:value-of select="$repoName"/>/bloby/main/data_line/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                                         <td><xsl:value-of select="string[@key=$key1]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key2]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key3]"/></td>
