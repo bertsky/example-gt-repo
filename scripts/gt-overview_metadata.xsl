@@ -28,7 +28,7 @@
     
     <xsl:variable name="folder" select="base-uri()" />
     
-    <xsl:param name="output">TABLE</xsl:param>
+    <xsl:param name="output"/>
     
     
     <xsl:variable name="key1">countTextRegion</xsl:variable>
