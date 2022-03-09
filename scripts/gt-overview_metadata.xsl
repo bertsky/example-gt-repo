@@ -92,7 +92,7 @@
              <xsl:variable name="holeMetric">
                 <xsl:element name="array">
                     
-                    <xsl:message select="$coll"></xsl:message>
+                    
                   <xsl:for-each select="collection($coll)">
                       <xsl:variable name="gtTypePath" select="replace($path, '../(.+)', '$1/')"/>
                       
@@ -336,11 +336,11 @@
                     
                     <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text()='line'">
                         
-                        <xsl:message select="$repoName"></xsl:message>
+                        
                         <!-- beginn columes -->
                         
                         <xsl:variable name="k15">
-                            
+                            <xsl:value-of select="$repoName"/>
                             <xsl:for-each select="$holeMetric/array">
                                 <xsl:value-of select="sum($holeMetric//string[@key=$key15])"/>
                             </xsl:for-each>
