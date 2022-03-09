@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="table_hide.css"/>
+<p>Hallo</p>
 <div>
    <h2>Details</h2>
    <ul>
