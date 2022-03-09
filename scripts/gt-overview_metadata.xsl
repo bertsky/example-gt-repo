@@ -10,7 +10,7 @@
     version="3.0">
     <xsl:output indent="yes" omit-xml-declaration="yes" method="xml"/>
     
-    <xsl:param name="repoName"/>
+    <xsl:param name="repoName" select="'defaultwert1'"/>
     
     <xsl:variable name="rName"><xsl:value-of select="$repoName"/></xsl:variable>
     
