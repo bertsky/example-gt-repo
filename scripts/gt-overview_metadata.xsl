@@ -136,6 +136,7 @@
                 
                 
              <xsl:if test="$output = 'METADATA'">
+                 <p>Hallo<xsl:value-of select="$repoName"/></p>
                 <xsl:element name="div">
                     <xsl:attribute name="class">metadata</xsl:attribute>
                     <h2>Metadata</h2>
@@ -1001,7 +1002,7 @@
             <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text()='line'">
                 
                 <xsl:element name="div">
-                    <p>Hallo<xsl:value-of select="$repoName"/></p>
+                    
                     <xsl:element name="h2">Details</xsl:element>
                     <xsl:element name="ul">
                         <xsl:copy-of select="$details//li[1]"/>
