@@ -10,9 +10,9 @@
     version="3.0">
     <xsl:output indent="yes" omit-xml-declaration="yes" method="xml"/>
     
-    <xsl:param name="repoName" select="'defaultwert1'"/>
+    <xsl:param name="repoName"/>
     
-    <xsl:variable name="rName"><xsl:value-of select="$repoName"/></xsl:variable>
+    
     
     <xsl:variable name="docMETADATA">
         <xsl:copy-of select="json-to-xml(unparsed-text('../METADATA.json'))"/>
@@ -1242,7 +1242,7 @@
                                                         
                                                       <xsl:message select="$rName"></xsl:message>
                                                         
-                                                        <td><a><xsl:attribute name="href">https://github.com/tboenig/<xsl:value-of select="$repoName"/>/bloby/main/data_line/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
+                                                        <td><a class="{$repoName}"><xsl:attribute name="href">https://github.com/tboenig/<xsl:value-of select="$repoName"/>/bloby/main/data_line/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                                         <td><xsl:value-of select="string[@key=$key1]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key2]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key3]"/></td>
