@@ -340,7 +340,6 @@
                         <!-- beginn columes -->
                         
                         <xsl:variable name="k15">
-                            <xsl:value-of select="$repoName"/>
                             <xsl:for-each select="$holeMetric/array">
                                 <xsl:value-of select="sum($holeMetric//string[@key=$key15])"/>
                             </xsl:for-each>
@@ -711,6 +710,7 @@
                                     
                                     
                                      <xsl:element name="td">
+                                         Hallo<xsl:value-of select="$repoName"/>
                                        <xsl:value-of select="$k15"/>
                                      </xsl:element>    
                                     
