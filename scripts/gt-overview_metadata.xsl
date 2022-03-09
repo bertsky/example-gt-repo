@@ -95,6 +95,8 @@ https://github.com/tboenig/DTGT/blob/main/data_line/Allgemeine_kirchliche_Zeitun
         
              <xsl:variable name="holeMetric">
                 <xsl:element name="array">
+                    
+                    <xsl:message select="$coll"></xsl:message>
                   <xsl:for-each select="collection($coll)">
                       <xsl:variable name="gtTypePath" select="replace($path, '../(.+)', '$1/')"/>
                       
@@ -1096,7 +1098,7 @@ https://github.com/tboenig/DTGT/blob/main/data_line/Allgemeine_kirchliche_Zeitun
                                            -->
                                            
                                            
-                                           <td><a><xsl:attribute name="href">https://github.com/tboenig/example-gt-repo/blob/main/data_structure/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
+                                           <td><a><xsl:attribute name="href">https://github.com/<xsl:value-of select="$repoName"/>/blob/main/data_structure/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                            <td><xsl:value-of select="string[@key=$key1]"/></td>
                                            <td><xsl:value-of select="string[@key=$key2]"/></td>
                                            <td><xsl:value-of select="string[@key=$key3]"/></td>
@@ -1272,7 +1274,7 @@ https://github.com/tboenig/DTGT/blob/main/data_line/Allgemeine_kirchliche_Zeitun
                                            -->
                                                       <xsl:message select="$repoName"></xsl:message>
                                                         
-                                                        <td><a><xsl:attribute name="href">https://github.com/tboenig/example-gt-repo/blob/main/data_line/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
+                                                        <td><a><xsl:attribute name="href">https://github.com/tboenig/<xsl:value-of select="$repoName"/>/blob/main/data_line/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                                         <td><xsl:value-of select="string[@key=$key1]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key2]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key3]"/></td>
