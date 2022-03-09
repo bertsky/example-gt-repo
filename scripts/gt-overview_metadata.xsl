@@ -12,6 +12,8 @@
     
     <xsl:param name="repoName"/>
     
+    <xsl:variable name="rName"><xsl:value-of select="$repoName"/></xsl:variable>
+    
     <xsl:variable name="docMETADATA">
         <xsl:copy-of select="json-to-xml(unparsed-text('../METADATA.json'))"/>
     </xsl:variable>
@@ -1238,7 +1240,7 @@
                                                     <tr>
                                                         
                                                         
-                                                      <xsl:message select="$repoName"></xsl:message>
+                                                      <xsl:message select="$rName"></xsl:message>
                                                         
                                                         <td><a><xsl:attribute name="href">https://github.com/tboenig/<xsl:value-of select="$repoName"/>/bloby/main/data_line/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                                         <td><xsl:value-of select="string[@key=$key1]"/></td>
