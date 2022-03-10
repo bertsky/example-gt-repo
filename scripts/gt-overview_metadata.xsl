@@ -25,6 +25,14 @@
         <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'structure_and_text'">../data_structure_and_text</xsl:if>
         <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'line'">../data_line</xsl:if>
      </xsl:variable>
+    
+    <xsl:variable name="gtType">
+        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'document'">data_document/</xsl:if>
+        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'structure'">data_structure/</xsl:if>
+        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'structure_and_text'">data_structure_and_text/</xsl:if>
+        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'line'">data_line/</xsl:if>
+    </xsl:variable>
+    
     <xsl:variable name="coll"><xsl:value-of select="$path"/>/?select=*.xml;recurse=yes</xsl:variable>
     
     <xsl:variable name="folder" select="base-uri()" />
@@ -106,7 +114,7 @@
                      
                          <xsl:element name="array"><xsl:attribute name="key">volume_region</xsl:attribute>
                          <xsl:element name="map">
-                             <xsl:attribute name="key1" select="substring-after(substring-before($filename, '/page/')[1],'data_structure/')"/>
+                             <xsl:attribute name="key1" select="substring-after(substring-before($filename, '/page/')[1], $gtType)"/>
                              <xsl:attribute name="key2" select="substring-after($filename, '/page/')"/>
                              <xsl:attribute name="file" select="$filename"/>
                              <string key="{$key1}"><xsl:value-of select="count(document($filename)//*/pc:TextRegion)"/></string>
@@ -985,7 +993,7 @@
                                    
                                    <xsl:for-each select="$content//map">
                                        
-                                       <xsl:message select="$repoBase"></xsl:message>
+                                       
                                        <tr>
                                            <td><a><xsl:attribute name="href">https://github.com/<xsl:value-of select="$repoName"/>/blob/<xsl:value-of select="$repoBase"/>/data_structure/<xsl:value-of select="substring-after(@file, '/data_structure/')"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                            <td><xsl:value-of select="string[@key=$key1]"/></td>
@@ -1158,7 +1166,7 @@
                                                 
                                                 <xsl:for-each select="$content//map">
                                                     
-                                                    <xsl:message select="$repoBase"></xsl:message>
+                                                    
                                                     <tr>
                                                         <td><a><xsl:attribute name="href">https://github.com/<xsl:value-of select="$repoName"/>/blob/<xsl:value-of select="$repoBase"/>/data_line/<xsl:value-of select="substring-after(@file, '/data_line/')"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                                         <td><xsl:value-of select="string[@key=$key1]"/></td>
