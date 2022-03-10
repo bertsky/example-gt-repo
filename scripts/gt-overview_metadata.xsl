@@ -105,8 +105,9 @@
                      
                          <xsl:element name="array"><xsl:attribute name="key">volume_region</xsl:attribute>
                          <xsl:element name="map">
-                             <xsl:attribute name="key1"><xsl:value-of select="substring-after(substring-before($filename, '/page/')[1],'data_structure/')"/></xsl:attribute>
-                             <xsl:attribute name="key2"><xsl:value-of select="substring-after($filename, '/page/')"/></xsl:attribute>
+                             <xsl:attribute name="key1" select="substring-after(substring-before($filename, '/page/')[1],'data_structure/')"/>
+                             <xsl:attribute name="key2" select="substring-after($filename, '/page/')"/>
+                             <xsl:attribute name="file" select="$filename"/>
                              <string key="{$key1}"><xsl:value-of select="count(document($filename)//*/pc:TextRegion)"/></string>
                              <string key="{$key2}"><xsl:value-of select="count(document($filename)//*/pc:ImageRegion)"/></string>
                              <string key="{$key3}"><xsl:value-of select="count(document($filename)//*/pc:LineDrawingRegion)"/></string>
@@ -1136,11 +1137,9 @@
                                                     <xsl:variable name="cfile" select="document-uri()"/>
                                                     
                                                     <tr>
-                                                        
-                                                        
-                                                      
-                                                        
-                                                        <td><a class="{$cfile}"><xsl:attribute name="href">https://github.com/tboenig/<xsl:value-of select="$repoName"/>/blob/main/data_line/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
+                                                        <td>
+                                                            <b><xsl:value-of select="$holeMetric//@file"/></b>
+                                                            <a class="{$cfile}"><xsl:attribute name="href">https://github.com/tboenig/<xsl:value-of select="$repoName"/>/blob/main/data_line/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                                         <td><xsl:value-of select="string[@key=$key1]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key2]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key3]"/></td>
