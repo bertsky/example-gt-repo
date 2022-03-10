@@ -11,6 +11,7 @@
     <xsl:output indent="yes" omit-xml-declaration="yes" method="xml"/>
     
     <xsl:param name="repoName"/>
+    <xsl:param name="repoBase"/>
     
     
     
@@ -975,7 +976,7 @@
                                        
                                        
                                        <tr>
-                                           <td><a><xsl:attribute name="href">https://github.com/<xsl:value-of select="$repoName"/>/blob/main/data_structure/<xsl:value-of select="substring-after(@file, '/data_structure/')"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
+                                           <td><a><xsl:attribute name="href">https://github.com/<xsl:value-of select="$repoName"/>/blob/<xsl:value-of select="$repoBase"/>/data_structure/<xsl:value-of select="substring-after(@file, '/data_structure/')"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                            <td><xsl:value-of select="string[@key=$key1]"/></td>
                                            <td><xsl:value-of select="string[@key=$key2]"/></td>
                                            <td><xsl:value-of select="string[@key=$key3]"/></td>
@@ -1137,7 +1138,7 @@
                                                     
                                                     
                                                     <tr>
-                                                        <td><a><xsl:attribute name="href">https://github.com/<xsl:value-of select="$repoName"/>/blob/main/data_line/<xsl:value-of select="substring-after(@file, '/data_line/')"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
+                                                        <td><a><xsl:attribute name="href">https://github.com/<xsl:value-of select="$repoName"/>/blob/<xsl:value-of select="$repoBase"/>/data_line/<xsl:value-of select="substring-after(@file, '/data_line/')"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                                         <td><xsl:value-of select="string[@key=$key1]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key2]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key3]"/></td>
