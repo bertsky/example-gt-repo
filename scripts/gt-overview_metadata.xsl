@@ -1134,13 +1134,13 @@
                                                 
                                                 
                                                 <xsl:for-each select="$content//map">
-                                                    <xsl:variable name="cfile" select="document-uri()"/>
+                                                    
                                                     
                                                     <tr>
                                                         <td>
                                                             
                                                             
-                                                            <b>https://github.com/<xsl:value-of select="$repoName"/>/blob/main/<xsl:value-of select="substring-after($cfile, '/data_line/')"/></b>
+                                                            <b>https://github.com/<xsl:value-of select="$repoName"/>/blob/main/<xsl:value-of select="substring-after(@file, '/data_line/')"/></b>
                                                             <a class="{$cfile}"><xsl:attribute name="href">https://github.com/tboenig/<xsl:value-of select="$repoName"/>/blob/main/data_line/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                                         <td><xsl:value-of select="string[@key=$key1]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key2]"/></td>
