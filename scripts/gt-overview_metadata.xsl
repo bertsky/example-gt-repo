@@ -1105,13 +1105,31 @@
                         </table>
                         <table id="table_id" class="display">
                             
-                            <xsl:element name="thead">
-                                <xsl:element name="tr">
-                                    <xsl:copy-of select="$tableHeader//thead/tr/th[position()>15]"/>
-                                    <xsl:copy-of select="$tableHeader//thead/tr/th[position()&lt;15]"/>
+                            <thead>                
+                                <tr>
+                                    <th>document</th>
+                                    <th>TextLine</th>
+                                    <th>Page</th>
+                                    <th>TxtRegion</th>
+                                    <th>ImgRegion</th>
+                                    <th>LineDrawRegion</th>
+                                    <th>GraphRegion</th>
+                                    <th>TabRegion</th>
+                                    <th>ChartRegion</th>
+                                    <th>SepRegion</th>
+                                    <th>MathRegion</th>
+                                    <th>ChemRegion</th>
+                                    <th>MusicRegion</th>
+                                    <th>AdRegion</th>
+                                    <th>NoiseRegion</th>
+                                    <th>UnkownRegion</th>
+                                    <th>CustomRegion</th>
                                     
-                                </xsl:element>
-                            </xsl:element>
+                                </tr>
+                            </thead>
+                            
+                            
+                            
                             
                             <tbody> 
                                 <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
@@ -1146,13 +1164,28 @@
                                             
                                             <table>
                                                 
-                                                <xsl:element name="thead">
-                                                    <xsl:element name="tr">
-                                                        <xsl:copy-of select="$tableHeader//thead/tr/th[position()>15]"/>
-                                                        <xsl:copy-of select="$tableHeader//thead/tr/th[position()&lt;15]"/>
-                                                
-                                                    </xsl:element>
-                                                </xsl:element>
+                                                <thead>                
+                                                    <tr>
+                                                        <th>document</th>
+                                                        <th>TextLine</th>
+                                                        <th>Page</th>
+                                                        <th>TxtRegion</th>
+                                                        <th>ImgRegion</th>
+                                                        <th>LineDrawRegion</th>
+                                                        <th>GraphRegion</th>
+                                                        <th>TabRegion</th>
+                                                        <th>ChartRegion</th>
+                                                        <th>SepRegion</th>
+                                                        <th>MathRegion</th>
+                                                        <th>ChemRegion</th>
+                                                        <th>MusicRegion</th>
+                                                        <th>AdRegion</th>
+                                                        <th>NoiseRegion</th>
+                                                        <th>UnkownRegion</th>
+                                                        <th>CustomRegion</th>
+                                                        
+                                                    </tr>
+                                                </thead>
                                                 
                                                 
                                                 <xsl:for-each select="$content//map">
