@@ -1105,7 +1105,13 @@
                         </table>
                         <table id="table_id" class="display">
                             
-                            <xsl:copy-of select="$tableHeader"/>
+                            <xsl:element name="thead">
+                                <xsl:element name="tr">
+                                    <xsl:copy-of select="$tableHeader//thead/tr/th[position()>15]"/>
+                                    <xsl:copy-of select="$tableHeader//thead/tr/th[position()&lt;15]"/>
+                                    
+                                </xsl:element>
+                            </xsl:element>
                             
                             <tbody> 
                                 <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
@@ -1140,7 +1146,13 @@
                                             
                                             <table>
                                                 
-                                                <xsl:copy-of select="$tableHeader"/>
+                                                <xsl:element name="thead">
+                                                    <xsl:element name="tr">
+                                                        <xsl:copy-of select="$tableHeader//thead/tr/th[position()>15]"/>
+                                                        <xsl:copy-of select="$tableHeader//thead/tr/th[position()&lt;15]"/>
+                                                
+                                                    </xsl:element>
+                                                </xsl:element>
                                                 
                                                 
                                                 <xsl:for-each select="$content//map">
