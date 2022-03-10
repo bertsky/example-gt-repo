@@ -1148,6 +1148,8 @@
                                                     
                                                     <tr>
                                                         <td><a><xsl:attribute name="href">https://github.com/<xsl:value-of select="$repoName"/>/blob/<xsl:value-of select="$repoBase"/>/data_line/<xsl:value-of select="substring-after(@file, '/data_line/')"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
+                                                        <td><xsl:value-of select="string[@key=$key15]"/></td>
+                                                        <td><xsl:value-of select="string[@key=$key16]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key1]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key2]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key3]"/></td>
@@ -1162,8 +1164,7 @@
                                                         <td><xsl:value-of select="string[@key=$key12]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key13]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key14]"/></td>
-                                                        <td><xsl:value-of select="string[@key=$key15]"/></td>
-                                                        <td><xsl:value-of select="string[@key=$key16]"/></td>
+                                                        
                                                     </tr>
                                                 </xsl:for-each>
                                             </table>
