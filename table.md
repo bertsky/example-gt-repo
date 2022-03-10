@@ -15,13 +15,13 @@
    <dl class="grid">
       <dt>Name:</dt>
       <dd>gt-repo-example</dd>
-      <dt>Beschreibung:</dt>
+      <dt>Description:</dt>
       <dd>Dieses Repositorium dient als Vorlage für vergleichbare Repositorien, die Ground Truth-Daten öffentlich zur Verfügung stellen möchten. Nach Prüfung und den entsprechenden Lizenzen kann dieses Repo in das OCR-D-GT-Repo eingebunden werden.</dd>
-      <dt>Sprache:</dt>
+      <dt>Language:</dt>
       <dd>deu</dd>
       <dt>Format:</dt>
       <dd>PAGE</dd>
-      <dt>Zeitraum:</dt>
+      <dt>Time:</dt>
       <dd>1600-1900</dd>
       <dt>GT Type:</dt>
       <dd>structure</dd>
@@ -30,9 +30,9 @@
    <div>
       <table class="noStyle">
          <tr>
-            <td>💡 Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf<br/>den passenden Button.
+            <td>💡 You can show and hide individual columns of the table.<br/>Click the corresponding button.
                             <details>
-                  <summary>Legende</summary>
+                  <summary>Legend</summary>
                   <dl class="grid">
                      <dt>TxtRegion</dt>
                      <dd>

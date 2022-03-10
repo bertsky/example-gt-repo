@@ -37,7 +37,7 @@
       <tr>
          <td>
             <details>
-               <summary>💡 Legende</summary>
+               <summary>Legend</summary>
                <dl class="grid_only">
                   <dt>TextLine</dt>
                   <dd>TextLine</dd>
