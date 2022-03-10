@@ -34,13 +34,16 @@ jobs:
       run: sh scripts/data_structure.sh
            
     - name: transform METADATA and make GT-Overview
-      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=METADATA -s:scripts/gt-overview_metadata.xsl -o:ghout/metadata.md
+      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=METADATA repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:ghout/metadata.md
+      shell: bash
 
     - name: make Compressed table view
-      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=TABLE -s:scripts/gt-overview_metadata.xsl -o:ghout/table.md
+      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=TABLE repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:ghout/table.md
+      shell: bash
 
     - name: Detailed table view
-      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=OVERVIEW -s:scripts/gt-overview_metadata.xsl -o:ghout/overview.md    
+      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=OVERVIEW repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:ghout/overview.md
+      shell: bash
                                                                                      
     - name: copy css styles and yml files to ghout
       run: sudo cp scripts/table_hide.css ghout/;sudo cp scripts/_config.yml ghout/ 
