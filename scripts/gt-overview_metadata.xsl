@@ -1137,11 +1137,7 @@
                                                     
                                                     
                                                     <tr>
-                                                        <td>
-                                                            
-                                                            
-                                                            <b>https://github.com/<xsl:value-of select="$repoName"/>/blob/main/data_line/<xsl:value-of select="substring-after(@file, '/data_line/')"/></b>
-                                                            <a><xsl:attribute name="href">https://github.com/tboenig/<xsl:value-of select="$repoName"/>/blob/main/data_line/<xsl:value-of select="@key1"/>/page/<xsl:value-of select="@key2"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
+                                                        <td><a><xsl:attribute name="href">https://github.com/<xsl:value-of select="$repoName"/>/blob/main/data_line/<xsl:value-of select="substring-after(@file, '/data_line/')"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                                         <td><xsl:value-of select="string[@key=$key1]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key2]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key3]"/></td>
