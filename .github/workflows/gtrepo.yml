@@ -38,7 +38,7 @@ jobs:
       shell: bash
 
     - name: make Compressed table view
-      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=TABLE repoBase=$GITHUB_REF repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:ghout/table.md
+      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=TABLE repoBase=$GITHUB_HEAD_REF repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:ghout/table.md
       shell: bash
 
     - name: Detailed table view
