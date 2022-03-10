@@ -1114,6 +1114,8 @@
                                     
                                     <tr>
                                         <th><xsl:value-of select="current-grouping-key()"/></th>
+                                        <td><xsl:value-of select="sum(current-group()//*[@key=$key15])"/></td>
+                                        <td><xsl:value-of select="sum(current-group()//*[@key=$key16])"/></td>
                                         <td><xsl:value-of select="sum(current-group()//*[@key=$key1])"/></td>
                                         <td><xsl:value-of select="sum(current-group()//*[@key=$key2])"/></td>
                                         <td><xsl:value-of select="sum(current-group()//*[@key=$key3])"/></td>
@@ -1128,8 +1130,7 @@
                                         <td><xsl:value-of select="sum(current-group()//*[@key=$key12])"/></td>
                                         <td><xsl:value-of select="sum(current-group()//*[@key=$key13])"/></td>
                                         <td><xsl:value-of select="sum(current-group()//*[@key=$key14])"/></td>
-                                        <td><xsl:value-of select="sum(current-group()//*[@key=$key15])"/></td>
-                                        <td><xsl:value-of select="sum(current-group()//*[@key=$key16])"/></td>
+                                        
                                         
                                     </tr>
                                     <tr><td colspan="15" style="text-align:left !important;">
