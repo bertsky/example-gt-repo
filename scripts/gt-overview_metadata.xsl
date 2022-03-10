@@ -946,7 +946,18 @@
                            <xsl:variable name="content"><list><xsl:copy-of select="current-group()"/></list></xsl:variable>
                            
                         <tr>
-                            <th><xsl:value-of select="current-grouping-key()"/></th>
+                            <th><xsl:choose>
+                                <xsl:when test="current-grouping-key() !=''">
+                                    <xsl:value-of select="current-grouping-key()"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="substring-before(substring-after(@file, '/data_structure/'), 'page')"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                                
+                                
+                                
+                                </th>
                             <td><xsl:value-of select="sum(current-group()//*[@key=$key1])"/></td>
                             <td><xsl:value-of select="sum(current-group()//*[@key=$key2])"/></td>
                             <td><xsl:value-of select="sum(current-group()//*[@key=$key3])"/></td>
@@ -1105,7 +1116,18 @@
                                     <xsl:variable name="content"><list><xsl:copy-of select="current-group()"/></list></xsl:variable>
                                     
                                     <tr>
-                                        <th><xsl:value-of select="current-grouping-key()"/></th>
+                                        <th><xsl:choose>
+                                            <xsl:when test="current-grouping-key() !=''">
+                                                <xsl:value-of select="current-grouping-key()"/>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:value-of select="substring-before(substring-after(@file, '/data_structure/'), 'page')"/>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                            
+                                            
+                                            
+                                        </th>
                                         <td><xsl:value-of select="sum(current-group()//*[@key=$key1])"/></td>
                                         <td><xsl:value-of select="sum(current-group()//*[@key=$key2])"/></td>
                                         <td><xsl:value-of select="sum(current-group()//*[@key=$key3])"/></td>
@@ -1226,7 +1248,7 @@
                 <table class="noStyle">
                     <tr><td> 
                         <details>
-                            <summary>Legend</summary>
+                            <summary>,Legend</summary>
                             <dl class="grid_only">
                                 <dt><xsl:value-of select="$tableHeader//th[16]"/></dt>
                                 <dd>TextLine</dd>
