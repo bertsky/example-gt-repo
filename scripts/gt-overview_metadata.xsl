@@ -145,10 +145,10 @@
                     <h2>Metadata</h2>
                     <dl class="grid">
                         <dt>Name:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='name']"/></dd>
-                        <dt>Beschreibung:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='description']"/></dd>
-                        <dt>Sprache:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='language']"/></dd>
+                        <dt>Description:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='description']"/></dd>
+                        <dt>Language:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='language']"/></dd>
                         <dt>Format:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='format']"/></dd>
-                        <dt>Zeitraum:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='start']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='end']"/></dd>
+                        <dt>Time:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='start']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='end']"/></dd>
                         <dt>GT Type:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='gtType']"/></dd>
                     </dl>
                 </xsl:element>
@@ -158,9 +158,9 @@
                 <h2>Total view</h2>
                 <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text()='structure'">
                     <table class="noStyle">
-                        <tr><td>&#x1F4A1; Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf<br/>den passenden Button.
+                        <tr><td>&#x1F4A1; You can show and hide individual columns of the table.<br/>Click the corresponding button.
                             <details>
-                                <summary>Legende</summary>                         
+                                <summary>Legend</summary>                         
                                 <dl class="grid">
                                     <dt><xsl:value-of select="$tableHeader//th[2]"/></dt>
                                     <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lytextregion.html" target="_blank">TextRegion</a></dd>
@@ -462,9 +462,9 @@
                         <!-- end columes -->
                         
                         <table class="noStyle">
-                            <tr><td>&#x1F4A1; Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf<br/>den passenden Button.
+                            <tr><td>&#x1F4A1; You can show and hide individual columns of the table.<br/>Click the corresponding button.
                                 <details>
-                                    <summary>Legende</summary>                         
+                                    <summary>Legend</summary>                         
                                     <dl class="grid">
                                         <dt><xsl:value-of select="$tableHeader//th[16]"/></dt>
                                         <dd>TextLine</dd>
@@ -870,19 +870,19 @@
                     <h2>Metadata</h2>
                     <dl class="grid">
                         <dt>Name:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='name']"/></dd>
-                        <dt>Beschreibung:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='description']"/></dd>
-                        <dt>Sprache:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='language']"/></dd>
+                        <dt>Description:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='description']"/></dd>
+                        <dt>Language:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='language']"/></dd>
                         <dt>Format:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='format']"/></dd>
-                        <dt>Zeitraum:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='start']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='end']"/></dd>
+                        <dt>Time:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='start']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='end']"/></dd>
                         <dt>GT Type:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='gtType']"/></dd>
                     </dl>
                     
                     <h2>Compressed table view</h2>
                     <div>
                     <table class="noStyle">
-                        <tr><td>&#x1F4A1; Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf<br/>den passenden Button.
+                        <tr><td>&#x1F4A1; You can show and hide individual columns of the table.<br/>Click the corresponding button.
                             <details>
-                                <summary>Legende</summary>                         
+                                <summary>Legend</summary>                         
                                 <dl class="grid">
                                     <dt><xsl:value-of select="$tableHeader//th[2]"/></dt>
                                     <dd><a href="https://ocr-d.de/de/gt-guidelines/trans/lytextregion.html" target="_blank">TextRegion</a></dd>
@@ -1023,19 +1023,19 @@
                     <h2>Metadata</h2>
                     <dl class="grid">
                         <dt>Name:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='name']"/></dd>
-                        <dt>Beschreibung:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='description']"/></dd>
-                        <dt>Sprache:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='language']"/></dd>
+                        <dt>Description:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='description']"/></dd>
+                        <dt>Language:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='language']"/></dd>
                         <dt>Format:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='format']"/></dd>
-                        <dt>Zeitraum:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='start']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='end']"/></dd>
+                        <dt>Time:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='start']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='end']"/></dd>
                         <dt>GT Type:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='gtType']"/></dd>
                     </dl>
                     
                     <h2>Compressed table view</h2>
                     <div>
                         <table class="noStyle">
-                            <tr><td>&#x1F4A1; Sie können einzelne Spalten der Tabelle ein- und ausblenden. Klicken Sie auf<br/>den passenden Button.
+                            <tr><td>&#x1F4A1; You can show and hide individual columns of the table.<br/>Click the corresponding button.
                                 <details>
-                                    <summary>Legende</summary>                         
+                                    <summary>Legend</summary>                         
                                     <dl class="grid">
                                         <dt><xsl:value-of select="$tableHeader//th[16]"/></dt>
                                         <dd>TextLine</dd>
@@ -1226,7 +1226,7 @@
                 <table class="noStyle">
                     <tr><td> 
                         <details>
-                            <summary>&#x1F4A1; Legende</summary>
+                            <summary>Legend</summary>
                             <dl class="grid_only">
                                 <dt><xsl:value-of select="$tableHeader//th[16]"/></dt>
                                 <dd>TextLine</dd>
