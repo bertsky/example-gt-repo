@@ -1281,7 +1281,7 @@
                 <table class="noStyle">
                     <tr><td> 
                         <details>
-                            <summary>,Legend</summary>
+                            <summary>Legend</summary>
                             <dl class="grid_only">
                                 <dt><xsl:value-of select="$tableHeader//th[16]"/></dt>
                                 <dd>TextLine</dd>
