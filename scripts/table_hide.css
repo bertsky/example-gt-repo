@@ -81,6 +81,15 @@
             #table_id.hide15 tr > *:nth-child(15) {
             display: none;
             }
+            #table_id.hide16 tr > *:nth-child(16) {
+            display: none;
+            }
+            #table_id.hide17 tr > *:nth-child(17) {
+            display: none;
+            }
+            
+            
+            
             .grid-container {
              display: grid;
              grid-template-columns: auto auto auto auto auto auto auto;
