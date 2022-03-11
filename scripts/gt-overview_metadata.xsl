@@ -970,7 +970,7 @@
                             <td><xsl:value-of select="sum(current-group()//*[@key=$key13])"/></td>
                             <td><xsl:value-of select="sum(current-group()//*[@key=$key14])"/></td>
                             </tr>
-                           <tr><td colspan="15" style="text-align:left !important;">
+                           <tr><td colspan="17" style="text-align:left !important;">
                            
                            <details>
                                <summary>Overview</summary>
@@ -1157,7 +1157,7 @@
                                         
                                         
                                     </tr>
-                                    <tr><td colspan="15" style="text-align:left !important;">
+                                    <tr><td colspan="17" style="text-align:left !important;">
                                         
                                         <details>
                                             <summary>Overview</summary>
