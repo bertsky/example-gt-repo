@@ -1543,7 +1543,22 @@
                 <xsl:element name="thead">
                     <xsl:element name="tr">
                         <th style="position: sticky !important; left: 0 !important;">document</th>
-                        <xsl:copy-of select="$tableHeader//thead/tr/th[position()>1]"/>
+                        <th>TextLine</th>
+                        <th>Page</th>
+                        <th>TxtRegion</th>
+                        <th>ImgRegion</th>
+                        <th>LineDrawRegion</th>
+                        <th>GraphRegion</th>
+                        <th>TabRegion</th>
+                        <th>ChartRegion</th>
+                        <th>SepRegion</th>
+                        <th>MathRegion</th>
+                        <th>ChemRegion</th>
+                        <th>MusicRegion</th>
+                        <th>AdRegion</th>
+                        <th>NoiseRegion</th>
+                        <th>UnkownRegion</th>
+                        <th>CustomRegion</th>
                     </xsl:element>
                 </xsl:element>
                             
@@ -1552,6 +1567,8 @@
                             <xsl:for-each select="$holeMetric/array/array">
                                 <tr>
                                     <th><xsl:value-of select="map/@key2"/></th>
+                                    <td><xsl:value-of select="map/string[@key=$key15]"/></td>
+                                    <td><xsl:value-of select="map/string[@key=$key16]"/></td>
                                     <td><xsl:value-of select="map/string[@key=$key1]"/></td>
                                     <td><xsl:value-of select="map/string[@key=$key2]"/></td>
                                     <td><xsl:value-of select="map/string[@key=$key3]"/></td>
@@ -1566,8 +1583,7 @@
                                     <td><xsl:value-of select="map/string[@key=$key12]"/></td>
                                     <td><xsl:value-of select="map/string[@key=$key13]"/></td>
                                     <td><xsl:value-of select="map/string[@key=$key14]"/></td>
-                                    <td><xsl:value-of select="map/string[@key=$key15]"/></td>
-                                    <td><xsl:value-of select="map/string[@key=$key16]"/></td>
+                                    
                                 </tr>
                             </xsl:for-each>
                             </tbody>     
