@@ -161,7 +161,17 @@
                         <dt>Format:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='format']"/></dd>
                         <dt>Time:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:map[@key='time']/fn:string[@key='notBefore']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:map[@key='time']/fn:string[@key='notAfter']"/></dd>
                         <dt>GT Type:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='gtTyp']"/></dd>
+                        
                     </dl>
+                    <details>
+                        <summary>More Information</summary>                         
+                        <dl class="more-grid">
+                            <dt>Transcription Guidelines:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='transcription-guidelines']"/></dd>
+                            <dt>License:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='license']/fn:map/fn:string[@key='name']"/>"/></dd>
+                            <dt>Project:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='project-name']"/></dd>
+                            <dt>Project-URL:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='project-website']"/></dd>
+                        </dl>
+                    </details>
                 </xsl:element>
                 
                 <xsl:element name="div">
@@ -888,6 +898,17 @@
                         <dt>GT Type:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='gtTyp']"/></dd>
                     </dl>
                     
+                    <details>
+                        <summary>More Information</summary>                         
+                        <dl class="more-grid">
+                            <dt>Transcription Guidelines:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='transcription-guidelines']"/></dd>
+                            <dt>License:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='license']/fn:map/fn:string[@key='name']"/>"/></dd>
+                            <dt>Project:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='project-name']"/></dd>
+                            <dt>Project-URL:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='project-website']"/></dd>
+                        </dl>
+                    </details>
+                    
+                    
                     <h2>Compressed table view</h2>
                     <div>
                     <table class="noStyle">
@@ -1040,6 +1061,17 @@
                         <dt>Time:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='notBefore']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='notAfter']"/></dd>
                         <dt>GT Type:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='gtTyp']"/></dd>
                     </dl>
+                    
+                    <details>
+                        <summary>More Information</summary>                         
+                        <dl class="more-grid">
+                            <dt>Transcription Guidelines:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='transcription-guidelines']"/></dd>
+                            <dt>License:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='license']/fn:map/fn:string[@key='name']"/>"/></dd>
+                            <dt>Project:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='project-name']"/></dd>
+                            <dt>Project-URL:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='project-website']"/></dd>
+                        </dl>
+                    </details>
+                    
                     
                     <h2>Compressed table view</h2>
                     <div>
