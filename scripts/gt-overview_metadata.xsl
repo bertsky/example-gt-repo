@@ -20,17 +20,17 @@
     </xsl:variable>
     
     <xsl:variable name="path">
-        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'document'">../data_document</xsl:if>
-        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'structure'">../data_structure</xsl:if>
-        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'structure_and_text'">../data_structure_and_text</xsl:if>
-        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'line'">../data_line</xsl:if>
+        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text() = 'data_document'">../data_document</xsl:if>
+        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text() = 'data_structure'">../data_structure</xsl:if>
+        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text() = 'data_structure_and_text'">../data_structure_and_text</xsl:if>
+        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text() = 'data_line'">../data_line</xsl:if>
      </xsl:variable>
     
-    <xsl:variable name="gtType">
-        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'document'">data_document/</xsl:if>
-        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'structure'">data_structure/</xsl:if>
-        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'structure_and_text'">data_structure_and_text/</xsl:if>
-        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text() = 'line'">data_line/</xsl:if>
+    <xsl:variable name="gtTyp">
+        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text() = 'data_document'">data_document/</xsl:if>
+        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text() = 'data_structure'">data_structure/</xsl:if>
+        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text() = 'data_structure_and_text'">data_structure_and_text/</xsl:if>
+        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text() = 'data_line'">data_line/</xsl:if>
     </xsl:variable>
     
     <xsl:variable name="coll"><xsl:value-of select="$path"/>/?select=*.xml;recurse=yes</xsl:variable>
@@ -96,6 +96,9 @@
    
     
     <xsl:template match="/">
+        
+        <xsl:message select="$docMETADATA"></xsl:message>
+        
         <link rel="stylesheet" href="table_hide.css"/>
         
              <xsl:variable name="holeMetric">
@@ -103,10 +106,10 @@
                     
                     
                   <xsl:for-each select="collection($coll)">
-                      <xsl:variable name="gtTypePath" select="replace($path, '../(.+)', '$1/')"/>
+                      <xsl:variable name="gtTypPath" select="replace($path, '../(.+)', '$1/')"/>
                       
                       <xsl:variable name="filename" select="base-uri()" />
-                      <xsl:variable name="gtdocument" select="substring-after(substring-before($filename, '/page/')[1],$gtTypePath)"/>
+                      <xsl:variable name="gtdocument" select="substring-after(substring-before($filename, '/page/')[1],$gtTypPath)"/>
                       
                       
                         <xsl:if test="$gtdocument !=''">
@@ -114,7 +117,7 @@
                      
                          <xsl:element name="array"><xsl:attribute name="key">volume_region</xsl:attribute>
                          <xsl:element name="map">
-                             <xsl:attribute name="key1" select="substring-after(substring-before($filename, '/page/')[1], $gtType)"/>
+                             <xsl:attribute name="key1" select="substring-after(substring-before($filename, '/page/')[1], $gtTyp)"/>
                              <xsl:attribute name="key2" select="substring-after($filename, '/page/')"/>
                              <xsl:attribute name="file" select="$filename"/>
                              <string key="{$key1}"><xsl:value-of select="count(document($filename)//*/pc:TextRegion)"/></string>
@@ -152,19 +155,19 @@
                     <xsl:attribute name="class">metadata</xsl:attribute>
                     <h2>Metadata</h2>
                     <dl class="grid">
-                        <dt>Name:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='name']"/></dd>
+                        <dt>Name:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='title']"/></dd>
                         <dt>Description:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='description']"/></dd>
                         <dt>Language:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='language']"/></dd>
                         <dt>Format:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='format']"/></dd>
-                        <dt>Time:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='start']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='end']"/></dd>
-                        <dt>GT Type:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='gtType']"/></dd>
+                        <dt>Time:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='notBefore']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='notAfter']"/></dd>
+                        <dt>GT Type:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='gtTyp']"/></dd>
                     </dl>
                 </xsl:element>
                 
                 <xsl:element name="div">
                     <xsl:attribute name="class">metadata</xsl:attribute>
                 <h2>Total view</h2>
-                <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text()='structure'">
+                <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text()='data_structure'">
                     <table class="noStyle">
                         <tr><td>&#x1F4A1; You can show and hide individual columns of the table.<br/>Click the corresponding button.
                             <details>
@@ -346,7 +349,7 @@
                     
                     
                     
-                    <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text()='line'">
+                    <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text()='data_line'">
                         
                         
                         <!-- beginn columes -->
@@ -846,7 +849,7 @@
                     
                     
                 
-                <xsl:if test="$docMETADATA//map/string[@key='gtType']/text()='text'">
+                <xsl:if test="$docMETADATA//map/string[@key='gtTyp']/text()='text'">
                 
                     <!--<array key="volume_lines">
                     <map>
@@ -863,7 +866,7 @@
         
         <xsl:if test="$output = 'TABLE'">
             
-            <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text()='structure'">
+            <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text()='data_structure'">
                 
                 <xsl:element name="div">
                     <xsl:element name="h2">Details</xsl:element>
@@ -877,12 +880,12 @@
                     <xsl:attribute name="class">metadata</xsl:attribute>
                     <h2>Metadata</h2>
                     <dl class="grid">
-                        <dt>Name:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='name']"/></dd>
+                        <dt>Name:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='title']"/></dd>
                         <dt>Description:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='description']"/></dd>
                         <dt>Language:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='language']"/></dd>
                         <dt>Format:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='format']"/></dd>
-                        <dt>Time:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='start']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='end']"/></dd>
-                        <dt>GT Type:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='gtType']"/></dd>
+                        <dt>Time:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='notBefore']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='notAfter']"/></dd>
+                        <dt>GT Type:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='gtTyp']"/></dd>
                     </dl>
                     
                     <h2>Compressed table view</h2>
@@ -1014,7 +1017,7 @@
             
             
             
-            <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtType']/text()='line'">
+            <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text()='data_line'">
                 
                 <xsl:element name="div">
                     
@@ -1030,12 +1033,12 @@
                     
                     <h2>Metadata</h2>
                     <dl class="grid">
-                        <dt>Name:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='name']"/></dd>
+                        <dt>Name:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='title']"/></dd>
                         <dt>Description:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='description']"/></dd>
                         <dt>Language:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='language']"/></dd>
                         <dt>Format:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='format']"/></dd>
-                        <dt>Time:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='start']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='end']"/></dd>
-                        <dt>GT Type:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='gtType']"/></dd>
+                        <dt>Time:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='notBefore']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='notAfter']"/></dd>
+                        <dt>GT Type:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='gtTyp']"/></dd>
                     </dl>
                     
                     <h2>Compressed table view</h2>
@@ -1332,22 +1335,7 @@
                 <xsl:element name="thead">
                     <xsl:element name="tr">
                         <th style="position: sticky !important; left: 0 !important;">document</th>
-                        <th>TextLine</th>
-                        <th>Page</th>
-                        <th>TxtRegion</th>
-                        <th>ImgRegion</th>
-                        <th>LineDrawRegion</th>
-                        <th>GraphRegion</th>
-                        <th>TabRegion</th>
-                        <th>ChartRegion</th>
-                        <th>SepRegion</th>
-                        <th>MathRegion</th>
-                        <th>ChemRegion</th>
-                        <th>MusicRegion</th>
-                        <th>AdRegion</th>
-                        <th>NoiseRegion</th>
-                        <th>UnkownRegion</th>
-                        <th>CustomRegion</th>
+                        <xsl:copy-of select="$tableHeader//thead/tr/th[position()>1]"/>
                     </xsl:element>
                 </xsl:element>
                             
@@ -1356,8 +1344,6 @@
                             <xsl:for-each select="$holeMetric/array/array">
                                 <tr>
                                     <th><xsl:value-of select="map/@key2"/></th>
-                                    <td><xsl:value-of select="map/string[@key=$key15]"/></td>
-                                    <td><xsl:value-of select="map/string[@key=$key16]"/></td>
                                     <td><xsl:value-of select="map/string[@key=$key1]"/></td>
                                     <td><xsl:value-of select="map/string[@key=$key2]"/></td>
                                     <td><xsl:value-of select="map/string[@key=$key3]"/></td>
@@ -1372,7 +1358,8 @@
                                     <td><xsl:value-of select="map/string[@key=$key12]"/></td>
                                     <td><xsl:value-of select="map/string[@key=$key13]"/></td>
                                     <td><xsl:value-of select="map/string[@key=$key14]"/></td>
-                                    
+                                    <td><xsl:value-of select="map/string[@key=$key15]"/></td>
+                                    <td><xsl:value-of select="map/string[@key=$key16]"/></td>
                                 </tr>
                             </xsl:for-each>
                             </tbody>     
