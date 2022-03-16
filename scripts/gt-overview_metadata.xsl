@@ -157,9 +157,9 @@
                     <dl class="grid">
                         <dt>Name:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='title']"/></dd>
                         <dt>Description:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='description']"/></dd>
-                        <dt>Language:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='language']"/></dd>
+                        <dt>Language:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='language']/fn:string"/></dd>
                         <dt>Format:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='format']"/></dd>
-                        <dt>Time:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='notBefore']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:array[@key='time']/fn:map/fn:string[@key='notAfter']"/></dd>
+                        <dt>Time:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:map[@key='time']/fn:string[@key='notBefore']"/>-<xsl:value-of select="$docMETADATA//fn:map/fn:map[@key='time']/fn:string[@key='notAfter']"/></dd>
                         <dt>GT Type:</dt><dd><xsl:value-of select="$docMETADATA//fn:map/fn:string[@key='gtTyp']"/></dd>
                     </dl>
                 </xsl:element>
