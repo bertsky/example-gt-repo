@@ -23,7 +23,7 @@
         <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text() = 'data_document'">../data_document</xsl:if>
         <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text() = 'data_structure'">../data_structure</xsl:if>
         <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text() = 'data_structure_and_text'">../data_structure_and_text</xsl:if>
-        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text() = 'data_line'">../data_line</xsl:if>
+        <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text() = 'data_line'">../data</xsl:if>
      </xsl:variable>
     
     <xsl:variable name="gtTyp">
@@ -1232,7 +1232,7 @@
                                                     
                                                     
                                                     <tr>
-                                                        <td><a><xsl:attribute name="href">https://github.com/<xsl:value-of select="$repoName"/>/blob/<xsl:value-of select="$repoBase"/>/data_line/<xsl:value-of select="substring-after(@file, '/data_line/')"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
+                                                        <td><a><xsl:attribute name="href">https://github.com/<xsl:value-of select="$repoName"/>/blob/<xsl:value-of select="$repoBase"/>/data/<xsl:value-of select="substring-after(@file, '/data/')"/></xsl:attribute><xsl:value-of select="@key2"/></a></td>
                                                         <td><xsl:value-of select="string[@key=$key15]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key16]"/></td>
                                                         <td><xsl:value-of select="string[@key=$key1]"/></td>
