@@ -3,18 +3,31 @@
    <h2>Metadata</h2>
    <dl class="grid">
       <dt>Name:</dt>
-      <dd>gt-repo-example</dd>
+      <dd>Example Ground Truth</dd>
       <dt>Description:</dt>
-      <dd>Dieses Repositorium dient als Vorlage für vergleichbare Repositorien, die Ground Truth-Daten öffentlich zur Verfügung stellen möchten. Nach Prüfung und den entsprechenden Lizenzen kann dieses Repo in das OCR-D-GT-Repo eingebunden werden.</dd>
+      <dd>This repository serves as a template for similar repositories that wish to make ground truth data publicly available. After review and the appropriate licenses, this repo can be included in the OCR-D-GT repo.</dd>
       <dt>Language:</dt>
       <dd>deu</dd>
       <dt>Format:</dt>
-      <dd>PAGE</dd>
+      <dd>Page-XML</dd>
       <dt>Time:</dt>
-      <dd>1600-1900</dd>
+      <dd>1628-1838</dd>
       <dt>GT Type:</dt>
-      <dd>structure</dd>
+      <dd>data_structure</dd>
    </dl>
+   <details>
+      <summary>More Information</summary>
+      <dl class="more-grid">
+         <dt>Transcription Guidelines:</dt>
+         <dd>We used the OCR-D Ground Truth Guidelines (https://ocr-d.de/en/gt-guidelines/trans/).</dd>
+         <dt>License:</dt>
+         <dd>CC0 1.0</dd>
+         <dt>Project:</dt>
+         <dd>OCR-D</dd>
+         <dt>Project-URL:</dt>
+         <dd>https://ocr-d.de/en/</dd>
+      </dl>
+   </details>
 </div>
 <div class="metadata">
    <h2>Total view</h2>

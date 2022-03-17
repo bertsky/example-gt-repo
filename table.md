@@ -14,18 +14,31 @@
    <h2>Metadata</h2>
    <dl class="grid">
       <dt>Name:</dt>
-      <dd>gt-repo-example</dd>
+      <dd>Example Ground Truth</dd>
       <dt>Description:</dt>
-      <dd>Dieses Repositorium dient als Vorlage für vergleichbare Repositorien, die Ground Truth-Daten öffentlich zur Verfügung stellen möchten. Nach Prüfung und den entsprechenden Lizenzen kann dieses Repo in das OCR-D-GT-Repo eingebunden werden.</dd>
+      <dd>This repository serves as a template for similar repositories that wish to make ground truth data publicly available. After review and the appropriate licenses, this repo can be included in the OCR-D-GT repo.</dd>
       <dt>Language:</dt>
       <dd>deu</dd>
       <dt>Format:</dt>
-      <dd>PAGE</dd>
+      <dd>Page-XML</dd>
       <dt>Time:</dt>
-      <dd>1600-1900</dd>
+      <dd>1628-1838</dd>
       <dt>GT Type:</dt>
-      <dd>structure</dd>
+      <dd>data_structure</dd>
    </dl>
+   <details>
+      <summary>More Information</summary>
+      <dl class="more-grid">
+         <dt>Transcription Guidelines:</dt>
+         <dd>We used the OCR-D Ground Truth Guidelines (https://ocr-d.de/en/gt-guidelines/trans/).</dd>
+         <dt>License:</dt>
+         <dd>CC0 1.0</dd>
+         <dt>Project:</dt>
+         <dd>OCR-D</dd>
+         <dt>Project-URL:</dt>
+         <dd>https://ocr-d.de/en/</dd>
+      </dl>
+   </details>
    <h2>Compressed table view</h2>
    <div>
       <table class="noStyle">
@@ -170,14 +183,14 @@
          </thead>
          <tbody>
             <tr>
-               <th>anthus_esskunst_1838</th>
-               <td>117</td>
+               <th/>
+               <td>404</td>
                <td>0</td>
                <td>0</td>
+               <td>2</td>
                <td>0</td>
                <td>0</td>
-               <td>0</td>
-               <td>21</td>
+               <td>22</td>
                <td>0</td>
                <td>0</td>
                <td>0</td>
@@ -214,7 +227,7 @@
                         </thead>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0023.xml">anthus_esskunst_1838_0023.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0023.xml">anthus_esskunst_1838_0023.xml</a>
                            </td>
                            <td>4</td>
                            <td>0</td>
@@ -233,7 +246,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0022.xml">anthus_esskunst_1838_0022.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0022.xml">anthus_esskunst_1838_0022.xml</a>
                            </td>
                            <td>5</td>
                            <td>0</td>
@@ -252,7 +265,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0027.xml">anthus_esskunst_1838_0027.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0027.xml">anthus_esskunst_1838_0027.xml</a>
                            </td>
                            <td>8</td>
                            <td>0</td>
@@ -271,7 +284,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0021.xml">anthus_esskunst_1838_0021.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0021.xml">anthus_esskunst_1838_0021.xml</a>
                            </td>
                            <td>6</td>
                            <td>0</td>
@@ -290,7 +303,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0024.xml">anthus_esskunst_1838_0024.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0024.xml">anthus_esskunst_1838_0024.xml</a>
                            </td>
                            <td>5</td>
                            <td>0</td>
@@ -309,7 +322,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0016.xml">anthus_esskunst_1838_0016.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0016.xml">anthus_esskunst_1838_0016.xml</a>
                            </td>
                            <td>7</td>
                            <td>0</td>
@@ -328,7 +341,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0029.xml">anthus_esskunst_1838_0029.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0029.xml">anthus_esskunst_1838_0029.xml</a>
                            </td>
                            <td>3</td>
                            <td>0</td>
@@ -347,7 +360,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0017.xml">anthus_esskunst_1838_0017.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0017.xml">anthus_esskunst_1838_0017.xml</a>
                            </td>
                            <td>7</td>
                            <td>0</td>
@@ -366,7 +379,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0033.xml">anthus_esskunst_1838_0033.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0033.xml">anthus_esskunst_1838_0033.xml</a>
                            </td>
                            <td>6</td>
                            <td>0</td>
@@ -385,7 +398,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0026.xml">anthus_esskunst_1838_0026.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0026.xml">anthus_esskunst_1838_0026.xml</a>
                            </td>
                            <td>6</td>
                            <td>0</td>
@@ -404,7 +417,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0030.xml">anthus_esskunst_1838_0030.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0030.xml">anthus_esskunst_1838_0030.xml</a>
                            </td>
                            <td>6</td>
                            <td>0</td>
@@ -423,7 +436,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0028.xml">anthus_esskunst_1838_0028.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0028.xml">anthus_esskunst_1838_0028.xml</a>
                            </td>
                            <td>4</td>
                            <td>0</td>
@@ -442,7 +455,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0011.xml">anthus_esskunst_1838_0011.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0011.xml">anthus_esskunst_1838_0011.xml</a>
                            </td>
                            <td>5</td>
                            <td>0</td>
@@ -461,7 +474,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0032.xml">anthus_esskunst_1838_0032.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0032.xml">anthus_esskunst_1838_0032.xml</a>
                            </td>
                            <td>5</td>
                            <td>0</td>
@@ -480,7 +493,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0020.xml">anthus_esskunst_1838_0020.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0020.xml">anthus_esskunst_1838_0020.xml</a>
                            </td>
                            <td>7</td>
                            <td>0</td>
@@ -499,7 +512,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0010.xml">anthus_esskunst_1838_0010.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0010.xml">anthus_esskunst_1838_0010.xml</a>
                            </td>
                            <td>5</td>
                            <td>0</td>
@@ -518,7 +531,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0031.xml">anthus_esskunst_1838_0031.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0031.xml">anthus_esskunst_1838_0031.xml</a>
                            </td>
                            <td>9</td>
                            <td>0</td>
@@ -537,7 +550,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0018.xml">anthus_esskunst_1838_0018.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0018.xml">anthus_esskunst_1838_0018.xml</a>
                            </td>
                            <td>7</td>
                            <td>0</td>
@@ -556,7 +569,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0019.xml">anthus_esskunst_1838_0019.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0019.xml">anthus_esskunst_1838_0019.xml</a>
                            </td>
                            <td>5</td>
                            <td>0</td>
@@ -575,7 +588,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anthus_esskunst_1838/page/anthus_esskunst_1838_0025.xml">anthus_esskunst_1838_0025.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0025.xml">anthus_esskunst_1838_0025.xml</a>
                            </td>
                            <td>7</td>
                            <td>0</td>
@@ -592,56 +605,9 @@
                            <td>0</td>
                            <td>0</td>
                         </tr>
-                     </table>
-                  </details>
-               </td>
-            </tr>
-            <tr>
-               <th>anhaltkoethen_fruchtbringende_1628</th>
-               <td>287</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2</td>
-               <td>0</td>
-               <td>0</td>
-               <td>1</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0</td>
-            </tr>
-            <tr>
-               <td colspan="17" style="text-align:left !important;">
-                  <details>
-                     <summary>Overview</summary>
-                     <table>
-                        <thead>
-                           <tr>
-                              <th>document</th>
-                              <th>TxtRegion</th>
-                              <th>ImgRegion</th>
-                              <th>LineDrawRegion</th>
-                              <th>GraphRegion</th>
-                              <th>TabRegion</th>
-                              <th>ChartRegion</th>
-                              <th>SepRegion</th>
-                              <th>MathRegion</th>
-                              <th>ChemRegion</th>
-                              <th>MusicRegion</th>
-                              <th>AdRegion</th>
-                              <th>NoiseRegion</th>
-                              <th>UnkownRegion</th>
-                              <th>CustomRegion</th>
-                              <th>TextLine</th>
-                              <th>Page</th>
-                           </tr>
-                        </thead>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0003.xml">anhaltkoethen_fruchtbringende_1628_0003.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0003.xml">anhaltkoethen_fruchtbringende_1628_0003.xml</a>
                            </td>
                            <td>2</td>
                            <td>0</td>
@@ -660,7 +626,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0015.xml">anhaltkoethen_fruchtbringende_1628_0015.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0015.xml">anhaltkoethen_fruchtbringende_1628_0015.xml</a>
                            </td>
                            <td>15</td>
                            <td>0</td>
@@ -679,7 +645,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0020.xml">anhaltkoethen_fruchtbringende_1628_0020.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0020.xml">anhaltkoethen_fruchtbringende_1628_0020.xml</a>
                            </td>
                            <td>15</td>
                            <td>0</td>
@@ -698,7 +664,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0047.xml">anhaltkoethen_fruchtbringende_1628_0047.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0047.xml">anhaltkoethen_fruchtbringende_1628_0047.xml</a>
                            </td>
                            <td>15</td>
                            <td>0</td>
@@ -717,7 +683,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0006.xml">anhaltkoethen_fruchtbringende_1628_0006.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0006.xml">anhaltkoethen_fruchtbringende_1628_0006.xml</a>
                            </td>
                            <td>6</td>
                            <td>0</td>
@@ -736,7 +702,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0039.xml">anhaltkoethen_fruchtbringende_1628_0039.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0039.xml">anhaltkoethen_fruchtbringende_1628_0039.xml</a>
                            </td>
                            <td>15</td>
                            <td>0</td>
@@ -755,7 +721,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0030.xml">anhaltkoethen_fruchtbringende_1628_0030.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0030.xml">anhaltkoethen_fruchtbringende_1628_0030.xml</a>
                            </td>
                            <td>14</td>
                            <td>0</td>
@@ -774,7 +740,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0009.xml">anhaltkoethen_fruchtbringende_1628_0009.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0009.xml">anhaltkoethen_fruchtbringende_1628_0009.xml</a>
                            </td>
                            <td>15</td>
                            <td>0</td>
@@ -793,7 +759,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0054.xml">anhaltkoethen_fruchtbringende_1628_0054.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0054.xml">anhaltkoethen_fruchtbringende_1628_0054.xml</a>
                            </td>
                            <td>15</td>
                            <td>0</td>
@@ -812,7 +778,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0029.xml">anhaltkoethen_fruchtbringende_1628_0029.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0029.xml">anhaltkoethen_fruchtbringende_1628_0029.xml</a>
                            </td>
                            <td>15</td>
                            <td>0</td>
@@ -831,7 +797,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0026.xml">anhaltkoethen_fruchtbringende_1628_0026.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0026.xml">anhaltkoethen_fruchtbringende_1628_0026.xml</a>
                            </td>
                            <td>14</td>
                            <td>0</td>
@@ -850,7 +816,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0012.xml">anhaltkoethen_fruchtbringende_1628_0012.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0012.xml">anhaltkoethen_fruchtbringende_1628_0012.xml</a>
                            </td>
                            <td>15</td>
                            <td>0</td>
@@ -869,7 +835,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0005.xml">anhaltkoethen_fruchtbringende_1628_0005.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0005.xml">anhaltkoethen_fruchtbringende_1628_0005.xml</a>
                            </td>
                            <td>5</td>
                            <td>0</td>
@@ -888,7 +854,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0010.xml">anhaltkoethen_fruchtbringende_1628_0010.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0010.xml">anhaltkoethen_fruchtbringende_1628_0010.xml</a>
                            </td>
                            <td>14</td>
                            <td>0</td>
@@ -907,7 +873,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0046.xml">anhaltkoethen_fruchtbringende_1628_0046.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0046.xml">anhaltkoethen_fruchtbringende_1628_0046.xml</a>
                            </td>
                            <td>14</td>
                            <td>0</td>
@@ -926,7 +892,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0022.xml">anhaltkoethen_fruchtbringende_1628_0022.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0022.xml">anhaltkoethen_fruchtbringende_1628_0022.xml</a>
                            </td>
                            <td>14</td>
                            <td>0</td>
@@ -945,7 +911,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0011.xml">anhaltkoethen_fruchtbringende_1628_0011.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0011.xml">anhaltkoethen_fruchtbringende_1628_0011.xml</a>
                            </td>
                            <td>15</td>
                            <td>0</td>
@@ -964,7 +930,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0034.xml">anhaltkoethen_fruchtbringende_1628_0034.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0034.xml">anhaltkoethen_fruchtbringende_1628_0034.xml</a>
                            </td>
                            <td>14</td>
                            <td>0</td>
@@ -983,7 +949,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0045.xml">anhaltkoethen_fruchtbringende_1628_0045.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0045.xml">anhaltkoethen_fruchtbringende_1628_0045.xml</a>
                            </td>
                            <td>15</td>
                            <td>0</td>
@@ -1002,7 +968,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0016.xml">anhaltkoethen_fruchtbringende_1628_0016.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0016.xml">anhaltkoethen_fruchtbringende_1628_0016.xml</a>
                            </td>
                            <td>14</td>
                            <td>0</td>
@@ -1021,7 +987,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0013.xml">anhaltkoethen_fruchtbringende_1628_0013.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0013.xml">anhaltkoethen_fruchtbringende_1628_0013.xml</a>
                            </td>
                            <td>15</td>
                            <td>0</td>
@@ -1040,7 +1006,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0008.xml">anhaltkoethen_fruchtbringende_1628_0008.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0008.xml">anhaltkoethen_fruchtbringende_1628_0008.xml</a>
                            </td>
                            <td>5</td>
                            <td>0</td>
@@ -1059,7 +1025,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data_structure/anhaltkoethen_fruchtbringende_1628/page/anhaltkoethen_fruchtbringende_1628_0007.xml">anhaltkoethen_fruchtbringende_1628_0007.xml</a>
+                              <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0007.xml">anhaltkoethen_fruchtbringende_1628_0007.xml</a>
                            </td>
                            <td>6</td>
                            <td>0</td>
