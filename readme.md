@@ -23,13 +23,16 @@ The METADATA.yml and LICENSE.md files provide specific information/metadata abou
            
 
 ```
-
-
-
-
-
-
 ### METADATA File format
 
 Description are coming
   
+### GitHub Action workflow
+
+#### OCR-D-Bagits
+
+Description are coming
+
+#### Ground Truth Analysis
+
+Description are coming
