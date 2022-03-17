@@ -13,7 +13,7 @@ jobs:
     - name: Git checkout
       uses: actions/checkout@v2
      
-    # Instalations
+    # Instalations and Foldering
       
     - name: install ocrd
       run: git clone --depth 1 https://github.com/OCR-D/core; ls -l;cd core; make install;cd ..;rm -rf core
@@ -29,9 +29,19 @@ jobs:
       
     - name: made gh-pages_out
       run: sudo mkdir ghout
-        
+    
+    # Bagit
+    
     - name: made bagit
       run: sh scripts/data_structure.sh
+      
+    # Transformation and analysis
+    
+    - name: Get SDK Version from config
+      id: lookupSdkVersion
+      uses: mikefarah/yq@master
+      with:
+       cmd: yq -o=json METADATA.yml > METADATA.json
            
     - name: transform METADATA and make GT-Overview
       run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=METADATA repoBase=$GITHUB_REF_NAME repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:ghout/metadata.md
