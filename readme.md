@@ -5,33 +5,27 @@
 Collection represents the entire repository. Collection is a placeholder for the concrete name of a collection.<br/><br/>
 💡 For example, `GermanBooks17thCentury`. 
 
-The METADATA.json and LICENCE.md files provide specific information/metadata about the repository.
+The METADATA.yml and LICENSE.md files provide specific information/metadata about the repository.
 
+**Images**: keep images in the same directory as the textual transcription (eg. GT-PAGE).
 
-The structure of the repo is the following:
+ The structure of the repo is the following:
 
 ```
-├── METADATA.json
+├── METADATA.yml
 ├── LICENSE.md
-└── Data
-      ├── data_document
-      │   └── document_title or identifer
-      │       ├── page
-      │       └── img-Folder (e.g. jpg or png or tif)     
-      ├── data_structure
-      │   └── document_title or identifer
-      │      ├── page
-      │      └── img-Folder (e.g. jpg or png or tif)     
-      ├── data_structure_and_text
-      │   └── document_title or identifer
-      │      ├── page
-      │      └── img-Folder (e.g. jpg or png or tif)     
-      └── data_line
-          └── document_title or identifer
-             ├── page
-             └── img-Folder (e.g. jpg or png or tif)     
+└── data
+      └── document_title or identifer
+          ├── GT-PAGE
+          ├── GT-ALTO
+          └── GT-LINE
+            
+           
 
 ```
+
+
+
 
 
 
