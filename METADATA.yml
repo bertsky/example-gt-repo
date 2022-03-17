@@ -1,0 +1,35 @@
+schema: https://github.com/tboenig/example-gt-repo/schema/2022-03-15/schema.json
+title: Example Ground Truth
+url: https://github.com/tboenig/example-gt-repo
+authors:
+  - name: Boenig
+    surname: Matthias
+    roles:
+      - transcriber
+      - project-manager
+      - digitization
+      - support
+description: >-
+  This repository serves as a template for similar repositories that wish to
+  make ground truth data publicly available. After review and the appropriate
+  licenses, this repo can be included in the OCR-D-GT repo.
+project-name: OCR-D
+project-website: https://ocr-d.de/en/
+language:
+  - deu
+script: []
+script-type: only-manuscript
+time:
+  notBefore: '1628'
+  notAfter: '1838'
+hands:
+  count: '1'
+  precision: exact
+license:
+  - name: CC0 1.0
+    url: https://creativecommons.org/licenses/zero/1.0/
+gtTyp: data_structure
+transcription-guidelines: >-
+  We used the OCR-D Ground Truth Guidelines
+  (https://ocr-d.de/en/gt-guidelines/trans/).
+format: Page-XML
