@@ -1416,8 +1416,21 @@
         </xsl:if>
         <xsl:if test="$output = 'METS'">
             
-            <xsl:message select="$conMets"></xsl:message>
-            <xsl:message select="$conImg"></xsl:message>
+            <xsl:variable name="test2">
+                <xsl:for-each select="collection($conMets)">
+                    <xsl:variable name="filename" select="base-uri()" />
+                    <mets><xsl:attribute name="file" select="$filename"/></mets>
+                </xsl:for-each>
+                
+                <xsl:for-each select="collection($conImg)">
+                    <xsl:variable name="filename" select="base-uri()" />
+                    
+                    <img><xsl:attribute name="file" select="$filename"/></img>
+                </xsl:for-each>
+            </xsl:variable>
+            
+            <xsl:message select="$test2"></xsl:message>
+            
             
           <xsl:if test="$conMets !=''">
             <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
