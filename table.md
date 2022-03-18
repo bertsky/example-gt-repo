@@ -183,14 +183,14 @@
          </thead>
          <tbody>
             <tr>
-               <th/>
-               <td>404</td>
+               <th>anthus_esskunst_1838</th>
+               <td>117</td>
                <td>0</td>
                <td>0</td>
-               <td>2</td>
                <td>0</td>
                <td>0</td>
-               <td>22</td>
+               <td>0</td>
+               <td>21</td>
                <td>0</td>
                <td>0</td>
                <td>0</td>
@@ -605,6 +605,53 @@
                            <td>0</td>
                            <td>0</td>
                         </tr>
+                     </table>
+                  </details>
+               </td>
+            </tr>
+            <tr>
+               <th>anhaltkoethen_fruchtbringende_1628</th>
+               <td>287</td>
+               <td>0</td>
+               <td>0</td>
+               <td>2</td>
+               <td>0</td>
+               <td>0</td>
+               <td>1</td>
+               <td>0</td>
+               <td>0</td>
+               <td>0</td>
+               <td>0</td>
+               <td>0</td>
+               <td>0</td>
+               <td>0</td>
+            </tr>
+            <tr>
+               <td colspan="17" style="text-align:left !important;">
+                  <details>
+                     <summary>Overview</summary>
+                     <table>
+                        <thead>
+                           <tr>
+                              <th>document</th>
+                              <th>TxtRegion</th>
+                              <th>ImgRegion</th>
+                              <th>LineDrawRegion</th>
+                              <th>GraphRegion</th>
+                              <th>TabRegion</th>
+                              <th>ChartRegion</th>
+                              <th>SepRegion</th>
+                              <th>MathRegion</th>
+                              <th>ChemRegion</th>
+                              <th>MusicRegion</th>
+                              <th>AdRegion</th>
+                              <th>NoiseRegion</th>
+                              <th>UnkownRegion</th>
+                              <th>CustomRegion</th>
+                              <th>TextLine</th>
+                              <th>Page</th>
+                           </tr>
+                        </thead>
                         <tr>
                            <td>
                               <a href="https://github.com/tboenig/example-gt-repo/blob/main/data/anhaltkoethen_fruchtbringende_1628/GT-PAGE/anhaltkoethen_fruchtbringende_1628_0003.xml">anhaltkoethen_fruchtbringende_1628_0003.xml</a>
