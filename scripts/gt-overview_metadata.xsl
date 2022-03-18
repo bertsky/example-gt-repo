@@ -122,7 +122,7 @@
                      
                          <xsl:element name="array"><xsl:attribute name="key">volume_region</xsl:attribute>
                          <xsl:element name="map">
-                             <xsl:attribute name="key1" select="substring-after(substring-before($filename, '/data/')[1], $gtTyp)"/>
+                             <xsl:attribute name="key1" select="substring-after(substring-before($filename, '/GT-PAGE/')[1], $gtTyp)"/>
                              <xsl:attribute name="key2" select="substring-after($filename, '/GT-PAGE/')"/>
                              <xsl:attribute name="file" select="$filename"/>
                              <string key="{$key1}"><xsl:value-of select="count(document($filename)//*/pc:TextRegion)"/></string>
@@ -157,6 +157,7 @@
         <xsl:if test="$output = 'METADATA'">
                  
                 <xsl:element name="div">
+                    <xsl:message select="$holeMetric"></xsl:message>
                     <xsl:attribute name="class">metadata</xsl:attribute>
                     <h2>Metadata</h2>
                     <dl class="grid">
