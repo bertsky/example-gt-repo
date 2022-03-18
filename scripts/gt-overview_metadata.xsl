@@ -1415,6 +1415,10 @@
             
         </xsl:if>
         <xsl:if test="$output = 'METS'">
+            
+            <xsl:message select="$conMets"></xsl:message>
+            <xsl:message select="$conImg"></xsl:message>
+            
           <xsl:if test="$conMets !=''">
             <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
                 <xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;
