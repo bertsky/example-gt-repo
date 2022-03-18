@@ -1413,7 +1413,7 @@
         <xsl:if test="$output = 'METS'">
        <xsl:variable name="test">
             <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
-                <xsl:value-of select="current-grouping-key()"/>
+                <xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>
             </xsl:for-each-group>
             
        </xsl:variable>
