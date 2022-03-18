@@ -1417,6 +1417,7 @@
         <xsl:if test="$output = 'METS'">
             
             <xsl:variable name="test2">
+                debug
                 <xsl:for-each select="collection($conMets)">
                     <xsl:variable name="filename" select="base-uri()" />
                     <mets><xsl:attribute name="file" select="$filename"/></mets>
