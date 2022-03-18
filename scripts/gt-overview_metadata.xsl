@@ -1424,9 +1424,9 @@
                 </xsl:for-each>
                 
                 <xsl:for-each select="collection($conImg)">
-                    <xsl:variable name="filename" select="document-uri()" />
+                    <xsl:variable name="filename1" select="base-uri()" />
                     
-                    <img><xsl:attribute name="file" select="$filename"/></img>
+                    <img><xsl:value-of select="$filename1" /></img>
                 </xsl:for-each>
             </xsl:variable>
             
