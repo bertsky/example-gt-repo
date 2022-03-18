@@ -99,7 +99,7 @@
     
     <xsl:template match="/">
         
-        <xsl:message select="$docMETADATA"></xsl:message>
+        
         
         <link rel="stylesheet" href="table_hide.css"/>
         
@@ -157,7 +157,7 @@
         <xsl:if test="$output = 'METADATA'">
                  
                 <xsl:element name="div">
-                    <xsl:message select="$holeMetric"></xsl:message>
+                    
                     <xsl:attribute name="class">metadata</xsl:attribute>
                     <h2>Metadata</h2>
                     <dl class="grid">
@@ -1413,7 +1413,7 @@
         <xsl:if test="$output = 'METS'">
        <xsl:variable name="test">
             <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
-                <xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>
+                <xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;
             </xsl:for-each-group>
             
        </xsl:variable>
