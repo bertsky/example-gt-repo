@@ -54,6 +54,11 @@ jobs:
     - name: Detailed table view
       run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=OVERVIEW repoBase=$GITHUB_REF_Name repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:ghout/overview.md
       shell: bash
+
+    - name: generated mets.sh
+      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=METS repoBase=$GITHUB_REF_Name repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:ghout/overview.md
+      shell: bash
+
                                                                                      
     - name: copy css styles and yml files to ghout
       run: sudo cp scripts/table_hide.css ghout/;sudo cp scripts/_config.yml ghout/ 
