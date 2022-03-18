@@ -1417,7 +1417,7 @@
             </xsl:for-each-group>
             
        
-            <xsl:message select="$test"></xsl:message>
+            
         </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
