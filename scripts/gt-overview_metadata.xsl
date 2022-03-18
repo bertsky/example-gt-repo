@@ -1421,7 +1421,7 @@
                 <xsl:for-each select="collection($conMets)">
                     <xsl:variable name="filename" select="base-uri()" />
                     
-                    <xsl:if test="$filename !=''">
+                    <xsl:if test="$filename =''">
                         <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
                             <xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;
                         </xsl:for-each-group>
