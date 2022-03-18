@@ -37,6 +37,10 @@
     
     <xsl:variable name="coll"><xsl:value-of select="$path"/>/?select=*.xml;recurse=yes</xsl:variable>
     
+    <xsl:variable name="conMets"><xsl:value-of select="$path"/>/?select=mets.xml;recurse=yes</xsl:variable>
+    
+    <xsl:variable name="conImg"><xsl:value-of select="$path"/>/?select=*.[jpgtiffpng]+;recurse=yes</xsl:variable>
+    
     <xsl:variable name="folder" select="base-uri()" />
     
     <xsl:param name="output"/>
@@ -1411,11 +1415,11 @@
             
         </xsl:if>
         <xsl:if test="$output = 'METS'">
-       
+          <xsl:if test="$conMets !=''">
             <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
                 <xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;
             </xsl:for-each-group>
-            
+          </xsl:if>
        
             
         </xsl:if>
