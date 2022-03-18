@@ -1420,24 +1420,30 @@
                 debug
                 <xsl:for-each select="collection($conMets)">
                     <xsl:variable name="filename" select="base-uri()" />
-                    <mets><xsl:attribute name="file" select="$filename"/></mets>
+                    
+                    <xsl:if test="$filename !=''">
+                        <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
+                            <xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;
+                        </xsl:for-each-group>
+                    </xsl:if>
+                    
+                    
+                    
+                    
+                    <!--<mets><xsl:attribute name="file" select="$filename"/></mets>-->
                 </xsl:for-each>
                 
-                <xsl:for-each select="collection($conImg)">
+                <!--<xsl:for-each select="collection($conImg)">
                     <xsl:variable name="filename1" select="base-uri()" />
                     
                     <img><xsl:value-of select="$filename1" /></img>
-                </xsl:for-each>
+                </xsl:for-each>-->
             </xsl:variable>
             
             <xsl:message select="$test2"></xsl:message>
             
             
-          <xsl:if test="$conMets !=''">
-            <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
-                <xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;
-            </xsl:for-each-group>
-          </xsl:if>
+          
        
             
         </xsl:if>
