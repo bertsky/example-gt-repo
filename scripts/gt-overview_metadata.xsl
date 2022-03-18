@@ -101,7 +101,7 @@
         
         
         
-        <link rel="stylesheet" href="table_hide.css"/>
+        
         
              <xsl:variable name="holeMetric">
                 <xsl:element name="array">
@@ -155,7 +155,7 @@
                 
              
         <xsl:if test="$output = 'METADATA'">
-                 
+            <link rel="stylesheet" href="table_hide.css"/>
                 <xsl:element name="div">
                     
                     <xsl:attribute name="class">metadata</xsl:attribute>
@@ -881,7 +881,7 @@
         
         
         <xsl:if test="$output = 'TABLE'">
-            
+            <link rel="stylesheet" href="table_hide.css"/>
             <xsl:if test="$docMETADATA//fn:map/fn:string[@key='gtTyp']/text()='data_structure'">
                 
                 <xsl:element name="div">
@@ -1280,7 +1280,7 @@
         
         
         <xsl:if test="$output = 'OVERVIEW'">
-            
+                <link rel="stylesheet" href="table_hide.css"/>
                 <link rel="stylesheet"
                     type="text/css"
                     href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css"/>
@@ -1411,12 +1411,12 @@
             
         </xsl:if>
         <xsl:if test="$output = 'METS'">
-       <xsl:variable name="test">
+       
             <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
                 <xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;
             </xsl:for-each-group>
             
-       </xsl:variable>
+       
             <xsl:message select="$test"></xsl:message>
         </xsl:if>
     </xsl:template>
