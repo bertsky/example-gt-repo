@@ -1428,20 +1428,22 @@
             
             
             <!--<xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;-->
-            <!--<xsl:message>
-                <xsl:if test="$test2 !=''">
+            <xsl:message>
+                
                     <xsl:value-of select="$test2"/>
-                </xsl:if>
-            </xsl:message>-->
+                
+            </xsl:message>
             
-            <xsl:if test="$test2 =''">
+            <xsl:variable name="test2">
                 <xsl:for-each select="collection($conPage)">
                     <xsl:variable name="filename" select="base-uri()" />
-                    <xsl:value-of select="substring-after($filename, 'file:')"/>
+                    hallo<xsl:value-of select="substring-after($filename, 'file:')"/>
                 </xsl:for-each>
+            </xsl:variable>
+            
+            <xsl:message select="$test2"></xsl:message>
                 
-                
-            </xsl:if>
+            
             
             
             
