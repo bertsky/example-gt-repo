@@ -1422,10 +1422,12 @@
                     <xsl:variable name="filename" select="base-uri()" />
                     
                     
-                    <xsl:for-each-group select="$holeMetric//*" group-adjacent="@key1">
-                            <xsl:variable name="a" select="current-grouping-key()"/>
+                    <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
+                            <xsl:variable name="a">
+                                <ab><xsl:value-of select="current-grouping-key()"/></ab>
+                            </xsl:variable>
                             
-                            <xsl:message select="$a"></xsl:message>
+                            <xsl:message select="$a"/>
                             
                             <xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;
                             
