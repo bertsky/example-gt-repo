@@ -1423,11 +1423,10 @@
             
 <!--            ocrd workspace add -g P0015 -G OCR-D-IMG -i OCR-D-IMG_0015 -m image/png OCR-D-IMG/OCR-D-IMG_0015.png-->
             
-            <xsl:for-each 
-                select="uri-collection($conMets)">
-                <datei2 name="{iri-to-uri(.)}"/>
-                
-                
+            <!-- Mets Control -->
+            
+            <xsl:for-each select="uri-collection($conMets)">
+                <cmets><xsl:value-of select="substring-before(iri-to-uri(.), 'mets.xml')"/></cmets>
             </xsl:for-each>
             
             
