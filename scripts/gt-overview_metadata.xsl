@@ -1419,8 +1419,9 @@
         <xsl:if test="$output = 'METS'">
                    <xsl:for-each
                         select="uri-collection($conPage)">
-                        <xsl:variable name="vfilename" select="base-uri()" />
-                        <datei filename="{$vfilename}"/>
+                       <datei name="{iri-to-uri(.)}">
+                           <xsl:value-of select="unparsed-text(.)"/>
+                       </datei>  
                     </xsl:for-each>
         </xsl:if>
     </xsl:template>
