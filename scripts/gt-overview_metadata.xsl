@@ -1429,9 +1429,9 @@
                             
                             
                         <test>
-                        <xsl:for-each-group select="$a" group-adjacent="$a//ab">
-                            <xsl:value-of select="distinct-values(current-group( ))"/>
-                        </xsl:for-each-group>
+                       
+                            <xsl:value-of select="distinct-values($a)"/>
+                        
                         </test>
                         
                         
