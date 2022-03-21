@@ -6,6 +6,7 @@
     xmlns:fn="http://www.w3.org/2005/xpath-functions"
     xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"
     xmlns:in="http://www.intern.de"
+    
     exclude-result-prefixes="#all"
     version="3.0">
     <xsl:output indent="yes" omit-xml-declaration="yes" method="xml"/>
@@ -1417,12 +1418,18 @@
             
         </xsl:if>
         <xsl:if test="$output = 'METS'">
-                   <xsl:for-each
-                        select="uri-collection($conPage)">
-                       <datei name="{iri-to-uri(.)}">
-                           <xsl:value-of select="unparsed-text(.)"/>
-                       </datei>  
-                    </xsl:for-each>
+            <xsl:text>ocrd workspace init </xsl:text>
+            
+            
+            <xsl:for-each 
+                select="uri-collection($conImg)">
+                <datei name="{iri-to-uri(.)}"/>
+                    
+                  
+            </xsl:for-each>
+            
+            
+            
         </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
