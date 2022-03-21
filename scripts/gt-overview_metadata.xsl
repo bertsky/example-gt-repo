@@ -1421,6 +1421,18 @@
             <xsl:text>ocrd workspace init </xsl:text>
             
             
+<!--            ocrd workspace add -g P0015 -G OCR-D-IMG -i OCR-D-IMG_0015 -m image/png OCR-D-IMG/OCR-D-IMG_0015.png-->
+            
+            <xsl:for-each 
+                select="uri-collection($conMets)">
+                <datei2 name="{iri-to-uri(.)}"/>
+                
+                
+            </xsl:for-each>
+            
+            
+            
+            
             <xsl:for-each 
                 select="uri-collection($conImg)">
                 <datei name="{iri-to-uri(.)}"/>
