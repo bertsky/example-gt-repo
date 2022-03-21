@@ -1423,12 +1423,12 @@
                     
                     
                         <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
-                            <xsl:if test="current-grouping-key() =''">
+                            <xsl:variable name="a" select="current-grouping-key()"/>
                             
-                            
+                            <xsl:message select="$a"></xsl:message>
                             
                             <xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;
-                            </xsl:if>
+                            
                         </xsl:for-each-group>
                     
                     
