@@ -1434,7 +1434,17 @@
                 </xsl:if>
             </xsl:message>-->
             
-            <xsl:message select="collection($conMets)"></xsl:message>
+            <xsl:if test="collection($conMets) =''">
+                <xsl:for-each select="collection($conPage)">
+                    <xsl:variable name="filename" select="base-uri()" />
+                    <xsl:value-of select="substring-after($filename, 'file:')"/>
+                </xsl:for-each>
+                
+                
+            </xsl:if>
+            
+            
+            
             
             
           
