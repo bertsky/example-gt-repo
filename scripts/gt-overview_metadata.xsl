@@ -1433,9 +1433,7 @@
             
             
             <xsl:variable name="wsp">
-                <xsl:for-each select="uri-collection($coll)">
-                    <xsl:text>ocrd workspace init </xsl:text> <xsl:value-of select="substring-before(iri-to-uri(.), 'GT-PAGE')"/>;
-                </xsl:for-each>
+                <xsl:for-each select="uri-collection($coll)"><xsl:text>ocrd workspace init </xsl:text> <xsl:value-of select="substring-before(iri-to-uri(.), 'GT-PAGE')"/>;</xsl:for-each>
             </xsl:variable>
             
             
@@ -1444,7 +1442,7 @@
                 
                 <xsl:message select="$wsp"></xsl:message>
                 
-                <!--<xsl:value-of select="distinct-values($wsp)"/>-->
+                <xsl:value-of select="distinct-values($wsp)"/>
             </xsl:if>
             
             
