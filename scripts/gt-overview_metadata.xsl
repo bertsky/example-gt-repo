@@ -1423,9 +1423,9 @@
                     
                     
                     <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
-                            <xsl:variable name="a">
+                            
                                 <ab><xsl:value-of select="current-grouping-key()"/></ab>
-                            </xsl:variable>
+                            
                             
                             
                         <!--<test>
