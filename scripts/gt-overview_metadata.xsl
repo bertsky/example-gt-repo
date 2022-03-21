@@ -1425,10 +1425,16 @@
             
             <!-- Mets Control -->
             
+            <xsl:variable name="cm">
             <xsl:for-each select="uri-collection($conMets)">
                 <cmets><xsl:value-of select="substring-before(iri-to-uri(.), 'mets.xml')"/></cmets>
             </xsl:for-each>
+            </xsl:variable>
             
+            
+            <xsl:if test="$cm//cmets = ''">
+                Hallo
+            </xsl:if>
             
             
             
