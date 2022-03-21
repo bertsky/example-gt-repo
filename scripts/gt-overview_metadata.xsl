@@ -1437,11 +1437,13 @@
             <xsl:variable name="test3">
                 <xsl:for-each select="collection($coll)">
                     <xsl:variable name="filename" select="base-uri()" />
-                    hallo<xsl:value-of select="substring-after($filename, 'file:')"/>
+                    <xsl:value-of select="substring-after($filename, 'file:')"/>
                 </xsl:for-each>
             </xsl:variable>
             
-            <xsl:message select="$test3"></xsl:message>
+            
+            
+            <xsl:message select="$test3[matches(.,'mets.xml')]"></xsl:message>
                 
             
             
