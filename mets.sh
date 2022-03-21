@@ -1,4 +1,6 @@
-ocrd workspace init <datei name="file:/home/runner/work/example-gt-repo/example-gt-repo/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0027.jpg"/>
+ocrd workspace init <datei2 name="file:/home/runner/work/example-gt-repo/example-gt-repo/data/anthus_esskunst_1838/mets.xml"/>
+<datei2 name="file:/home/runner/work/example-gt-repo/example-gt-repo/data/anhaltkoethen_fruchtbringende_1628/mets.xml"/>
+<datei name="file:/home/runner/work/example-gt-repo/example-gt-repo/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0027.jpg"/>
 <datei name="file:/home/runner/work/example-gt-repo/example-gt-repo/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0025.jpg"/>
 <datei name="file:/home/runner/work/example-gt-repo/example-gt-repo/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0024.jpg"/>
 <datei name="file:/home/runner/work/example-gt-repo/example-gt-repo/data/anthus_esskunst_1838/GT-PAGE/anthus_esskunst_1838_0018.jpg"/>
