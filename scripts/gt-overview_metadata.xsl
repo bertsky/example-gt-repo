@@ -1442,7 +1442,7 @@
                     
                     
                     
-                    <test><xsl:value-of select="."/></test>
+                    <test><xsl:value-of select="base-uri()"/></test>
                     
                     <!--<mets><xsl:attribute name="file" select="$filename"/></mets>-->
                 </xsl:for-each>
