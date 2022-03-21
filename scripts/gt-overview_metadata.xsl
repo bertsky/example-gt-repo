@@ -1427,9 +1427,16 @@
                                 <ab><xsl:value-of select="current-grouping-key()"/></ab>
                             </xsl:variable>
                             
-                            <xsl:message select="$a"/>
                             
-                            <xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;
+                        <test>
+                        <xsl:for-each-group select="$a" group-adjacent="$a//ab">
+                            <xsl:copy-of select="current-group( )[1]"/>
+                        </xsl:for-each-group>
+                        </test>
+                        
+                        
+                            
+                            <!--<xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;-->
                             
                         </xsl:for-each-group>
                     
