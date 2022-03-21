@@ -39,7 +39,7 @@
     
     <xsl:variable name="conMets"><xsl:value-of select="$path"/>/?select=mets.xml;recurse=yes</xsl:variable>
     
-    <xsl:variable name="conPage"><xsl:value-of select="$path"/>/?select=GT-PAGE/*.xml;recurse=yes</xsl:variable>
+    <xsl:variable name="conPage"><xsl:value-of select="$path"/>/?select=*GT-PAGE/*.xml;recurse=yes</xsl:variable>
     
     <xsl:variable name="conImg"><xsl:value-of select="$path"/>/?select=*.[jpgtiffpng]+;recurse=yes</xsl:variable>
     
@@ -1435,7 +1435,7 @@
             </xsl:message>
             
             <xsl:variable name="test3">
-                <xsl:for-each select="collection($conPage)">
+                <xsl:for-each select="collection($conImg)">
                     <xsl:variable name="filename" select="base-uri()" />
                     hallo<xsl:value-of select="substring-after($filename, 'file:')"/>
                 </xsl:for-each>
