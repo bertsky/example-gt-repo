@@ -1430,7 +1430,7 @@
                             
                         <test>
                         <xsl:for-each-group select="$a" group-adjacent="$a//ab">
-                            <xsl:copy-of select="distinct-values(current-group( ))"/>
+                            <xsl:value-of select="distinct-values(current-group( ))"/>
                         </xsl:for-each-group>
                         </test>
                         
