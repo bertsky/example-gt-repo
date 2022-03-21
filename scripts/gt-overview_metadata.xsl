@@ -1432,8 +1432,16 @@
             </xsl:variable>
             
             
+            <xsl:variable name="wsp">
+                <xsl:for-each select="uri-collection($coll)">
+                    <xsl:text>ocrd workspace init </xsl:text> <xsl:value-of select="iri-to-uri(.)[1]"/>
+                </xsl:for-each>
+            </xsl:variable>
+            
+            
+            
             <xsl:if test="$cm = ''">
-                Hallo
+                <xsl:value-of select="$wsp"/> 
             </xsl:if>
             
             
