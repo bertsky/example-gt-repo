@@ -1422,31 +1422,19 @@
                 
                 <xsl:for-each select="collection($conMets)">
                     <xsl:variable name="filename" select="base-uri()" />
-                    
-                    
-                    
-                        
-                        
-                            
-                            <!--<xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;-->
-                            
-                        
-                    
-                    
-                    
-                    <test><xsl:value-of select="substring-after($filename, 'file:')"/></test>
-                    
-                    
-                </xsl:for-each>
-                
-                
-            </xsl:variable>
+                        <xsl:value-of select="substring-after($filename, 'file:')"/>
+                     </xsl:for-each>
+                </xsl:variable>
             
-            <xsl:message>
+            
+            <!--<xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;-->
+            <!--<xsl:message>
                 <xsl:if test="$test2 !=''">
                     <xsl:value-of select="$test2"/>
                 </xsl:if>
-            </xsl:message>
+            </xsl:message>-->
+            
+            <xsl:message select="collection($conMets)"></xsl:message>
             
             
           
