@@ -1417,7 +1417,7 @@
         <xsl:if test="$output = 'METS'">
             
             <xsl:variable name="test2">
-                debugy
+                
                 <xsl:for-each select="collection($conMets)">
                     <xsl:variable name="filename" select="base-uri()" />
                     
@@ -1428,11 +1428,11 @@
                             </xsl:variable>
                             
                             
-                        <test>
+                        <!--<test>
                        
                             <xsl:value-of select="distinct-values($a)"/>
                         
-                        </test>
+                        </test>-->
                         
                         
                             
