@@ -1454,7 +1454,7 @@
                 </xsl:for-each>-->
             </xsl:variable>
             
-            <xsl:message select="distinct-values($test2)"></xsl:message>
+            <xsl:message select="$test2"></xsl:message>
             
             
           
