@@ -39,6 +39,8 @@
     
     <xsl:variable name="conMets"><xsl:value-of select="$path"/>/?select=mets.xml;recurse=yes</xsl:variable>
     
+    <xsl:variable name="conPage"><xsl:value-of select="$path"/>/?select=GT-PAGE;recurse=yes</xsl:variable>
+    
     <xsl:variable name="conImg"><xsl:value-of select="$path"/>/?select=*.[jpgtiffpng]+;recurse=yes</xsl:variable>
     
     <xsl:variable name="folder" select="base-uri()" />
@@ -1440,7 +1442,11 @@
                 
             </xsl:variable>
             
-            <xsl:message select="$test2"></xsl:message>
+            <xsl:message>
+                <xsl:if test="$test2 !=''">
+                    <xsl:value-of select="$test2"/>
+                </xsl:if>
+            </xsl:message>
             
             
           
