@@ -1423,7 +1423,7 @@
                     
                     
                         <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
-                            <xsl:variable name="a" select="current-grouping-key()"/>
+                            <xsl:variable name="a" select="current-grouping-key()[1]"/>
                             
                             <xsl:message select="$a"></xsl:message>
                             
