@@ -1432,7 +1432,7 @@
             </xsl:variable>
             
             
-            <xsl:if test="$cm//cmets = ''">
+            <xsl:if test="$cm = ''">
                 Hallo
             </xsl:if>
             
