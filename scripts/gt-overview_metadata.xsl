@@ -1422,36 +1422,22 @@
                     <xsl:variable name="filename" select="base-uri()" />
                     
                     
-                    <!--<xsl:for-each-group select="$holeMetric//*" group-by="@key1">
-                            
-                                <xsl:value-of select="current-grouping-key()"/>,
-                            
-                            
-                            
-                        <!-\-<test>
-                       
-                            <xsl:value-of select="distinct-values($a)"/>
-                        
-                        </test>-\->
+                    
                         
                         
                             
-                            <!-\-<xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;-\->
+                            <!--<xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;-->
                             
-                        </xsl:for-each-group>-->
+                        
                     
                     
                     
-                    <test><xsl:value-of select="base-uri()"/></test>
+                    <test><xsl:value-of select="substring-after($filename, 'file:')"/></test>
                     
-                    <!--<mets><xsl:attribute name="file" select="$filename"/></mets>-->
+                    
                 </xsl:for-each>
                 
-                <!--<xsl:for-each select="collection($conImg)">
-                    <xsl:variable name="filename1" select="base-uri()" />
-                    
-                    <img><xsl:value-of select="$filename1" /></img>
-                </xsl:for-each>-->
+                
             </xsl:variable>
             
             <xsl:message select="$test2"></xsl:message>
