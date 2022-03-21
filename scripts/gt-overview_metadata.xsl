@@ -1438,12 +1438,7 @@
             
             
             
-            <xsl:if test="$cm = ''">
-                
-                <xsl:message select="$wsp"></xsl:message>
-                
-                <xsl:value-of select="distinct-values($wsp)"/>
-            </xsl:if>
+            <xsl:if test="$cm = ''"><xsl:value-of select="distinct-values($wsp)"/></xsl:if>
             
             
             
