@@ -1427,14 +1427,14 @@
             
             <xsl:variable name="cm">
             <xsl:for-each select="uri-collection($conMets)">
-                <cmets><xsl:value-of select="substring-before(iri-to-uri(.), 'mets.xml')"/></cmets>
+                <xsl:value-of select="substring-before(iri-to-uri(.), 'mets.xml')"/>
             </xsl:for-each>
             </xsl:variable>
             
             
             <xsl:variable name="wsp">
                 <xsl:for-each select="uri-collection($coll)">
-                    <xsl:text>ocrd workspace init </xsl:text> <xsl:value-of select="iri-to-uri(.)[1]"/>
+                    <xsl:text>ocrd workspace init </xsl:text> <xsl:value-of select="substring-before(iri-to-uri(.), 'GT-PAGE')"/>
                 </xsl:for-each>
             </xsl:variable>
             
