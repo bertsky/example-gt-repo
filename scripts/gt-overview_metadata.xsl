@@ -1417,43 +1417,11 @@
             
         </xsl:if>
         <xsl:if test="$output = 'METS'">
-            
-            <xsl:variable name="test2">
-                
-                <xsl:for-each select="collection($conMets)">
-                    <xsl:variable name="filename" select="base-uri()" />
-                        <xsl:value-of select="substring-after($filename, 'file:')"/>
-                     </xsl:for-each>
-                </xsl:variable>
-            
-            
-            <!--<xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="current-grouping-key()"/>;-->
-            <xsl:message>
-                
-                    <xsl:value-of select="$test2"/>
-                
-            </xsl:message>
-            
-            <xsl:variable name="test3">
-                <xsl:for-each select="collection($conImg)">
-                    <xsl:variable name="filename" select="base-uri()" />
-                    hallo<xsl:value-of select="substring-after($filename, 'file:')"/>
-                </xsl:for-each>
-            </xsl:variable>
-            
-            
-            
-            <xsl:message select="$test3"></xsl:message>
-                
-            
-            
-            
-            
-            
-            
-          
-       
-            
+                   <xsl:for-each
+                        select="uri-collection($conPage)">
+                        <xsl:variable name="vfilename" select="base-uri()" />
+                        <datei filename="{$vfilename}"/>
+                    </xsl:for-each>
         </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
