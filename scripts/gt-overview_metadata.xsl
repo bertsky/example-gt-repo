@@ -1434,14 +1434,14 @@
                 
             </xsl:message>
             
-            <xsl:variable name="test2">
+            <xsl:variable name="test3">
                 <xsl:for-each select="collection($conPage)">
                     <xsl:variable name="filename" select="base-uri()" />
                     hallo<xsl:value-of select="substring-after($filename, 'file:')"/>
                 </xsl:for-each>
             </xsl:variable>
             
-            <xsl:message select="$test2"></xsl:message>
+            <xsl:message select="$test3"></xsl:message>
                 
             
             
