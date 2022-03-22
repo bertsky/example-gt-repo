@@ -1434,13 +1434,17 @@
             
             <xsl:variable name="wsp">
                 <xsl:for-each select="uri-collection($coll)">
-                    <ws><xsl:text>ocrd workspace init </xsl:text> <xsl:value-of select="iri-to-uri(.)"/><!--<xsl:value-of select="substring-before(iri-to-uri(.), 'GT-PAGE')"/>--></ws>
+                    <ws><xsl:value-of select="distinct-values(substring-before(iri-to-uri(.), 'GT-PAGE'))"/></ws>
                 </xsl:for-each>
             </xsl:variable>
             
             
             
-            <xsl:if test="$cm = ''"><xsl:value-of select="distinct-values($wsp//ws)"/></xsl:if>
+            <xsl:if test="$cm = ''">
+                <xsl:for-each select="$wsp//ws">
+                    <xsl:text>ocrd workspace init </xsl:text> <xsl:value-of select="."/>
+                </xsl:for-each>
+            </xsl:if>
             
             
             
