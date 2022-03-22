@@ -32,8 +32,8 @@ jobs:
     
     # Bagit
     
-    - name: made bagit
-      run: sh scripts/data_structure.sh
+    #- name: made bagit
+    #  run: sh scripts/data_structure.sh
       
     # Transformation and analysis
     
