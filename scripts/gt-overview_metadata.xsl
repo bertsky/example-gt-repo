@@ -1418,7 +1418,7 @@
             
         </xsl:if>
         <xsl:if test="$output = 'METS'">
-            <xsl:text>ocrd workspace init </xsl:text>
+            
             
             
 <!--            ocrd workspace add -g P0015 -G OCR-D-IMG -i OCR-D-IMG_0015 -m image/png OCR-D-IMG/OCR-D-IMG_0015.png-->
@@ -1434,17 +1434,13 @@
             
             <xsl:variable name="wsp">
                 <xsl:for-each select="uri-collection($coll)">
-                    <ws><xsl:value-of select="distinct-values(substring-before(iri-to-uri(.), 'GT-PAGE'))"/></ws>
+                    <ws><xsl:text>ocrd workspace init </xsl:text> <xsl:value-of select="substring-before(iri-to-uri(.), 'GT-PAGE')"/></ws>
                 </xsl:for-each>
             </xsl:variable>
             
             
             
-            <xsl:if test="$cm = ''">
-                <xsl:for-each select="$wsp//ws">
-                    <xsl:text></xsl:text> <xsl:value-of select="."/>
-                </xsl:for-each>
-            </xsl:if>
+            <xsl:if test="$cm = ''"><xsl:value-of select="distinct-values($wsp//ws)"/></xsl:if>
             
             
             
