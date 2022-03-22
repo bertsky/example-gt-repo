@@ -59,12 +59,6 @@ jobs:
       run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=METS repoBase=$GITHUB_REF_Name repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:scripts/mets.sh
       shell: bash
   
-    - name: gernerated mets files
-      if: 'scripts/mets.sh'
-      run: sh scripts/mets.sh
-      shell: bash
-
-
     - name: made bagit
       run: sh scripts/data_structure.sh  
 
