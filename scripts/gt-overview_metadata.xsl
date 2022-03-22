@@ -1432,11 +1432,15 @@
             </xsl:variable>
             
             
-            <xsl:variable name="wsp"><xsl:for-each select="collection($coll)">'<xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="substring-before(., 'GT-PAGE')"/>',</xsl:for-each></xsl:variable>
+            <xsl:variable name="wsp">
+                <xsl:for-each select="collection($coll)">
+                    <ws><xsl:text>ocrd workspace init </xsl:text><xsl:value-of select="substring-before(., 'GT-PAGE')"/></ws>
+                </xsl:for-each>
+            </xsl:variable>
             
             
             
-            <xsl:if test="$cm = ''"><xsl:value-of select="distinct-values($wsp)"/></xsl:if>
+            <xsl:if test="$cm = ''"><xsl:value-of select="distinct-values($wsp//ws)"/></xsl:if>
             
             
             
