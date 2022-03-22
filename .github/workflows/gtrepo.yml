@@ -60,7 +60,7 @@ jobs:
       shell: bash
   
     - name: gernerated mets files
-      if: scripts/mets.sh
+      if: 'scripts/mets.sh'
       run: sh scripts/mets.sh
       shell: bash
 
