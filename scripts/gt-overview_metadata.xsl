@@ -1434,7 +1434,7 @@
             
             <xsl:variable name="wsp">
                 <xsl:for-each select="uri-collection($coll)">
-                    <ws><xsl:text>ocrd workspace init </xsl:text> <xsl:value-of select="substring-after(substring-before(iri-to-uri(.), 'GT-PAGE'), 'file:')"/></ws>
+                    <ws><xsl:text>ocrd workspace init </xsl:text> <xsl:value-of select="substring-after(substring-before(iri-to-uri(.), 'GT-PAGE'), 'file:')"/>;</ws>
                 </xsl:for-each>
             </xsl:variable>
             
