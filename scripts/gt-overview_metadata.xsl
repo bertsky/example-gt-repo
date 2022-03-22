@@ -1442,7 +1442,7 @@
             
             <xsl:if test="$cm = ''">
                 <xsl:for-each select="$wsp//ws">
-                    <xsl:text>ocrd workspace init </xsl:text> <xsl:value-of select="."/>
+                    <xsl:text></xsl:text> <xsl:value-of select="."/>
                 </xsl:for-each>
             </xsl:if>
             
