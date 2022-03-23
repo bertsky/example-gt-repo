@@ -1425,7 +1425,11 @@
             
             <!-- Mets Control -->
             
-            
+            <xsl:variable name="cm">
+            <xsl:for-each select="uri-collection($conMets)">
+                <xsl:value-of select="substring-before(iri-to-uri(.), 'mets.xml')"/>
+            </xsl:for-each>
+            </xsl:variable>
             
             
             <xsl:variable name="wsp">
@@ -1436,7 +1440,7 @@
             
             
             <xsl:variable name="test">
-            <xsl:value-of select="distinct-values($wsp//ws)"/>
+            <xsl:if test="$cm = ''"><xsl:value-of select="distinct-values($wsp//ws)"/></xsl:if>
             
             
             
@@ -1449,7 +1453,9 @@
             
             </xsl:variable>
             
-            <xsl:message select="$test"/>
+            <xsl:message select="$cm"></xsl:message>
+            <xsl:text>Hallo</xsl:text>
+            <xsl:message select="$test"></xsl:message>
             
         </xsl:if>
     </xsl:template>
