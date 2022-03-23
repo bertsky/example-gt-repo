@@ -59,8 +59,8 @@ jobs:
       run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=METS repoBase=$GITHUB_REF_Name repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:scripts/mets.sh
       shell: bash
   
-     -name: pwdy
-      run: pwd
+    - name: testy
+      run: pwd 
 
 
     - name: made bagit
