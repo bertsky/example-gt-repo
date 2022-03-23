@@ -1454,8 +1454,8 @@
             </xsl:variable>
             
             <xsl:message select="$cm"></xsl:message>
-            <xsl:text>Hallo</xsl:text>
-            <xsl:message select="$test"></xsl:message>
+            <!--<xsl:text>Hallo</xsl:text>
+            <xsl:message select="$test"></xsl:message>-->
             
         </xsl:if>
     </xsl:template>
