@@ -1426,9 +1426,11 @@
             <!-- Mets Control -->
             
             <xsl:variable name="cm">
+                <test>
             <xsl:for-each select="uri-collection($conMets)">
                 <xsl:value-of select="substring-before(iri-to-uri(.), 'mets.xml')"/>
             </xsl:for-each>
+                </test>
             </xsl:variable>
             
             
