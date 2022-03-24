@@ -132,7 +132,7 @@
                              <xsl:attribute name="key1" select="substring-after(substring-before($filename, '/GT-PAGE/')[1], 'data/')"/>
                              <xsl:attribute name="key2" select="substring-after($filename, '/GT-PAGE/')"/>
                              <xsl:attribute name="file" select="$filename"/>
-                             <imgage><xsl:value-of select="document($filename)//*/pc:Metadata/@externalRef"/></imgage>
+                             <image><xsl:value-of select="document($filename)//*/pc:Metadata/@externalRef"/></image>
                              <string key="{$key1}"><xsl:value-of select="count(document($filename)//*/pc:TextRegion)"/></string>
                              <string key="{$key2}"><xsl:value-of select="count(document($filename)//*/pc:ImageRegion)"/></string>
                              <string key="{$key3}"><xsl:value-of select="count(document($filename)//*/pc:LineDrawingRegion)"/></string>
@@ -1445,9 +1445,9 @@
             <xsl:variable name="gMets">
             <xsl:if test="$cMets//mets = ''">
                 
-                <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
-                    <td><xsl:value-of select="imgage"/></td>
-                </xsl:for-each-group>
+                <xsl:for-each select="$holeMetric/array/array">
+                    <td><xsl:value-of select="map/image"/></td>
+                </xsl:for-each>
             </xsl:if>
             
             
