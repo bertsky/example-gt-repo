@@ -1443,20 +1443,25 @@
             
             
             <xsl:variable name="gMets">
-            <xsl:if test="$cMets//mets = ''">test<xsl:value-of select="$holeMetric"/></xsl:if>
+            <xsl:if test="$cMets//mets = ''">
+                
+                <xsl:for-each-group select="$holeMetric//*" group-by="@key1">
+                    <td><xsl:value-of select="imgage"/></td>
+                </xsl:for-each-group>
+            </xsl:if>
             
             
             
-            <xsl:for-each 
+            <!--<xsl:for-each 
                 select="uri-collection($conImg)">
                 <datei name="{iri-to-uri(.)}"/>
                     
                   
-            </xsl:for-each>
+            </xsl:for-each>-->
             
             </xsl:variable>
             
-            <xsl:message select="$holeMetric"></xsl:message>
+            <xsl:message select="$gMets"></xsl:message>
             <!--<xsl:text>Hallo</xsl:text>
             <xsl:message select="$test"></xsl:message>-->
             
