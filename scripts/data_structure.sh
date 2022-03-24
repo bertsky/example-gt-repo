@@ -13,12 +13,7 @@ if test -f "mets.xml"; then
 
 else
  
-    cd $path/$eachfile;cd ..;ocrd workspace init ${PWD##*/};pwd;ls -l;sudo mkdir $path/ghout/${PWD##*/};sudo mv $path/$eachfile/mets.xml $path/ghout/${PWD##*/}/ 
+    cd $path/$eachfile;cd ..;ocrd workspace init ${PWD##*/};sudo mkdir $path/ghout/${PWD##*/};sudo mv $path/$eachfile/mets.xml $path/ghout/${PWD##*/}/ 
     
 fi
 done
-
-
-
-
-
