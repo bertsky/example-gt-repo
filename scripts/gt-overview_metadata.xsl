@@ -1446,7 +1446,7 @@
             <xsl:if test="$cMets//mets = ''">
                 
                 <xsl:for-each select="$holeMetric/array/array">
-                    <td><xsl:value-of select="map/@key2"/></td>
+                    <td><xsl:value-of select="map/@file"/></td>
                     <td><xsl:value-of select="map/image"/></td>
                 </xsl:for-each>
             </xsl:if>
