@@ -1456,7 +1456,7 @@
             
             </xsl:variable>
             
-            <xsl:message select="$gMets"></xsl:message>
+            <xsl:message select="$holeMetric"></xsl:message>
             <!--<xsl:text>Hallo</xsl:text>
             <xsl:message select="$test"></xsl:message>-->
             
