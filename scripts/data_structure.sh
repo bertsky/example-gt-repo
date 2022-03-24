@@ -11,16 +11,9 @@ if test -f "mets.xml"; then
 
 else
  
-    echo "sh mets.sh"
-
+    cd $path/data/$eachfile;ocrd workspace init $eachfile;sudo mkdir ghout/$eachfile;sudo mv $path/data/$eachfile/mets.xml ghout/$eachfile/ 
+    
 fi
-
-
-
-   
-   
-   
-   
 done
 
 
