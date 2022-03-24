@@ -1,17 +1,19 @@
 #!/bin/bash
 metsfiles=`ls data/`
+page=`find -name 'GT-PAGE'`
 path=`pwd`
 
-for eachfile in $metsfiles
+for eachfile in $page
 do
-cd $path/data/$eachfile
+cd $path/$eachfile;cd ..
 
 if test -f "mets.xml"; then
-    cd $path/data/$eachfile;ocrd zip bag -i ocrd_data_structur_$eachfile;sudo mv $path/data/*.zip $path/ocrdzip_out/
+    echo "cd $path/$eachfile;cd ..;ocrd zip bag -i ocrd_data_structur_${PWD##*/};sudo mv $path/data/*.zip $path/ocrdzip_out/
+    
 
 else
  
-    cd $path/data/$eachfile;ocrd workspace init $eachfile;pwd;ls -l;sudo mkdir $path/ghout/$eachfile;sudo mv $path/data/$eachfile/mets.xml $path/ghout/$eachfile/ 
+    cd $path/$eachfile;cd ..;ocrd workspace init ${PWD##*/};pwd;ls -l;sudo mkdir $path/ghout/${PWD##*/};sudo mv $path/$eachfile/mets.xml $path/ghout/${PWD##*/}/ 
     
 fi
 done
