@@ -1443,7 +1443,7 @@
             
             
             <xsl:variable name="gMets">
-            <xsl:if test="$cMets//mets = ''"><xsl:value-of select="$holeMetric"/></xsl:if>
+            <xsl:if test="$cMets//mets = ''">test<xsl:value-of select="$holeMetric"/></xsl:if>
             
             
             
