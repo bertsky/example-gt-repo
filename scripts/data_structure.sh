@@ -11,7 +11,7 @@ if test -f "mets.xml"; then
 
 else
  
-    cd $path/data/$eachfile;ocrd workspace init $eachfile;sudo mkdir $path/ghout/$eachfile;sudo mv $path/data/$eachfile/mets.xml $path/ghout/$eachfile/ 
+    cd $path/data/$eachfile;ocrd workspace init $eachfile;pwd;ls -l;sudo mkdir $path/ghout/$eachfile;sudo mv $path/data/$eachfile/mets.xml $path/ghout/$eachfile/ 
     
 fi
 done
