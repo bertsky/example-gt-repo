@@ -1446,8 +1446,8 @@
             <xsl:if test="$cMets//mets = ''">
                 
                 <xsl:for-each select="$holeMetric/array/array">
-                    <td1><xsl:value-of select="substring-before(map/@file, 'GT-PAGE')"/></td1>
-                    <td2><xsl:value-of select="map/image"/></td2>
+                    <td1>cd <xsl:value-of select="substring-before(map/@file, 'GT-PAGE')"/></td1>
+                    <td2>ocrd workspace add -g P<xsl:number format="0001"/> -G OCR-D-IMG -i OCR-D-IMG_<xsl:number format="0001"/> -m image/<xsl:value-of select="substring-after(tokenize(map/image, '/')[last()], '.')"/> <xsl:value-of select="map/image"/></td2>
                 </xsl:for-each>
             </xsl:if>
             
