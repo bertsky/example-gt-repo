@@ -6,14 +6,14 @@ path=`pwd`
 for eachfile in $page
 do
 cd $path/$eachfile;cd ..
-
+p=`pwd`
 if test -f "mets.xml"; then
-    echo "cd $path/$eachfile;cd ..;ocrd zip bag -i ocrd_data_structur_${PWD##*/};sudo mv $path/data/*.zip $path/ocrdzip_out/
+    cd $path/$eachfile;cd ..;ocrd zip bag -i ocrd_data_structur_${PWD##*/};sudo mv $path/data/*.zip $path/ocrdzip_out/
     
 
 else
  
-    cd $path/$eachfile;cd ..;ocrd workspace init ${PWD##*/};sudo mkdir $path/ghout/${PWD##*/};sudo mv $path/$eachfile/mets.xml $path/ghout/${PWD##*/}/ 
+    cd $path/$eachfile;cd ..;ocrd workspace init ${PWD##*/};sudo mkdir $path/ghout/${PWD##*/};sudo mv $p/mets.xml $path/ghout/${PWD##*/}/
     
 fi
 done
