@@ -133,7 +133,7 @@
                              <xsl:attribute name="key2" select="substring-after($filename, '/GT-PAGE/')"/>
                              <xsl:attribute name="file" select="$filename"/>
                              <image><xsl:value-of select="document($filename)//*/pc:Metadata/@externalRef"/></image>
-                             <page><xsl:value-of select="$filename"/></page>
+                             <page><xsl:value-of select="substring-before($filename, '/GT-PAGE/')"/></page>
                              <string key="{$key1}"><xsl:value-of select="count(document($filename)//*/pc:TextRegion)"/></string>
                              <string key="{$key2}"><xsl:value-of select="count(document($filename)//*/pc:ImageRegion)"/></string>
                              <string key="{$key3}"><xsl:value-of select="count(document($filename)//*/pc:LineDrawingRegion)"/></string>
