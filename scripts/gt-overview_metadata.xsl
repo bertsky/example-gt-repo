@@ -1446,8 +1446,8 @@
             <xsl:if test="$cMets//mets = ''">
                 
                 <xsl:for-each select="$holeMetric/array/array">
-                    <td><xsl:value-of select="map/@file"/></td>
-                    <td><xsl:value-of select="map/image"/></td>
+                    <td1><xsl:value-of select="substring-before(map/@file, 'GT-PAGE')"/></td1>
+                    <td2><xsl:value-of select="map/image"/></td2>
                 </xsl:for-each>
             </xsl:if>
             
