@@ -132,7 +132,8 @@
                              <xsl:attribute name="key1" select="substring-after(substring-before($filename, '/GT-PAGE/')[1], 'data/')"/>
                              <xsl:attribute name="key2" select="substring-after($filename, '/GT-PAGE/')"/>
                              <xsl:attribute name="file" select="$filename"/>
-                             <image><xsl:value-of select="document($filename)//*/pc:Metadata/@externalRef"/></image>
+                             <image1><xsl:value-of select="document($filename)//*/pc:Metadata/@externalRef"/></image1>
+                             <image2><xsl:value-of select="document($filename)//*/pc:Page/@imageFilename"/></image2>
                              <page><xsl:value-of select="substring-after($filename, '/GT-PAGE/')"/></page>
                              <string key="{$key1}"><xsl:value-of select="count(document($filename)//*/pc:TextRegion)"/></string>
                              <string key="{$key2}"><xsl:value-of select="count(document($filename)//*/pc:ImageRegion)"/></string>
@@ -1448,7 +1449,7 @@
                 
                 <xsl:for-each select="$holeMetric/array/array">
                     <td1>cd <xsl:value-of select="substring-before(map/@file, 'GT-PAGE')"/></td1>
-                    <td2>ocrd workspace add -g P<xsl:number format="0001"/> -G OCR-D-IMG -i OCR-D-IMG_<xsl:number format="0001"/> -m image/<xsl:value-of select="substring-after(tokenize(map/image, '/')[last()], '.')"/><xsl:text> </xsl:text>Image:<xsl:value-of select="map/image"/><xsl:text> </xsl:text>Page:<xsl:value-of select="map/page"/></td2>
+                    <td2>ocrd workspace add -g P<xsl:number format="0001"/> -G OCR-D-IMG -i OCR-D-IMG_<xsl:number format="0001"/> -m image/<xsl:value-of select="substring-after(tokenize(map/image, '/')[last()], '.')"/><xsl:text> </xsl:text>Image1:<xsl:value-of select="map/image1"/><xsl:text> </xsl:text>Image2:<xsl:value-of select="map/image2"/><xsl:text> </xsl:text>Page:<xsl:value-of select="map/page"/></td2>
                 </xsl:for-each>
             </xsl:if>
             
