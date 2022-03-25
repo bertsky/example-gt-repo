@@ -3,6 +3,7 @@ metsfiles=`ls data/`
 page=`find -name 'GT-PAGE'`
 path=`pwd`
 
+cd /home/runner/work/DTGT/DTGT/data/Die_paepstliche_Unfehlbarkeit/;pwd
 for eachfile in $page
 do
 cd $path/$eachfile;cd ..
