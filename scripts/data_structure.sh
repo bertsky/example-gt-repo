@@ -9,7 +9,7 @@ do
 cd $path/$eachfile;cd ..
 p=`pwd`
 if test -f "mets.xml"; then
-    cd $p;cd ..;ocrd zip bag -i ocrd_data_structur_${PWD##*/};cd ${PWD##*/};sudo mv $path/data/*.zip $path/ocrdzip_out/
+    cd $p;ocrd zip bag -i ocrd_data_structur_${PWD##*/};cd ${PWD##*/};sudo mv $path/data/*.zip $path/ocrdzip_out/
     
 
 else
