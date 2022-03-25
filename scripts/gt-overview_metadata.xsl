@@ -1437,55 +1437,25 @@
             </xsl:variable>
             
             
-            <xsl:variable name="wsp">
-                <xsl:for-each select="uri-collection($coll)">
-                    <ws><xsl:text>ocrd workspace init </xsl:text> <xsl:value-of select="substring-after(substring-before(iri-to-uri(.), 'GT-PAGE'), 'file:')"/>;</ws>
-                </xsl:for-each>
-            </xsl:variable>
-            
-            
-            <xsl:variable name="gMets">
             <xsl:if test="$cMets//mets = ''">
-                
                 <xsl:for-each select="$holeMetric/array/array">
-                    <!--<td1>cd <xsl:value-of select="substring-before(map/@file, 'GT-PAGE')"/></td1>-->
-                    <td2>
-                        <!--ocrd workspace add -g P<xsl:number format="0001"/> -G OCR-D-IMG -i OCR-D-IMG_<xsl:number format="0001"/> -m image/<xsl:value-of select="substring-after(tokenize(map/image, '/')[last()], '.')"/>--> 
-                    
-                        <!--Image1:<xsl:value-of select="map/image1"/><xsl:text> </xsl:text>-->
                         <xsl:variable name="Image2" select="substring-before(map/image2, '.')"/>
                         <xsl:variable name="Page" select="substring-before(map/page, '.')"/>
-                        <xsl:if test="$Image2 = $Page">
-                            
+                        
+                       <xsl:if test="$Image2 = $Page">
                             cd <xsl:value-of select="substring-after(substring-before(map/@file, 'GT-PAGE'), 'file:')"/>
                             ocrd workspace add -g P<xsl:number format="0001"/> -G OCR-D-IMG -i OCR-D-IMG_<xsl:number format="0001"/> -m image/<xsl:value-of select="substring-after(tokenize(map/image1, '/')[last()], '.')"/><xsl:text>&#xA;</xsl:text><xsl:value-of select="map/image1"/>
                             ocrd workspace add -g P<xsl:number format="0001"/> -G DEFAULT -i DEFAULT_<xsl:number format="0001"/> -m image/<xsl:value-of select="substring-after(tokenize(map/image1, '/')[last()], '.')"/><xsl:text>&#xA;</xsl:text><xsl:value-of select="map/image1"/>
                             ocrd workspace add -g P<xsl:number format="0001"/> -G OCR-D-GT-SEG-PAGE -i OCR-D-GT-SEG-PAGE_<xsl:number format="0001"/> -m text/xml <xsl:value-of select="substring-after(map/@file, 'file:')"/>
                             ocrd workspace add -g P<xsl:number format="0001"/> -G OCR-D-GT-SEG-BLOCK -i OCR-D-GT-SEG-BLOCK_<xsl:number format="0001"/> -m text/xml <xsl:value-of select="substring-after(map/@file, 'file:')"/>
                         </xsl:if>
-                        </td2>
+                        
                     
                     
                     
                 </xsl:for-each>
             </xsl:if>
-            
-            
-            
-            <!--<xsl:for-each 
-                select="uri-collection($conImg)">
-                <datei name="{iri-to-uri(.)}"/>
-                    
-                  
-            </xsl:for-each>-->
-            
-            </xsl:variable>
-            
-            <xsl:message select="$gMets"></xsl:message>
-            <!--<xsl:text>Hallo</xsl:text>
-            <xsl:message select="$test"></xsl:message>-->
-            
-        </xsl:if>
+          </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
 
