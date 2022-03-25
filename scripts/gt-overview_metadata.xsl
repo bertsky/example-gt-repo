@@ -1448,7 +1448,7 @@
                 
                 <xsl:for-each select="$holeMetric/array/array">
                     <td1>cd <xsl:value-of select="substring-before(map/@file, 'GT-PAGE')"/></td1>
-                    <td2>ocrd workspace add -g P<xsl:number format="0001"/> -G OCR-D-IMG -i OCR-D-IMG_<xsl:number format="0001"/> -m image/<xsl:value-of select="substring-after(tokenize(map/image, '/')[last()], '.')"/><xsl:text> Image:</xsl:text><xsl:value-of select="map/image"/>Page:</xsl:text><xsl:value-of select="map/page"/></td2>
+                    <td2>ocrd workspace add -g P<xsl:number format="0001"/> -G OCR-D-IMG -i OCR-D-IMG_<xsl:number format="0001"/> -m image/<xsl:value-of select="substring-after(tokenize(map/image, '/')[last()], '.')"/><xsl:text> </xsl:text>Image:<xsl:value-of select="map/image"/><xsl:text> </xsl:text>Page:<xsl:value-of select="map/page"/></td2>
                 </xsl:for-each>
             </xsl:if>
             
