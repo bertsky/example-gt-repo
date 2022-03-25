@@ -133,6 +133,7 @@
                              <xsl:attribute name="key2" select="substring-after($filename, '/GT-PAGE/')"/>
                              <xsl:attribute name="file" select="$filename"/>
                              <image><xsl:value-of select="document($filename)//*/pc:Metadata/@externalRef"/></image>
+                             <page><xsl:value-of select="substring-before($filename, '/GT-PAGE/')"/></page>
                              <string key="{$key1}"><xsl:value-of select="count(document($filename)//*/pc:TextRegion)"/></string>
                              <string key="{$key2}"><xsl:value-of select="count(document($filename)//*/pc:ImageRegion)"/></string>
                              <string key="{$key3}"><xsl:value-of select="count(document($filename)//*/pc:LineDrawingRegion)"/></string>
@@ -1447,7 +1448,7 @@
                 
                 <xsl:for-each select="$holeMetric/array/array">
                     <td1>cd <xsl:value-of select="substring-before(map/@file, 'GT-PAGE')"/></td1>
-                    <td2>ocrd workspace add -g P<xsl:number format="0001"/> -G OCR-D-IMG -i OCR-D-IMG_<xsl:number format="0001"/> -m image/<xsl:value-of select="substring-after(tokenize(map/image, '/')[last()], '.')"/><xsl:text> </xsl:text><xsl:value-of select="map/image"/></td2>
+                    <td2>ocrd workspace add -g P<xsl:number format="0001"/> -G OCR-D-IMG -i OCR-D-IMG_<xsl:number format="0001"/> -m image/<xsl:value-of select="substring-after(tokenize(map/image, '/')[last()], '.')"/><xsl:text> Image:</xsl:text><xsl:value-of select="map/image"/>Page:</xsl:text><xsl:value-of select="map/page"/></td2>
                 </xsl:for-each>
             </xsl:if>
             
