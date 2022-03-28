@@ -14,6 +14,7 @@ if test -f "mets.xml"; then
 
 else
     echo "${PWD##*/}"
+    echo "cd $p;"
     # cd $p;cd ..;ocrd workspace -d ${PWD##*/} init ;cd ${PWD##*/};pwd;ls;sh $path/ghout/mets.sh;sudo mkdir $path/ghout/${PWD##*/};sudo mv mets.xml $path/ghout/${PWD##*/}/
     
 fi
