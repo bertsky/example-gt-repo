@@ -13,7 +13,7 @@ if test -f "mets.xml"; then
     
 
 else
-    ocrd workspace --directory $p init;pwd;cd $p;ls
+    ocrd workspace --directory $p init;pwd;ls
     
     # sh $path/ghout/mets.sh;sudo mkdir $path/ghout/${PWD##*/};sudo mv mets.xml $path/ghout/${PWD##*/}/
     
