@@ -13,7 +13,8 @@ if test -f "mets.xml"; then
     
 
 else
-    ocrd workspace --directory $p init;sh $path/ghout/mets.sh;cd $p;ocrd zip bag -i ocrd_data_structur_${PWD##*/};cd ${PWD##*/};sudo mv $path/data/*.zip $path/ocrdzip_out/
-    #sudo mkdir $path/ghout/${PWD##*/};sudo mv mets.xml $path/ghout/${PWD##*/}/
+    ocrd workspace --directory $p init;sh $path/ghout/mets.sh;cd $p;ocrd zip bag -i ocrd_data_structur_${PWD##*/};pwd;ls -l
+    # cd ${PWD##*/};sudo mv $path/data/*.zip $path/ocrdzip_out/
+    # sudo mkdir $path/ghout/${PWD##*/};sudo mv mets.xml $path/ghout/${PWD##*/}/
 fi
 done
