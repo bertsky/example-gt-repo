@@ -12,13 +12,6 @@ if test -f "mets.xml"; then
 
     cd $p;ocrd zip bag -i ocrd_data_structur_${PWD##*/};cd ${PWD##*/};sudo mv $path/data/*.zip $path/ocrdzip_out/
     
-
-    # cd $p;ocrd zip bag -i ocrd_data_structur_${PWD##*/} -I .;cd ..;pwd;ls -l
-    
-    # ocrd zip bag -i ocrd_data_structur_${PWD##*/};pwd;ls -l;cd ${PWD##*/};pwd;ls -l;
-    # sudo mv $path/data/*.zip $path/ocrdzip_out/
-    
-
 else
     ocrd workspace --directory $p init;sh $path/ghout/mets.sh;cd $p;ocrd zip bag -i ocrd_data_structur_${PWD##*/};pwd;ls -l
     # cd ${PWD##*/};sudo mv $path/data/*.zip $path/ocrdzip_out/
