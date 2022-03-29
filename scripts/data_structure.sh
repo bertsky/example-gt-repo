@@ -10,7 +10,7 @@ cd $path/$eachfile;cd ..
 p=`pwd`
 if test -f "mets.xml"; then
     
-    cd /home/runner/work/example-gt-repo/example-gt-repo/data/${PWD##*/};sudo ocrd zip bag -i gt_data_structur_${PWD##*/} -I ocrd_data_structur_${PWD##*/};
+    cd /home/runner/work/example-gt-repo/example-gt-repo/data/${PWD##*/};ocrd zip bag -i gt_data_structur_${PWD##*/} -I ocrd_data_structur_${PWD##*/};
     # find -name ocrd_data_structur_${PWD##*/};sudo mv /home/runner/work/example-gt-repo/example-gt-repo/data/*.zip /home/runner/work/example-gt-repo/example-gt-repo/ocrdzip_out/
     # cd $p;ocrd zip bag -i ocrd_data_structur_${PWD##*/};cd ${PWD##*/};sudo mv $path/data/*.zip $path/ocrdzip_out/
     
