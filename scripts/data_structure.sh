@@ -6,7 +6,7 @@ for eachfile in $metsfiles
 do
 cd $path/$eachfile;cd ..
 p=`pwd`
-
+   echo $eachfile
    cd $p;ocrd zip bag -i ocrd_data_structur_$eachfile -I DEST;sudo mv /home/runner/work/example-gt-repo/example-gt-repo/data/*.zip /home/runner/work/example-gt-repo/example-gt-repo/ocrdzip_out/
    
    
