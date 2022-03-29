@@ -64,7 +64,8 @@ jobs:
 
 
     - name: made bagit
-      run: sh scripts/data_structure.sh  
+      run: sh scripts/data_structure.sh
+      shell: bash
 
 
 
