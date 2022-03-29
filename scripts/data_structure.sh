@@ -8,7 +8,7 @@ do
 p=`pwd`
    echo erster $eachfile
    echo zweiter $p
-   cd data/$p;ocrd zip bag -i ocrd_data_structur_$eachfile -I DEST;sudo mv /home/runner/work/example-gt-repo/example-gt-repo/data/*.zip /home/runner/work/example-gt-repo/example-gt-repo/ocrdzip_out/
+   cd $p/data/$eachfile;ocrd zip bag -i ocrd_data_structur_$eachfile -I DEST;sudo mv /home/runner/work/example-gt-repo/example-gt-repo/data/*.zip /home/runner/work/example-gt-repo/example-gt-repo/ocrdzip_out/
    
    
    
