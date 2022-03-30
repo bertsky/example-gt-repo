@@ -16,7 +16,7 @@ else
     p2 cd $p;cd.. 
     echo erster: $path/$eachfile
     echo zweiter: $p
-    echo drei: $p2
+    echo $path
     
     # ocrd workspace --directory $p init;sh $path/ghout/mets.sh;cd $p;ocrd zip bag -i ocrd_data_structur_${PWD##*/};sudo mv *.zip $path/ocrdzip_out/
     
