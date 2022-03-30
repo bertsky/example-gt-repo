@@ -8,17 +8,13 @@ for eachfile in $page
 do
 cd $path/$eachfile;cd ..
 p=`pwd`
-p2=cd ..
+
 if test -f "mets.xml"; then
     cd $p;ocrd zip bag -i ocrd_data_structur_${PWD##*/};cd ${PWD##*/};mv $path/data/*.zip $path/ocrdzip_out/
     
 
 else
-    echo erster: $path/$eachfile
-    echo zweiter: $p
-    echo dritter: $p2
-    
-    # ocrd workspace --directory $p init;sh $path/ghout/mets.sh;cd $p;ocrd zip bag -i ocrd_data_structur_${PWD##*/};sudo mv *.zip $path/ocrdzip_out/
+    ocrd workspace --directory $p init;sh $path/ghout/mets.sh;cd $p;ocrd zip bag -i ocrd_data_structur_${PWD##*/};cd $p;cd ..;sudo mv *.zip $path/ocrdzip_out/
     
     # pwd;ls -l
     
