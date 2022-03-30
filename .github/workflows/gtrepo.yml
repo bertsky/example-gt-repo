@@ -20,6 +20,7 @@ jobs:
         git clone --depth 1 https://github.com/OCR-D/core
         make -C core install
         rm -rf core
+        pip install click==8.0.1 # workaround for core#828
           
     - name: Download and install saxon
       run: wget https://sourceforge.net/projects/saxon/files/Saxon-HE/10/Java/SaxonHE10-5J.zip/download && unzip download
