@@ -11,13 +11,15 @@ do
     fi
     if test -f "mets.xml"; then
         ocrd zip bag -i ocrd_data_structur_$name
-        sudo mv $PWD.ocrd.zip "$topdir"/ocrdzip_out/
+        mv $PWD.ocrd.zip "$topdir"/ocrdzip_out/
     else
         ocrd workspace init
         sh "$topdir"/ghout/mets.sh
-        sudo mkdir "$topdir"/ghout/$name
-        sudo mv mets.xml "$topdir"/ghout/$name/
+        mkdir "$topdir"/ghout/$name
+        mv mets.xml "$topdir"/ghout/$name/
+        # and zip?
     fi
+    popd
 done
 
 
