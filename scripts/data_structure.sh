@@ -13,7 +13,6 @@ if test -f "mets.xml"; then
     
 
 else
-    p2 cd $p;cd.. 
     echo erster: $path/$eachfile
     echo zweiter: $p
     echo $path
