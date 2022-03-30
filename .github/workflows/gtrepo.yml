@@ -13,26 +13,26 @@ jobs:
     - name: Git checkout
       uses: actions/checkout@v2
      
-    # Instalations and Foldering
+    # Installation and Directories
       
     - name: install ocrd
-      run: git clone --depth 1 https://github.com/OCR-D/core; ls -l;cd core; make install;cd ..;rm -rf core
+      run: |
+        git clone --depth 1 https://github.com/OCR-D/core
+        make -C core install
+        rm -rf core
           
     - name: Download and install saxon
       run: wget https://sourceforge.net/projects/saxon/files/Saxon-HE/10/Java/SaxonHE10-5J.zip/download && unzip download
                       
-    - name: ocrd zip help
-      run: ocrd zip bag --help
-    
-    - name: made ocrdzip_out
-      run: sudo mkdir ocrdzip_out
+    - name: make ocrdzip_out
+      run: mkdir ocrdzip_out
       
-    - name: made gh-pages_out
-      run: sudo mkdir ghout
+    - name: make gh-pages_out
+      run: mkdir ghout
     
     # Bagit
     
-    #- name: made bagit
+    #- name: make bagit
     #  run: sh scripts/data_structure.sh
       
     # Transformation and analysis
@@ -44,41 +44,35 @@ jobs:
        cmd: yq -o=json METADATA.yml > METADATA.json
            
     - name: transform METADATA and make GT-Overview
-      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=METADATA repoBase=$GITHUB_REF_NAME repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:ghout/metadata.md
+      run: java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=METADATA repoBase=$GITHUB_REF_NAME repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:ghout/metadata.md
       shell: bash
 
     - name: make Compressed table view
-      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=TABLE repoBase=$GITHUB_REF_NAME repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:ghout/table.md
+      run: java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=TABLE repoBase=$GITHUB_REF_NAME repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:ghout/table.md
       shell: bash
 
     - name: Detailed table view
       run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=OVERVIEW repoBase=$GITHUB_REF_Name repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:ghout/overview.md
       shell: bash
 
-    - name: generated mets.sh
-      run: sudo java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=METS repoBase=$GITHUB_REF_Name repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:scripts/mets.sh
+    - name: generate mets.sh
+      run: java -jar saxon-he-10.5.jar -xsl:scripts/gt-overview_metadata.xsl output=METS repoBase=$GITHUB_REF_Name repoName=$GITHUB_REPOSITORY -s:scripts/gt-overview_metadata.xsl -o:scripts/mets.sh
       shell: bash
   
-    - name: testy
-      run: pwd 
-
-
-    - name: made bagit
+    - name: make bagits
       run: sh scripts/data_structure.sh
       shell: bash
 
-
-
     - name: copy css styles and yml files to ghout
-      run: sudo cp scripts/table_hide.css ghout/;sudo cp scripts/_config.yml ghout/ 
-
+      run: |
+        cp scripts/table_hide.css ghout/
+        cp scripts/_config.yml ghout/ 
 
     - name: Archive the ocrdzip files from ocrdzip_out folder
       uses: thedoctor0/zip-release@master
       with:
          filename: site.zip
          path: 'ocrdzip_out'
-      
     
     - name: Create GitHub release
       id: create-new-release
@@ -91,7 +85,6 @@ jobs:
           body_path: CHANGELOG.md 
           draft: false
           prerelease: false
-     
     
     - name: Upload asset to GitHub release
       uses: actions/upload-release-asset@latest
@@ -105,25 +98,12 @@ jobs:
           asset_name: bagitDump-v${{ github.run_number }}.zip
           asset_content_type: application/zip
           
-   
-   
-   
-   
     - name: Deploy GT-Overview to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: ghout # The folder the action should deploy.
-   
-   
-   
-   
-   
-   
-   
-   
-          
+          FOLDER: ghout # The folder the action should deploy.       
           
    # - name: Deploy Bagits 🚀
    #   uses: JamesIves/github-pages-deploy-action@3.7.1
@@ -131,10 +111,6 @@ jobs:
    #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
    #       BRANCH: bagitoutput # The branch the action should deploy to.
    #       FOLDER: ocrdzip_out # The folder the action should deploy.
-    
-    
-    
-    
     
     #- name: Create Release
     #  id: create_release
